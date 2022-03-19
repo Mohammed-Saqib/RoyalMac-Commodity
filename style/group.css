@@ -44,25 +44,20 @@
 }
 
 .business-grp-content{
-    /* outline: 1px solid; */
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 75% !important;
+    position: relative;
 }
 
 a{
     text-decoration: none;
 }
 .grp-card{
-    outline: 1px solid;
-    width: 300px;
+    /* auto width for each assigned in owl carousel */
+    /* width: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
 }
 
 .card-img{
@@ -79,7 +74,7 @@ a{
 }
 
 .card-header{
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
@@ -94,6 +89,50 @@ a{
 }
 .card-header a:hover{
     font-weight: 400;
+    color: var(--goldColor);
+}
+
+.owl-nav{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-30%);
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav button span{
+    font-size: 62px;
+    font-weight: 300;
+    color: var(--darkWhite1);
+}
+.owl-nav button span:hover{
+    color: var(--goldColor);
+}
+
+.owl-dots{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-dots .owl-dot{
+    outline: 1px solid var(--greenColor);
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    margin-right: 5px;
+    background-color: var(--greenColor);
+    z-index: 5;
+    border-radius: 15px;
+}
+
+.owl-dots .owl-dot.active{
+    background-color: var(--greenColor);
 }
 
 @media screen and (max-width: 750px){
@@ -109,6 +148,10 @@ a{
     .card-header{
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .business-grp-content{
+        width: 70% !important;
     }
     
 }
@@ -126,5 +169,9 @@ a{
 
     .grp-card{
         margin-right: 0;
+    }
+
+    .business-grp-content{
+        width: 60% !important;
     }
 }
