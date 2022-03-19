@@ -1,0 +1,44 @@
+RoyalMac           Invester	                      Activities                     Commodity            ReachUs           Board                        Projects
+                   ->stakes                         -> import/Export                                                     ->Board Of directors            
+                   ->join Venturs                   -> Stockiest 							 ->Advisory Board
+                      info: some informario         -> Business Consulting						 ->Team	
+                                                    -> Joint Venturs   							    						
+						    -> Merchendiser							   
+
+body{
+RoyalMac Business Group
+cards  ->    company image1        company image2      			company image3
+	    RoyalMac PVT.LTD.	   RoyalMac International		RoyalMac 3D Constructions
+
+Activity
+1.  -> 
+2.  ->
+
+Commodity
+cards images like : https://momentomultimedia.com/en/
+
+Board
+only display the content onClick
+1.Board Of Directors
+2.Advisory Board
+3.Consultant
+
+Confedential
+pop image 			Standard Chatered Bank       RoyalMac
+proof of product		    Account Info	   Company Docs
+
+projects
+upcoming Project   - 3
+project volume	   - 7225 CR	 Usd 975 Ml.USD
+
+
+Reach us
+Social icons			Contact Us			Operational Icons
+* FB				* Email						
+* Insta				* WathsApp
+* Twitter			* Google Meet
+* LinkedIn			*Zoom Meet
+* WathsApp
+* Telegram
+
+
