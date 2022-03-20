@@ -1,0 +1,266 @@
+.activity-area{
+    margin:50px 0;
+    background-color: var(--darkWhite2);
+    width: 100%;
+    padding: 50px 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.activity-content{
+    /* border: 1px solid var(--greenColor); */
+    width: 80%;
+    display: flex;
+}
+
+.activity-left{
+    border-right: 1px solid var(--goldColor);
+    width: 20%;
+    padding: 20px 10px;
+}
+
+.activity-heading{
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.line2{
+    display: inline-block;
+    margin: 10px 0;
+    width: 120px;
+    height: 2px;
+    background-color: var(--greenColor);
+    border-radius: 25px;
+}
+
+.activity-list{
+    cursor: pointer;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    max-width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.activity-list img{
+    margin-right: 5px;
+}
+
+.activity-list::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--greenColor);
+    transition: width 0.5s ease;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+}
+
+.activity-list:hover::after{
+    width: 100%;
+}
+
+.activity-heading:hover , .activity-list:hover{
+    color: var(--goldColor);
+    animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
+}
+
+.activity-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contents{
+    padding: 10px 15px;
+    transition: display 1s ease;
+    -webkit-transition: display 1s ease;
+    -moz-transition: display 1s ease;
+}
+
+.para{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+.hide{
+   display: none;
+}
+
+.unhide{
+    display: block;
+}
+
+@media screen and (max-width: 1061px){
+    .activity-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .activity-content{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .activity-content{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity-left{
+        border-right: none;
+        border-bottom: 1px solid var(--goldColor);
+        width: 80%;
+        padding: 10px 10px;
+    }
+
+    .activity-heading{
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 300;
+    }
+    
+    .line2{
+        display: block;
+        margin: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .activity-list{
+        margin: 0 0 10px 0;
+        padding-left: 20px;
+        min-width: 50%;
+        float: left;
+    }
+
+    .activity-right{
+        border-left: 1px solid var(--greenColor);
+        border-bottom: 1px solid var(--greenColor);
+        border-right: 1px solid var(--greenColor);
+    }
+}
+
+@media screen and (max-width: 750px){
+    .activity-area{
+        padding: 30px 10px;
+    }
+
+    .activity-left{
+        width: 90%;
+        padding: 10px 10px;
+    }
+
+    .activity-heading{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .line2{       
+        display: block;
+        margin: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .activity-list{
+        margin: 0 0 10px 0;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .activity-right{
+        width: 90%;
+    }
+
+    .contents{
+        padding: 10px 15px 0px 15px;
+    }
+
+    .para{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .activity-list{
+        min-width: 50%;
+        float: none;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .activity-area{
+        padding: 20px 10px;
+    }
+
+    .activity-left{
+        width: 95%;
+        padding: 10px 10px;
+    }
+
+    .activity-heading{
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    .line2{       
+        display: block;
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .activity-list{
+        margin: 0 0 10px 0;
+        padding-left: 15px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .activity-right{
+        width: 95%;
+    }
+
+    .contents{
+        padding: 10px 10px 0px 10px;
+    }
+
+    .para{
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .activity-list{
+        min-width: 100%;
+    }
+}

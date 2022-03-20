@@ -1,9 +1,10 @@
 RoyalMac           Invester	                      Activities                     Commodity            ReachUs           Board                        Projects
                    ->stakes                         -> import/Export                                                     ->Board Of directors            
-                   ->join Venturs                   -> Stockiest 							 ->Advisory Board
-                      info: some informario         -> Business Consulting						 ->Team	
+                   ->join Venturs                   -> Stockiest 							                                     ->Advisory Board
+                      info: some informario         -> Business Consulting						                               ->Team	
                                                     -> Joint Venturs   							    						
-						    -> Merchendiser							   
+						                                  -> Merchendiser
+                                                    -> Trading							   
 
 body{
 RoyalMac Business Group
