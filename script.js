@@ -2,10 +2,11 @@ $(document).ready(function(){
     $(".menu-icon img").click(function(){
       $(".menu").toggleClass("activated-menu")
       const close = document.querySelector('.activated-menu');
+      console.log(close)
       if(close == null){
-          document.querySelector('.menu-icon img').setAttribute('src','../Images/SVG/menu.svg')
+          document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/menu.svg')
       }else{
-        document.querySelector('.menu-icon img').setAttribute('src','../Images/SVG/close.svg') 
+        document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/close.svg') 
       }    
     });
 });
