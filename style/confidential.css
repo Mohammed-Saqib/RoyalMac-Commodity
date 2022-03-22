@@ -1,0 +1,187 @@
+.confedential{
+    margin:50px 0;
+    background-color: var(--darkWhite2);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 30px 0;
+}
+.confi-heading{
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.confi-heading:hover{
+    color: var(--goldColor);
+    animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
+}
+
+.confi-content{
+    /* outline: 1px solid; */
+    width: 60% !important;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 10px;    
+}
+.pop
+,.account-info
+,.company-docs{
+    /* outline: 1px solid; */
+    /* max-width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2),4px 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    height: 300px;
+    margin: 20px 0;
+    background-color: #dfe6e9;
+    position: relative;
+}
+
+.pop-img{
+    width: 100%;
+    height: 230px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.acc-img, .comp-img{
+    outline: 1px solid;
+    height: 250px;
+    /* width: 300px; */
+    background-color: var(--whiteColor) !important;   
+    border-radius: 5px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.acc-img img, .comp-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.pop-sub{
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.conf-sub-head{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.conf-sub-head:hover{
+    color: var(--goldColor);
+}
+
+.conf-download{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    cursor: pointer;
+}
+
+.conf-download:hover{
+    color: rgb(8, 8, 185);
+}
+
+.down-content, .down-content1, .down-content2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.down-content img, .down-content1 img, .down-content2 img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.down-content input, .down-content1 input, .down-content2 input{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.down-content .close, .down-content1 .close1, .down-content2 .close2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 88%;
+    top: -10%;
+    cursor: pointer;
+}
+
+.down-content-show{
+    display: flex;
+}
+
+@media screen and (max-width:900px){
+    .conf-sub-head{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .confi-content{
+        width: 70% !important;
+    }
+    .conf-sub-head{
+        font-size: 12px;
+        line-height: 12px;
+        margin: 10px;
+    }
+    .conf-download{
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+@media screen and (max-width:3750px){
+    .confi-content{
+        width: 80% !important;
+    }
+    .pop
+    ,.account-info
+    ,.company-docs{
+    margin: 10px 0;
+   }
+}

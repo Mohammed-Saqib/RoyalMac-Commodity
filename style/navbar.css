@@ -15,6 +15,10 @@
  --darkWhite2 : #f1f1f1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--whiteColor); 
     width: 100vw;

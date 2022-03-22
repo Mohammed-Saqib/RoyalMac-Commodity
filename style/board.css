@@ -1,0 +1,230 @@
+.board{
+    margin:50px 0;
+    background-color: var(--darkWhite2);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 30px 0;
+}
+
+.board-heading{
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.board-heading:hover{
+    color: var(--goldColor);
+    animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
+}
+
+.board-of-director{
+    /* outline: 1px solid; */
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.brd-header{
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--goldColor);
+    position: relative;
+}
+
+.brd-header:hover::after{
+    /* width: 100%; */
+}
+
+.brd-header::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--greenColor);
+    position: absolute;
+    top: 100%;
+    /* left: 50%; */
+    left: 0;
+    /* right: 50%; */
+    /* transform: translateX(-50%);
+    transition: width 0.2s ease; */
+}
+
+.brd-card-container{
+    /* outline: 1px solid; */
+    margin: 5px 0;
+    padding:20px 0;
+    width: 80% !important;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; */
+    overflow: hidden;
+}
+
+.brd-member-crd{
+    background-color: var(--whiteColor);
+    padding: 10px;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    /* width: 260px;   */
+    /* max-height: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2), 2px 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+}
+
+.brd-member-crd:hover{
+    background-color: var(--darkWhite1);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+}
+
+.brd-member-img{
+    background-color: var(--whiteColor);
+    max-width: 250px;
+    max-height:  250px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.brd-member-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+}
+
+.brd-member-img img:hover{
+    transform: scale(2.3);
+    -webkit-transform: scale(2.3);
+    -moz-transform: scale(2.3);
+    object-position: right;
+}
+
+.brd-member-name{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.brd-member-soc{
+    /* outline: 1px solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 5px 0;   
+}
+
+.brd-icons{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+}
+
+.brd-icons img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.brd-icons:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+
+.advisory-board{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.advisory-card-container{
+    margin: 5px 0;
+    padding:20px 0;
+    width: 80% !important;
+    overflow: hidden;
+}
+
+.board-unhide{
+    display: flex;
+}
+
+@media screen and (max-width:750px) {
+    .board-heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .brd-header{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .brd-member-crd:hover{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .board{
+        margin:40px 0;
+        padding: 20px 0;
+    }
+    .board-heading{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .brd-header{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .brd-card-container{
+        /* outline: 1px solid red; */
+        padding:20px 0;
+        width: 80%;
+    }
+    .brd-member-name{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+}

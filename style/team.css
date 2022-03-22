@@ -1,0 +1,281 @@
+*{
+    /* outline: 1px solid red; */
+}
+
+.team-container{
+    width: 100%; height: 100%;
+    background-color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-navbar{
+    /* background-color: var(--darkWhite1); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.back{
+    width: 80%;
+    flex: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.back a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+   color: var(--black);
+    position: relative;
+}
+
+.back a:hover{
+    color: var(--goldColor);
+}
+
+.back a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--goldColor);
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+}
+.back a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--greenColor);
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.back a:hover::after{
+  width: 100%;
+}
+
+/* team content list  */
+.team-content{
+    margin-top: 20px;
+    width: 95%;
+    padding: 10px;
+}
+
+.search{
+    /* outline: 1px solid; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search input{
+    padding: 7px 30px 7px 10px;
+    width: 60%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    outline: none;    
+}
+
+.search input:focus{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search .search-btn{
+    margin-left: -30px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.team-list{
+    width: 100% ;
+    /* margin-top: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 15px;
+}
+
+.team-card{
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2),2px 5px 10px rgba(0, 0, 0, 0.1), 
+    0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin: 0 10px 10px 0; */
+    max-height: 250px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.team-card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    background-color: var(--darkWhite2);
+}
+
+.flag{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flag img{
+    /* outline: 1px solid; */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.flag .country{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.team-card .name{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.team-card .designation{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.team-card .mail{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.msg{
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: red;
+}
+
+@media screen and (max-width:750px) {
+    .search input{
+        width: 80%;
+    }
+    .flag .country{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .team-card .name{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .team-card .designation{
+        font-size: 15px;
+        line-height: 16px;
+    }
+    
+    .team-card .mail{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .msg{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .search input{
+        width: 95%;
+    }
+
+    .search input{
+        padding: 5px 30px 5px 10px;
+        width: 60%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .flag .country{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .team-card .name{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .team-card .designation{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .team-card .mail{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .team-list{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .msg{
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

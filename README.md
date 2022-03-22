@@ -1,3 +1,3 @@
-# RoyalMAc
+# RoyalMAc Commodity
 
-Landing Page
+RoyalMac Commodity Website

@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./style/body.css">
     <link rel="stylesheet" href="./style/group.css">
     <link rel="stylesheet" href="./style/activity.css">
+    <link rel="stylesheet" href="./style/commodity.css">
+    <link rel="stylesheet" href="./style/board.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/reachUs.css">
+    <link rel="stylesheet" href="./style/confidential.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RoyalMac</title>
@@ -19,33 +25,33 @@
             <div class="logo"><img src="./Images/logo.svg" alt="RoyalMac Logo"></div>
             <div class="menu">
                 <ul class="active-menu">
-                    <li><a href="#">RoyalMac</a></li>
+                    <li><a href="./index.html">RoyalMac</a></li>
                     <li class="dropdown"><a href="#">Investment</a>
                         <div class="dropdown-content drp-cnt">
                             <div class="content">stakes <span class="content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nulla impedit. Nulla, a. Tenetur nobis sapiente veniam doloribus repellat eum.</span></div>
                             <div class="content">join Venturs <span class="content-info"><span class="up-case">R</span>oyal<span class="up-case">M</span>ac <span class="up-case">Pvt. Ltd.</span> invites you to become a part of our upcoming project joint venture to improve operation speed and boost- up sales. Contact us for more info.</span></div>
                          </div>
                     </li>
-                    <li class="dropdown"><a href="#">Activities</a>
+                    <li class="dropdown"><a href="#list1">Activities</a>
                         <div class="dropdown-content">
-                            <a href="#">Import/Export</a>
-                            <a href="#">Business Consulting</a>
-                            <a href="#">Joint Venturs</a>
-                            <a href="#">Stockist</a>
-                            <a href="#">Merchendiser</a>
-                            <a href="#">Trading</a>
+                            <a href="#list1">Import/Export</a>
+                            <a href="#list1">Business Consulting</a>
+                            <a href="#list1">Joint Venturs</a>
+                            <a href="#list1">Stockist</a>
+                            <a href="#list1">Merchendiser</a>
+                            <a href="#list1">Trading</a>
                          </div>
                     </li>
-                    <li class="dropdown"><a href="#">Commodity</a></li>
-                    <li class="dropdown"><a href="#">Board</a>
+                    <li class="dropdown"><a href="#commodity">Commodity</a></li>
+                    <li class="dropdown"><a href="#board" id="nav-board">Board</a>
                         <div class="dropdown-content">
-                            <a href="#">Board Of directors</a>
-                            <a href="#">Advisory Board</a>
-                            <a href="#">Team</a>
+                            <a href="#board" class="nav-bod">Board Of directors</a>
+                            <a href="#board" class="nav-ab">Advisory Board</a>
+                            <a href="./team.html">Team</a>
                          </div>
                     </li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">ReachUS</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#reachus">ReachUS</a></li>
                 </ul>
             </div>
             <div class="menu-icon"><img src="./Images//SVG/menu.svg" alt=""></div>
@@ -81,14 +87,14 @@
         <div class="activity-area" id="activity-area">
             <div class="activity-content">
                 <div class="activity-left">
-                    <h2 class="activity-heading list1">Activity</h2>
+                    <h2 class="activity-heading list1" id="list1">Activity</h2>
                     <span class="line2"></span>
-                    <p class="activity-list list2"><img src="./Images/SVG/arrow-right.svg"> import/Export</p>
-                    <p class="activity-list list3"><img src="./Images/SVG/arrow-right.svg"> Business Consulting</p>
-                    <p class="activity-list list4 "><img src="./Images/SVG/arrow-right.svg"> join Venturs</p>
-                    <p class="activity-list list5"><img src="./Images/SVG/arrow-right.svg"> Stockist</p>
-                    <p class="activity-list list6"><img src="./Images/SVG/arrow-right.svg"> Merchendiser</p>
-                    <p class="activity-list list7"><img src="./Images/SVG/arrow-right.svg"> Trading</p>
+                    <p class="activity-list list2" id="list2"><img src="./Images/SVG/arrow-right.svg"> import/Export</p>
+                    <p class="activity-list list3" id="list3"><img src="./Images/SVG/arrow-right.svg"> Business Consulting</p>
+                    <p class="activity-list list4" id="list4"><img src="./Images/SVG/arrow-right.svg"> join Venturs</p>
+                    <p class="activity-list list5" id="list5"><img src="./Images/SVG/arrow-right.svg"> Stockist</p>
+                    <p class="activity-list list6" id="list6"><img src="./Images/SVG/arrow-right.svg"> Merchendiser</p>
+                    <p class="activity-list list7" id="list7"><img src="./Images/SVG/arrow-right.svg"> Trading</p>
                 </div>
                 <div class="activity-right">
                     <div class="contents content-1 hide unhide">
@@ -115,6 +121,272 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="commodity" id="commodity">
+            <div class="cm-heading">COMMODITY</div>
+            <span class="line"></span>
+            <div class="cm-content owl-carousel">
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-info">Product: RAIL R50 – R65 </p>
+                        <p class="cm-info">Supply Capacity: 25 ML. MT. / Month </p>
+                        <p class="cm-info">Origin : KSA / RUSSIA /Ukraine / UK/ USA / India </p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/copper.png" alt="Copper"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">Copper</p>
+                        <p class="cm-info">Product: Millbury, cathode, Ingots </p>
+                        <p class="cm-info">Supply Capacity: 5 ML. MT. / Month</p>
+                        <p class="cm-info">Origin: All </p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">Steel </p>
+                        <p class="cm-info">Product : Galvanized, cold-rolled , Ingots, TMT, Steel for Recycling purpose</p>
+                        <p class="cm-info">Supply Capacity: 25 ML. MT. / Month</p>
+                        <p class="cm-info">Origin : All </p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">Aluminum </p>
+                        <p class="cm-info">Product : Ingots,  Recycling purpose Steel</p>
+                        <p class="cm-info">Supply Capacity: 25 ML.  MT. / Month</p>
+                        <p class="cm-info">Origin : All</p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">HMS 1 & 2 </p>
+                        <p class="cm-info">Product : For Recycling purpose</p>
+                        <p class="cm-info">Supply Capacity: 15 ML.  MT. / Month</p>
+                        <p class="cm-info">Origin : All</p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">ZINC </p>
+                        <p class="cm-info">Product : Ingots,  Recycling purpose</p>
+                        <p class="cm-info">Supply Capacity: 5 ML.  MT. / Month </p>
+                        <p class="cm-info">Origin : All</p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/aircraft.png" alt="Aircraft"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">Aircraft </p>
+                        <p class="cm-info">Product :  for Recycling purpose</p>
+                        <p class="cm-info">Supply Capacity: As per the stock availability </p>
+                        <p class="cm-info">Origin : All</p>
+                    </div>
+                </div>
+                <div class="cm-card">
+                    <div class="cm-img"><img src="./Images/ship.png" alt="Ships"></div>
+                    <div class="cm-card-content">
+                        <p class="cm-card-heading">Ships </p>
+                        <p class="cm-info">Product :  for Recycling purpose</p>
+                        <p class="cm-info">Supply Capacity: As per the stock availability</p>
+                        <p class="cm-info">Origin : All</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="board">
+            <div class="board-heading">Board</div>
+            <span class="line"></span>
+
+
+
+            <div class="board-of-director board-unhide">
+                <div class="brd-header">Board Of Director</div>
+                <div class="brd-card-container owl-carousel">
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="advisory-board">
+                <div class="brd-header">Advisory Board</div>
+                <div class="advisory-card-container owl-carousel">
+                    <div class="brd-member-crd">  
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                    <div class="brd-member-crd">
+                        <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
+                        <p class="brd-member-name">RON SWANSON</p>
+                        <div class="brd-member-soc">
+                            <span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span>
+                            <span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span>
+                            <span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="project" id="project">
+            <div class="project-heading">Project</div>
+            <span class="line"></span>
+            <div class="project-content">
+                <div class="up-pro">
+                    <img src="./Images/logo.svg" alt="">
+                    <div class="counter-no">3</div>
+                     <span>Upcoming Projects</span>
+                </div>
+                <div class="pro-vol">
+                    <img src="./Images/logo.svg" alt="">
+                    <div class="counter" data-target="7225">7225cr / Usd 975 Ml.USD</div>
+                    <span>Project Volume</span>
+                </div>
+            </div>
+        </div>
+        <div class="confedential">
+            <div class="confi-heading">Confidential</div>
+            <span class="line"></span>
+            <div class="confi-content owl-carousel">
+                <div class="pop">
+                    <div class="pop-img">
+                        <span class="pop-sub">POP</span>
+                    </div>
+                    <div class="conf-sub-head">Proof Of Product</div>
+                    <span class="conf-download conf-download0">download</span>
+                    <div class="down-content">
+                        <div class="close"><img src="./Images/SVG/close-win.svg" alt="close"></div>
+                        <img src="./Images/SVG/lock.svg" alt="lock">
+                        <input type="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="acc-img">
+                        <img src="./Images/bank.jpg" alt="bank">
+                    </div>
+                    <div class="conf-sub-head">Account Information</div>
+                    <span class="conf-download conf-download1">download</span>
+                    <div class="down-content1">
+                        <div class="close1"><img src="./Images/SVG/close-win.svg" alt="close"></div>
+                        <img src="./Images/SVG/lock.svg" alt="lock">
+                        <input type="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+                <div class="company-docs">
+                    <div class="comp-img">
+                        <img src="./Images/logo.svg" alt="bank">
+                    </div>
+                    <div class="conf-sub-head">Company Documents</div>
+                    <span class="conf-download conf-download2">download</span>
+                    <div class="down-content2">
+                        <div class="close2"><img src="./Images/SVG/close-win.svg" alt="close"></div>
+                        <img src="./Images/SVG/lock.svg" alt="lock">
+                        <input type="password" placeholder="Enter Password" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reach-us">
+            <div class="reach-us-heading" id="reachus">Reach US</div>
+            <span class="line"></span>
+            <div class="reach-us-content">
+                <div class="social">
+                    <p class="reach-us-sub">Lets Get Social</p>
+                    <div class="r-fb">
+                        <img src="./Images/SVG/facebook.svg" alt="">
+                        <a href="#"><p class="fb-text">facebook</p></a>
+                    </div>
+                    <div class="r-insta">
+                        <img src="./Images/SVG/instagram.svg" alt="">
+                        <a href="#"><p class="insta-text">Instagram</p></a>
+                    </div>
+                    <div class="r-twitter">
+                        <img src="./Images/SVG/twitter.svg" alt="">
+                        <a href="#"><p class="twit-text">Twitter</p></a>
+                    </div>
+                    <div class="r-link">
+                        <img src="./Images/SVG/linkedin.svg" alt="">
+                        <a href="#"><p class="link-text">LinkedIn</p></a>
+                    </div>
+                    <div class="r-tele">
+                        <img src="./Images/SVG/telegram.svg" alt="">
+                        <a href="#"><p class="tele-text">Telegram</p></a>
+                    </div>
+                </div>
+                <div class="traditional">
+                    <p class="reach-us-sub">Contact Us</p>
+                    <div class="r-email">
+                        <img src="./Images/SVG/gmail.svg" alt="">
+                        <a href="#"><p class="em-text">Gmail</p></a>
+                    </div>
+                    <div class="r-gmeet">
+                        <img src="./Images/SVG/google.svg" alt="">
+                        <a href="#"><p class="gm-text">Goggle Meet</p></a>
+                    </div>
+                    <div class="r-zmeet">
+                        <img src="./Images/SVG/zoom.svg" alt="">
+                        <a href="#"><p class="zm-text">Zoom Meet</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="./Images/logo.svg" alt="logo">
+            <p class="footer-text">@CopyRight 2022 All Rights Reserved to RoyalMac</p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
