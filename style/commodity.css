@@ -62,7 +62,7 @@
     position: absolute;
     color: var(--whiteColor);
     width: 100%;
-    height: 99%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 2;
@@ -73,7 +73,26 @@
     padding: 5px;
     border-radius: 0 50px 0 50px;
     overflow: hidden !important;
-    display: none;
+    /* display: none; */
+    transition: clip-path 0.2s ease !important;
+    /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
+    animation: clipAni 9s ease infinite;
+}
+
+@keyframes clipAni {
+    65%{
+        transition: clip-path 0.2s ease !important;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+    70%{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    90%{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    100%{
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
 }
 
 .cm-card-heading{
@@ -91,9 +110,9 @@
     margin: 7px 0 0 25px;
 }
 
-.cm-card:hover .cm-card-content{
-    display: flex;
-}
+/* .cm-card:hover .cm-card-content{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+} */
 
 @media screen and (max-width:1500px) {
     .cm-card-heading{

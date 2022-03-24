@@ -1,6 +1,7 @@
 .board{
     margin:50px 0;
-    background-color: var(--darkWhite2);
+    /* background-color: var(--darkWhite2); */
+    background-color: var(--whiteColor);
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -47,19 +48,15 @@
     /* width: 100%; */
 }
 
-.brd-header::after{
+/* .brd-header::after{
     content: "";
     width: 100%;
     height: 2px;
     background-color: var(--greenColor);
     position: absolute;
     top: 100%;
-    /* left: 50%; */
     left: 0;
-    /* right: 50%; */
-    /* transform: translateX(-50%);
-    transition: width 0.2s ease; */
-}
+} */
 
 .brd-card-container{
     /* outline: 1px solid; */
@@ -100,7 +97,8 @@
 
 .brd-member-img{
     background-color: var(--whiteColor);
-    max-width: 250px;
+    /* max-width: 250px; */
+    max-width: 100%;
     max-height:  250px;
     /* border-radius: 100%; */
     border-radius: 5px;

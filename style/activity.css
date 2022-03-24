@@ -1,6 +1,7 @@
 .activity-area{
-    margin:50px 0;
-    background-color: var(--darkWhite2);
+    margin:30px 0;
+    /* background-color: var(--darkWhite2); */
+    background-color: var(--whiteColor);
     width: 100%;
     padding: 50px 10px;
     display: flex; 
@@ -98,8 +99,7 @@
     line-height: 20px;
     text-align: justify;
     word-wrap: break-word;
-    margin-bottom: 10px;
-    text-indent: 10px;
+    margin-bottom: 15px;
 }
 
 .hide{

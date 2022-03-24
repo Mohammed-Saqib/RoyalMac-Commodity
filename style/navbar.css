@@ -9,11 +9,13 @@
     font-family: Prompt;
     src: url(../fonts/Prompt-Regular.ttf);
 }
+
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
 }
+
 ::-webkit-scrollbar-track{
-    background: gray;
+    background: var(--darkWhite2);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -133,7 +135,7 @@ a{
     background-color: var(--whiteColor) !important;
     min-width: 160px;
     box-shadow: 0px 8px 16px  rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 5;
     display: none;
 }
 

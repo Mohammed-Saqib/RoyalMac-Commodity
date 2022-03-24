@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="./style/reachUs.css">
     <link rel="stylesheet" href="./style/confidential.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/v-stockist.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RoyalMac</title>
 </head>
@@ -28,7 +31,7 @@
                     <li><a href="./index.html">RoyalMac</a></li>
                     <li class="dropdown"><a href="#">Investment</a>
                         <div class="dropdown-content drp-cnt">
-                            <div class="content">stakes <span class="content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nulla impedit. Nulla, a. Tenetur nobis sapiente veniam doloribus repellat eum.</span></div>
+                            <div class="content">stakes <span class="content-info" style="width: 130px;">Available soon.</span></div>
                             <div class="content">join Venturs <span class="content-info"><span class="up-case">R</span>oyal<span class="up-case">M</span>ac <span class="up-case">Pvt. Ltd.</span> invites you to become a part of our upcoming project joint venture to improve operation speed and boost- up sales. Contact us for more info.</span></div>
                          </div>
                     </li>
@@ -51,35 +54,37 @@
                          </div>
                     </li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="#reachus">ReachUS</a></li>
+                    <li><a href="#reachus">Reach US</a></li>
                 </ul>
             </div>
             <div class="menu-icon"><img src="./Images/SVG/menu.svg" alt=""></div>
         </div>
         <div class="crousel">
-            <div class="crousel-img"><img src="./Images/img1.webp" alt="RoyalMac Reception"></div>
+            <div class="crousel-img"><img id="gallery" src="./Images/imgone.webp" alt="RoyalMac Reception"></div>
             <div class="crousel-content">
                 <h1>WELCOME</h1>
             </div>
         </div>
         <div class="company-info">
             <p>The ROYALMAC Pvt. Ltd. is a multinational business conglomerate with a core business segment of large-volume imports and exports across the world, which was formed as a consortium with a strategic joint venture mentality.</p>
-            <a href="#reachus">Get In Touch</a>
+            <a href="#reachus"><div class="box">
+                <h6 class="a">Get In Touch</h6>
+            </div></a>
         </div>
         <div class="busines-group">
-            <h1 class="grp-header">RoyalMac Business Group</h1>
+            <h1 class="grp-header">RoyalMac Business Groups</h1>
             <span class="line"></span>
             <div class="business-grp-content owl-carousel">
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img src="./Images/grp-img1.jpg" alt="RoyalMac"></div></a>
+                    <div class="card-img"><a href="#"><img id="construction" src="./Images/import1.png" alt="RoyalMac"></div></a>
                     <div class="card-header"><a href="#">RoyalMac PVT.LTD.</a></div>
                 </div>
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img src="./Images/grp-img1.jpg" alt="RoyalMac"></div></a>
+                    <div class="card-img"><a href="#"><img id="construction" src="./Images/fmcg.jpeg" alt="RoyalMac"></div></a>
                     <div class="card-header"><a href="#">RoyalMac International</a></div>
                 </div>
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img src="./Images/grp-img1.jpg" alt="RoyalMac"></div></a>
+                    <div class="card-img"><a href="#"><img id="construction" src="./Images/constructiontwo.png" alt="RoyalMac"></div></a>
                     <div class="card-header"><a href="#">RoyalMac 3D Constructions</a></div>
                 </div>
             </div>            
@@ -93,8 +98,8 @@
                     <p class="activity-list list3" id="list3"><img src="./Images/SVG/arrow-right.svg"> Business Consulting</p>
                     <p class="activity-list list4" id="list4"><img src="./Images/SVG/arrow-right.svg"> join Ventures</p>
                     <p class="activity-list list5" id="list5"><img src="./Images/SVG/arrow-right.svg"> Stockist</p>
-                    <p class="activity-list list6" id="list6"><img src="./Images/SVG/arrow-right.svg"> Merchendiser</p>
-                    <p class="activity-list list7" id="list7"><img src="./Images/SVG/arrow-right.svg"> Trading</p>
+                    <p class="activity-list list7" id="list6"><img src="./Images/SVG/arrow-right.svg"> Trading</p>
+                    <p class="activity-list list6" id="list7"><img src="./Images/SVG/arrow-right.svg"> Merchendiser</p>
                 </div>
                 <div class="activity-right">
                     <div class="contents content-1 hide unhide">
@@ -114,13 +119,68 @@
                         <p class="para"><b>Stockist</b>: RoyalMac is a potential super-stockist of exclusive products.</p>
                     </div>
                     <div class="contents content-6 hide">
-                        <p class="para"><b>Merchandiser</b>: RoyalMac is a large volume trader and merchandiser around the world.</p>
+                        <p class="para"><b>Trading</b>: RoyalMac Pvt. Ltd. is established longer and closer working relationships with our clients and suppliers not only to supply rapid and reliable services but also to consistently achieve expectations and goals.  With our partners, we create commercial flows, import and export products, and coordinate and manage worldwide projects. We are able to integrate all of these functions with our fruitful experience courtesy to our network.</p>
                     </div>
                     <div class="contents content-7 hide">
-                        <p class="para"><b>Trading</b>: RoyalMac Pvt. Ltd. is established longer and closer working relationships with our clients and suppliers not only to supply rapid and reliable services but also to consistently achieve expectations and goals.  With our partners, we create commercial flows, import and export products, and coordinate and manage worldwide projects. We are able to integrate all of these functions with our fruitful experience courtesy to our network.</p>
+                        <p class="para"><b>Merchandiser</b>: RoyalMac is a large volume trader and merchandiser around the world.</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="virtual-stockist">
+        <div class="activity-content v-content">
+            <div class="activity-left v-left">
+                <h2 class="activity-heading lists1">V Card</h2>
+                <span class="line2"></span>
+                <p class="activity-list lists2" ><img src="./Images/SVG/arrow-right.svg"> Black Card</p>
+                <p class="activity-list lists3" ><img src="./Images/SVG/arrow-right.svg"> Green Card</p>
+                <p class="activity-list lists4" ><img src="./Images/SVG/arrow-right.svg"> Gold Card</p>
+            </div>
+            <div class="activity-right v-right">
+                <div class="contents contents-1 d-block vhide vunhide">
+                    <p class="para"> <b>India’s First Virtual Stockist Card in 3 Variants</b> : For the first time in India or Globally  , RoyalMac launched a virtual stockist ownership card, which eliminates the need for a warehouse, logistics, office, and workers to handle operations. "Hire an employee to count money as a witty statement," we simply suggested. In this segment, we may present three different cards: the Black Card, the Green Card, and the Gold Card. The black version is for novices, whereas the green version has been upgraded. The V VIP grade is Gold.</p>
+                </div>
+                <div class="contents contents-2 vhide">
+                    <p class="para card-content"><b>Black Card</b>: The Black Card is an ownership card that will be offered in limited quantities at initially, with quantities ranging from 100 MT to 5000 MT with a profit ratio of 20% to 30% for stockists. The stockist can verify and confirm the granted quantity under the stockist's name and ownership certificate by scanning the QR code on the Black Card.The card will be valid till the shipment and transaction are completed. There is an option for the stockist to sell the stock back to RoyalMac at a mutually contract rate.</p>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./Images/black-f.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                          <div class="flip-card-back">
+                              <img src="./Images/black-b.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents contents-3 vhide">
+                    <p class="para card-content"><b>Green Card</b>: The Green Card is an upgraded ownership card with a minimum stock level of 5,500 MT to 500,000 MT and a profit ratio of 25% to 30% for stockists. There will also be additional benefits for green card holders, which will be revealed at the right point. The stockist can verify and confirm the allotted quantity under the stockist's name and ownership certificate by scanning the QR code on the green card. The card will be valid till the shipment and transaction are completed. There is an option for the stockist to sell the stock back to RoyalMac at a prior offered amount.</p>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./Images/green-f.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                          <div class="flip-card-back">
+                              <img src="./Images/green-b.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents contents-4 vhide">
+                    <p class="para card-content"><b>Gold Card</b>: The Gold Card is the VIP grade card, with a minimum stock level of 600,000 MT to 1,000,000 MT and a stockist profit ratio of 25% to 30%. Gold Card holders will also receive extra privileges, such as a Dubai and European trip package. By scanning the QR code on the gold card, the commodity ownership gold card may verify and confirm the allotted quantity under the stockist's name and ownership certificate. The card will be valid till the shipping and transaction are completed. The stockist shall re-sell the stock to RoyalMac at a prior agreed-upon price.</p>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./Images/gold-f.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                          <div class="flip-card-back">
+                              <img src="./Images/gold-b.png" alt="Avatar" style="width:180px;height:230px;">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="commodity" id="commodity">
             <div class="cm-heading">COMMODITY</div>
@@ -144,16 +204,16 @@
                     </div>
                 </div>
                 <div class="cm-card">
-                    <div class="cm-img"><img src="./Images/steel.png" alt="Steel"></div>
+                    <div class="cm-img"><img src="./Images/hotroll.png" alt="Steel"></div>
                     <div class="cm-card-content">
-                        <p class="cm-card-heading">Steel </p>
-                        <p class="cm-info">Product : Galvanized, cold-rolled , Ingots, TMT, Steel for Recycling purpose</p>
+                        <p class="cm-card-heading">Hot / Cold Roll Steel sheets </p>
+                        <p class="cm-info">Product : Galvanized, cold-rolled , Ingots, Steel for Recycling purpose</p>
                         <p class="cm-info">Supply Capacity: 25 ML. MT. / Month</p>
                         <p class="cm-info">Origin : All </p>
                     </div>
                 </div>
                 <div class="cm-card">
-                    <div class="cm-img"><img src="./Images/aluminium.png" alt="Aluminum"></div>
+                    <div class="cm-img"><img src="./Images/steel.png" alt="Aluminum"></div>
                     <div class="cm-card-content">
                         <p class="cm-card-heading">Aluminum </p>
                         <p class="cm-info">Product : Ingots,  Recycling purpose Steel</p>
@@ -171,9 +231,9 @@
                     </div>
                 </div>
                 <div class="cm-card">
-                    <div class="cm-img"><img src="./Images/zinc.png" alt="ZINC"></div>
+                    <div class="cm-img"><img src="./Images/steel-rebar.png" alt="ZINC"></div>
                     <div class="cm-card-content">
-                        <p class="cm-card-heading">ZINC </p>
+                        <p class="cm-card-heading">Steel Rebar </p>
                         <p class="cm-info">Product : Ingots,  Recycling purpose</p>
                         <p class="cm-info">Supply Capacity: 5 ML.  MT. / Month </p>
                         <p class="cm-info">Origin : All</p>
@@ -203,35 +263,33 @@
             <div class="board-heading">Board</div>
             <span class="line"></span>
 
-
-
             <div class="board-of-director board-unhide">
                 <div class="brd-header">Board Of Director</div>
                 <div class="brd-card-container owl-carousel">
                     <div class="brd-member-crd">
-                        <div class="brd-member-img"><img src="./Images/Sudheer.jpg" alt=""></div>
-                        <p class="brd-member-name">Sudheer Nasim</p>
+                        <div class="brd-member-img"><img src="./Images/SR.jpg" alt=""></div>
+                        <p class="brd-member-name">Managing Director</p>
                         <div class="brd-member-soc">
                             <a href="mailto:sr@royal-mac.com"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
                     <div class="brd-member-crd">
-                        <div class="brd-member-img"><img src="./Images/Manikanta.jpg" alt=""></div>
-                        <p class="brd-member-name">Manikanta K</p>
+                        <div class="brd-member-img"><img src="./Images/MK.jpg" alt=""></div>
+                        <p class="brd-member-name">Operation Director</p>
                         <div class="brd-member-soc">
                             <a href="mailto:mk@royal-mac.com"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
                     <div class="brd-member-crd">
-                        <div class="brd-member-img"><img src="./Images/Bindhu.jpg" alt=""></div>
-                        <p class="brd-member-name">Bindu Kalam</p>
+                        <div class="brd-member-img"><img src="./Images/BK.jpg" alt=""></div>
+                        <p class="brd-member-name">Public Relation Dir</p>
                         <div class="brd-member-soc">
                             <a href="mailto:bk@royal-mac.com"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
@@ -240,7 +298,7 @@
 
 
             <div class="advisory-board">
-                <div class="brd-header">Advisory Board</div>
+                <div class="brd-header">Advisory</div>
                 <div class="advisory-card-container owl-carousel">
                     <div class="brd-member-crd">  
                         <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
@@ -287,14 +345,20 @@
             <span class="line"></span>
             <div class="project-content">
                 <div class="up-pro">
-                    <img src="./Images/logo.svg" alt="">
-                    <div class="counter-no">3</div>
-                     <span>Upcoming Projects</span>
+                    <!-- <img src="./Images/logo.svg" alt=""> -->
+                    <span>Upcoming Projects</span>
+                    <div class="counter-box">
+                        <span class="counter">3</span>
+                    </div>
                 </div>
                 <div class="pro-vol">
-                    <img src="./Images/logo.svg" alt="">
-                    <div class="counter" data-target="7225">7225cr / Usd 975 Ml.USD</div>
+                    <!-- <img src="./Images/logo.svg" alt=""> -->
                     <span>Project Volume</span>
+                    <!-- <div class="counter" data-target="7225">7225cr / Usd 975 Ml.USD</div> -->
+                    <div class="counter-box">
+                        <span>INR&nbsp;<span class="counter">&nbsp;7225</span>&nbsp;Cr </span>
+                        <span>Or <span class="counter">&nbsp;975</span>&nbsp;Ml.USD</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,9 +369,10 @@
                 <div class="pop">
                     <div class="pop-img">
                         <span class="pop-sub">POP</span>
+                        <!-- <img src="./Images/confi-rail.webp" alt="bank"> -->
                     </div>
                     <div class="conf-sub-head">Proof Of Product</div>
-                    <span class="conf-download conf-download0">download</span>
+                    <span class="conf-download conf-download0">open</span>
                     <div class="down-content">
                         <div class="close"><img src="./Images/SVG/close-win.svg" alt="close"></div>
                         <img src="./Images/SVG/lock.svg" alt="lock">
@@ -316,10 +381,10 @@
                 </div>
                 <div class="account-info">
                     <div class="acc-img">
-                        <img src="./Images/bank.jpg" alt="bank">
+                        <img src="./Images/confi-bank.png" alt="bank">
                     </div>
                     <div class="conf-sub-head">Account Information</div>
-                    <span class="conf-download conf-download1">download</span>
+                    <span class="conf-download conf-download1">open</span>
                     <div class="down-content1">
                         <div class="close1"><img src="./Images/SVG/close-win.svg" alt="close"></div>
                         <img src="./Images/SVG/lock.svg" alt="lock">
@@ -328,10 +393,10 @@
                 </div>
                 <div class="company-docs">
                     <div class="comp-img">
-                        <img src="./Images/logo.svg" alt="bank">
+                        <img src="./Images/confi.jpg" alt="bank">
                     </div>
                     <div class="conf-sub-head">Company Documents</div>
-                    <span class="conf-download conf-download2">download</span>
+                    <span class="conf-download conf-download2">open</span>
                     <div class="down-content2">
                         <div class="close2"><img src="./Images/SVG/close-win.svg" alt="close"></div>
                         <img src="./Images/SVG/lock.svg" alt="lock">
@@ -367,12 +432,25 @@
                         <a href="#"><p class="tele-text">Telegram</p></a>
                     </div>
                 </div>
+
                 <div class="traditional">
                     <p class="reach-us-sub">Contact Us</p>
                     <div class="r-email">
                         <img src="./Images/SVG/gmail.svg" alt="">
                         <a href="#"><p class="em-text">Gmail</p></a>
                     </div>
+                    <div class="r-gmeet">
+                        <img src="./Images/SVG/mail.svg" alt="">
+                        <a href="#"><p class="gm-text">Email</p></a>
+                    </div>
+                    <div class="r-zmeet">
+                        <img src="./Images/SVG/whatsapp.svg" alt="">
+                        <a href="#"><p class="zm-text">Wathsapp</p></a>
+                    </div>
+                </div>
+
+                <div class="meeting">
+                    <p class="reach-us-sub">Meeting</p>
                     <div class="r-gmeet">
                         <img src="./Images/SVG/google.svg" alt="">
                         <a href="#"><p class="gm-text">Goggle Meet</p></a>
@@ -381,7 +459,24 @@
                         <img src="./Images/SVG/zoom.svg" alt="">
                         <a href="#"><p class="zm-text">Zoom Meet</p></a>
                     </div>
+                    <div class="r-email">
+                        <img src="./Images/SVG/botim.svg" alt="">
+                        <a href="#"><p class="em-text">Botim</p></a>
+                    </div>
                 </div>
+
+                <div class="map-container">
+                    <p class="reach-us-sub">Locations</p>
+                    <div class="earth"></div>                     
+                      <div class="circle">                         
+                       <span class="cName1">Europe</span>
+                        <span class="cName2">Middle-East</span>
+                        <span class="cName3">Asia</span>
+                        <span class="cName4">Africa</span>
+                        <span class="cName5">Continental</span>
+                      </div>
+                </div>
+
             </div>
         </div>
         <div class="footer">

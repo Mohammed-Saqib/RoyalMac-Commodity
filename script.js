@@ -49,12 +49,44 @@ $(document).ready(function(){
     });
 });
 
-const timeline = gsap.timeline({defaults: {duration : 4 }})
+function startAnimation(){
+    var tl= new gsap.timeline({repeat:-1});
+    tl.to("#gallery",4,{attr : {src:"./Images/imgone.webp"},scale : 1.2, ease : 'power2.out'})
+    .to("#gallery",4,{attr:{src:"./Images/imgtwo.jpg"}, scale : 1, ease : 'power2.out'})
+    .to("#gallery",4,{attr : {src:"./Images/imgthree.jpg"}, scale : 1.2, ease : 'power2.out'})
+}
+
+const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
 timeline
-.to('.crousel-img img',{opacity : 0.6, ease : 'power3.out' })
-.from('.crousel-content',{opacity : 0, duration:6, scale : 0,  ease : 'elastic'},'-=3')
-.to('.crousel-content',{opacity : 1, delay : 3, duration: 4, scale : 0, opacity : 0, ease : 'power3.out'})
-.to('.crousel-img img',{opacity : 1, ease : 'power3.out' },'-=2');
+// .to('.crousel-img img',{opacity : 0.6, ease : 'power3.out' })
+// .from('.crousel-content',{opacity : 0, duration:2, scale : 0,  ease : 'elastic'},'-=3')
+// .to('.crousel-content',{opacity : 1, delay : 1, duration: 3, scale : 0, opacity : 0, ease : 'power3.out'})
+// .to('.crousel-img img',{opacity : 1, ease : 'power3.out' },'-=2');
+
+.from('.crousel-content',{opacity : 0, ease : 'power3.in'},'<-1')
+.from('.crousel-content h1',{opacity : 0, delay:3, scale: 0, duration:2, ease : 'power3.out'},'<-1')
+.to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
+.to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
+
+const t3 = new gsap.timeline({repeat : -1})
+t3.from('#fmcg',{rotateY : '360deg',  duration : 5,  ease : 'power3.out' })
+
+
+const t4 = new gsap.timeline({repeat : -1})
+t4
+.to('#construction', {scale: 0.8})
+.from('#construction', {y : -250, ease : 'elastic', yoyo : true, duration: 1, stagger : {
+    each : 1,
+}})
+
+.to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, yoyo : true, duration: 3, stagger : {
+    each : 1,
+}})
+
+.to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, yoyo : true, duration: 3, stagger : {
+    each : 1,
+}})
+
 
 
 let actList1 = document.querySelector('.list1');
@@ -137,6 +169,56 @@ actList7.addEventListener('click', () => {
     content7.className += " unhide";
     gsap.from(content7, { opacity:0, duration : 3, ease : 'power2.inOut' });
 });
+
+// virtual stockiest card
+let actLists1 = document.querySelector('.lists1');
+let actLists2 = document.querySelector('.lists2');
+let actLists3 = document.querySelector('.lists3');
+let actLists4 = document.querySelector('.lists4');
+
+let contents1 = document.querySelector('.contents-1');
+let contents2 = document.querySelector('.contents-2');
+let contents3 = document.querySelector('.contents-3');
+let contents4 = document.querySelector('.contents-4');
+
+actLists1.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('vunhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" vunhide", "");
+    }
+    contents1.className += " vunhide";
+    gsap.from(contents1, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+
+actLists2.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('vunhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" vunhide", "");
+    }
+    contents2.className += " vunhide";
+    gsap.from(contents2, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+
+actLists3.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('vunhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" vunhide", "");
+    }
+    contents3.className += " vunhide";
+    gsap.from(contents3, { opacity:0, duration : 3, ease : 'power2.inOut' });
+
+});
+
+actLists4.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('vunhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" vunhide", "");
+    }
+    contents4.className += " vunhide";
+    gsap.from(contents4, { opacity:0, duration : 3, ease : 'power2.inOut' });
+
+});
+
 
 $(document).ready(function(){
     $('.cm-content').owlCarousel({
@@ -307,6 +389,13 @@ navAb.addEventListener('click', () => {
 //       updateCounter();
 // })
 
+$(document).ready(function(){
+    $('.counter').counterUp({
+        delay : 10,
+        time: 1000
+    })
+});
+
 
 $(document).ready(function(){
     $('.confi-content').owlCarousel({
@@ -378,3 +467,11 @@ $(document).ready(function(){
         $('.down-content2').removeClass('down-content-show')
     });
 });
+
+const globe = gsap.timeline({repeat : -1, defaults: {duration : 4 }})
+globe
+.from('.cName1',{opacity : 0, display : 'block', ease : 'power2.out'})
+.from('.cName2',{opacity : 0, display : 'block', ease : 'power2.out'})
+.from('.cName3',{opacity : 0, display : 'block', ease : 'power2.out'})
+.from('.cName4',{opacity : 0, display : 'block', ease : 'power2.out'})
+.from('.cName5',{opacity : 0, display : 'block', ease : 'power2.out'})

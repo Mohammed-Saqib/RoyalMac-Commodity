@@ -1,5 +1,5 @@
 .reach-us{
-    margin:50px 0;
+    margin:30px 0;
     background-color: var(--whiteColor);
     width: 100%;
     overflow: hidden;
@@ -24,16 +24,14 @@
 }
 
 .reach-us-content{
-    /* outline: 1px solid; */
-    width: 30%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    
+    flex-wrap: wrap;
+    padding: 10px;    
 }
 
-.social , .traditional{
-    /* outline: 1px solid; */
+.social , .traditional, .meeting, .map-container{
     border-left: 1px solid var(--goldColor);
     max-width: 50%;
     height: 100%;
@@ -42,6 +40,59 @@
     align-items: flex-start;
     padding: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.map-container{
+    align-items: center;
+}
+
+.earth{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('../Images/globe.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: animateEarth 15s linear infinite;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.cName1, .cName2, .cName3, .cName4, .cName5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+@keyframes animateEarth {
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: -800px 0;
+    }
 }
 
 .r-fb
@@ -125,13 +176,21 @@
         line-height: 28px;
     }
     .reach-us-content{
-        width: 70%; 
+        width: 80%; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .social , .traditional, .meeting, .map-container{
+        min-width: 60%;        
     }
 }
 
 @media screen and (max-width:550px) {
     .reach-us-content{
         width: 80%;
+    }
+    .social , .traditional, .meeting, .map-container{
+        min-width: 80%;
     }
 }
 
@@ -146,6 +205,9 @@
         font-size: 16px;
         line-height: 16px;
     }
+    .social , .traditional, .meeting, .map-container{
+        min-width: 90%;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -153,10 +215,12 @@
         margin:40px 0;
         /* padding: 20px 0; */
     }
+
     .reach-us-heading{
         font-size: 22px;
         line-height: 24px;
     }
+
     .reach-us-sub{
         font-size: 14px;
         line-height: 14px;
@@ -185,6 +249,10 @@
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
     width: 25px;
 }
+.reach-us-content{
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+}
 }
 
 @media screen and (max-width:340px) {
@@ -202,6 +270,17 @@
     ,.zm-text{
     font-size: 10px;
     line-height: 10px;
+}
+.social , .traditional, .meeting, .map-container{
+    min-width: 100%;
+}
+.earth{
+    width: 150px;
+    height: 150px;
+}
+.circle{
+    font-size: 16px;
+    line-height: 16px;
 }
 }
 
