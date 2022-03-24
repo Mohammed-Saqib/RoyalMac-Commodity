@@ -474,4 +474,10 @@ globe
 .from('.cName2',{opacity : 0, display : 'block', ease : 'power2.out'})
 .from('.cName3',{opacity : 0, display : 'block', ease : 'power2.out'})
 .from('.cName4',{opacity : 0, display : 'block', ease : 'power2.out'})
-.from('.cName5',{opacity : 0, display : 'block', ease : 'power2.out'})
+.from('.cName5',{opacity : 0, display : 'block', ease : 'power2.out'});
+
+$(document).ready(function(){
+    $('.box').click(function(){
+        alert('Card Will Be Available Soon');
+    });
+});
