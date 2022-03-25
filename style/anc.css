@@ -13,7 +13,11 @@
     font-size: 18px;
     line-height: 24px;
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
+}
+
+.announcement p:hover{
+    border: none;
 }
 
 @media screen and (max-width: 350px) {

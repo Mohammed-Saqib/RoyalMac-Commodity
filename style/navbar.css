@@ -220,8 +220,7 @@ a{
     -moz-animation: shake 0.1s 2 ease;
 }
 
-
-@media only screen and (max-width:930px){
+@media only screen and (max-width:1050px){
 
     .logo img{
         width: 80px;

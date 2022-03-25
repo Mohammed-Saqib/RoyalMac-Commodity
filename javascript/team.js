@@ -1,31 +1,35 @@
 const team = [
     {
-    name:"mohammed saqib",
+    name:"mr. mohammed saqib",
     email : "mohammedsaqibbca62@gmail.com",
     designation : "Software developer",
     country: "india",
-    image: './Images/maps/india.png'
+    image: './Images/maps/india.png',
+    phone:'123456789',
     },
     {
-        name:"viper",
-        email : "mohammedsaqibbca62@gmail.com",
+        name:"mr. viper",
+        email : "viper@gmail.com",
         designation : "Software developer",
         country: "Dubai",
-        image: './Images/maps/saudi.png'
+        image: './Images/maps/saudi.png',
+        phone:'123456789',
     },
     {
-        name:"danish",
+        name:"mr. danish",
         email : "danish@gmail.com",
         designation : "seo",
         country: "america",
-        image: './Images/maps/usa.png'
+        image: './Images/maps/usa.png',
+        phone:'123456789',
     },
     {
-        name:"vicky",
+        name:"mr. vicky",
         email : "vicky@gmail.com",
         designation : "Software developer",
         country: "australia",
-        image: './Images/maps/australia.png'
+        image: './Images/maps/australia.png',
+        phone:'123456789',
     },
 ];
 
@@ -42,6 +46,7 @@ function display(term){
         <div class="flag">
             <img src="${card.image}" alt="flag">
             <p class="country">${card.country}</p>
+            <a href="https://api.whatsapp.com/send?phone=${card.phone}"><img src="./Images/SVG/whatsapp.svg" style="width: 25px; height: 25px;"  alt="wathsapp"></a>
         </div>
         <p class="name">${card.name}</p>
         <p class="designation">DESIGNATION : ${card.designation}</p>

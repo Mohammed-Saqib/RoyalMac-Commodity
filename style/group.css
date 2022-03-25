@@ -52,6 +52,11 @@
 a{
     text-decoration: none;
 }
+
+#construction{
+        transform: scale(0.8);
+}
+
 .grp-card{
     /* auto width for each assigned in owl carousel */
     /* width: 300px; */

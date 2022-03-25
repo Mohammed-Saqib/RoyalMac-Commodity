@@ -50,42 +50,40 @@ $(document).ready(function(){
 });
 
 function startAnimation(){
-    var tl= new gsap.timeline({repeat:-1});
-    tl.to("#gallery",4,{attr : {src:"./Images/imgone.webp"},scale : 1.2, ease : 'power2.out'})
-    .to("#gallery",4,{attr:{src:"./Images/imgtwo.jpg"}, scale : 1, ease : 'power2.out'})
-    .to("#gallery",4,{attr : {src:"./Images/imgthree.jpg"}, scale : 1.2, ease : 'power2.out'})
+    const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
+    // tl.to("#gallery",4,{attr : {src:"./Images/imgone.webp"},scale : 1.2, ease : 'power2.out'})
+    // .to("#gallery",4,{attr:{src:"./Images/imgtwo.jpg"}, scale : 1, ease : 'power2.out'})
+    // .to("#gallery",4,{attr : {src:"./Images/imgthree.jpg"}, scale : 1.2, ease : 'power2.out'})
+tl
+.from('.slide1',{opacity : 0.8, ease:'power3.out' })
+.from('.slide2',{opacity : 0, ease:'power3.out' })
+.from('.slide3',{opacity : 0, ease:'power3.out' })
 }
 
 const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
 timeline
-// .to('.crousel-img img',{opacity : 0.6, ease : 'power3.out' })
-// .from('.crousel-content',{opacity : 0, duration:2, scale : 0,  ease : 'elastic'},'-=3')
-// .to('.crousel-content',{opacity : 1, delay : 1, duration: 3, scale : 0, opacity : 0, ease : 'power3.out'})
-// .to('.crousel-img img',{opacity : 1, ease : 'power3.out' },'-=2');
-
 .from('.crousel-content',{opacity : 0, ease : 'power3.in'},'<-1')
 .from('.crousel-content h1',{opacity : 0, delay:3, scale: 0, duration:2, ease : 'power3.out'},'<-1')
 .to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
 .to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
 
-const t3 = new gsap.timeline({repeat : -1})
-t3.from('#fmcg',{rotateY : '360deg',  duration : 5,  ease : 'power3.out' })
-
-
 const t4 = new gsap.timeline({repeat : -1})
 t4
 .to('#construction', {scale: 0.8})
-.from('#construction', {y : -250, ease : 'elastic', yoyo : true, duration: 1, stagger : {
+.from('#construction', {y : -200, ease : 'elastic.out', duration: 1, stagger : {
+    each : 0.2,
+}})
+
+.to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, duration: 3, stagger : {
     each : 1,
 }})
 
-.to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, yoyo : true, duration: 3, stagger : {
-    each : 1,
+.to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1,stagger : {
+    each : 0.2,
 }})
-
-.to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, yoyo : true, duration: 3, stagger : {
-    each : 1,
-}})
+// .to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1, stagger : {
+//     each : 1,
+// }})
 
 
 
@@ -442,9 +440,18 @@ $(document).ready(function(){
 
 // confidential code
 
+function removeClasses(cls){
+    setTimeout(() => {
+        $(document).ready(function(){
+            $(`.${cls}`).removeClass('down-content-show')
+        });
+    },4000)
+}
+
 $(document).ready(function(){
     $('.conf-download0').click(function(){
         $('.down-content').addClass('down-content-show')
+        removeClasses("down-content");    // for temprorary code
     });
     $('.close').click(function(){
         $('.down-content').removeClass('down-content-show')
@@ -454,6 +461,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.conf-download1').click(function(){
         $('.down-content1').addClass('down-content-show')
+        removeClasses("down-content1");   // for temproray code
     });
     $('.close1').click(function(){
         $('.down-content1').removeClass('down-content-show')
@@ -462,6 +470,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.conf-download2').click(function(){
         $('.down-content2').addClass('down-content-show')
+        removeClasses("down-content2");   // for temprorary code
     });
     $('.close2').click(function(){
         $('.down-content2').removeClass('down-content-show')
@@ -476,8 +485,17 @@ globe
 .from('.cName4',{opacity : 0, display : 'block', ease : 'power2.out'})
 .from('.cName5',{opacity : 0, display : 'block', ease : 'power2.out'});
 
+// apply card code
 $(document).ready(function(){
     $('.box').click(function(){
         alert('Card Will Be Available Soon');
+    });
+});
+
+// career code
+let career = document.querySelector('.career');
+$(document).ready(function(){
+    $('#toggleCareer').click(function(){
+       $('.career').addClass('career-unhide'); 
     });
 });

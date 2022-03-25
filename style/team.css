@@ -155,18 +155,42 @@
 }
 
 .flag{
+    min-width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .flag img{
-    /* outline: 1px solid; */
     display: inline-block;
     width: 30px;
     height: 30px;
     overflow: hidden;
     margin-right: 20px;
+}
+
+.flag a{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 5px;
+    transition: transform 0.2s ease;
+}
+.flag a img{
+    animation: zm 2s ease infinite;
+}
+
+@keyframes zm {   
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .flag .country{

@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/v-stockist.css">
     <link rel="stylesheet" href="./style/anc.css">
+    <link rel="stylesheet" href="./style/career.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RoyalMac</title>
 </head>
-<body>
+<body >
     <div class="container">
         <div class="navbar">
             <div class="logo"><img src="./Images/logo.svg" alt="RoyalMac Logo"></div>
@@ -51,22 +52,32 @@
                         <div class="dropdown-content">
                             <a href="#board" class="nav-bod">Board Of directors</a>
                             <a href="#board" class="nav-ab">Advisory Board</a>
-                            <a href="./team.html">Team</a>
+                            <a href="./team.html" target="_blank">Team</a>
                          </div>
                     </li>
                     <li><a href="#project">Projects</a></li>
+                    <li><a href="#career" id="toggleCareer">Careers</a></li>
                     <li><a href="#reachus">Reach US</a></li>
                 </ul>
             </div>
             <div class="menu-icon"><img src="./Images/SVG/menu.svg" alt=""></div>
         </div>
         <div class="crousel">
-            <div class="crousel-img"><img id="gallery" src="./Images/imgone.webp" alt="RoyalMac Reception"></div>
+            <!-- <div class="crousel-img"><img id="gallery" src="./Images/imgone.webp" alt="RoyalMac Reception"></div> -->
+            <div class="slide slide1">
+                <img src="./Images/imgthree.jpg" alt="">
+            </div>
+            <div class="slide slide2">
+                <img src="./Images/imgtwo.jpg" alt="">
+            </div>
+            <div class="slide slide3">
+                <img src="./Images/imgone.webp" alt="">
+            </div>
             <div class="crousel-content">
                 <h1>WELCOME</h1>
             </div>
         </div>
-        <marquee  direction="left" scrollamount="10" >NOTE :- Sales Process started in India : Virtual Stockist l  Buyers Pre-Order l *</marquee>
+        <marquee  direction="left" scrollamount="10" >News :- For the First Time in the Rail Industry, RoyalMac Introduces a Virtual Stockist, Accessible Only for India. | Rail Price : LME/ KSA – USA – UK – Germany – Japan – Netherland – Austria – China - Poland – Spain – India - Russia - Ukraine. | Press : RoyalMac 3D Printed Construction JV India.  |  Stake : 5%</marquee>
         <div class="company-info">
             <p>The ROYALMAC Pvt. Ltd. is a multinational business conglomerate with a core business segment of large-volume imports and exports across the world, which was formed as a consortium with a strategic joint venture mentality.</p>
         </div>
@@ -75,16 +86,16 @@
             <span class="line"></span>
             <div class="business-grp-content owl-carousel">
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img id="construction" src="./Images/import1.png" alt="RoyalMac"></div></a>
-                    <div class="card-header"><a href="#">RoyalMac PVT.LTD.</a></div>
+                    <div class="card-img"><a href="http://royal-mac.com" target="_blank"><img id="construction" src="./Images/import1.png" alt="RoyalMac"></div></a>
+                    <div class="card-header"><a href="http://royal-mac.com" target="_blank">RoyalMac PVT.LTD.</a></div>
                 </div>
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img id="construction" src="./Images/fmcg.jpeg" alt="RoyalMac"></div></a>
-                    <div class="card-header"><a href="#">RoyalMac International</a></div>
+                    <div class="card-img"><a href="http://royalmacinternational.com" target="_blank"><img id="construction" src="./Images/fmcg.jpeg" alt="RoyalMac"></div></a>
+                    <div class="card-header"><a href="http://royalmacinternational.com" target="_blank">RoyalMac International</a></div>
                 </div>
                 <div class="grp-card">
-                    <div class="card-img"><a href="#"><img id="construction" src="./Images/constructiontwo.png" alt="RoyalMac"></div></a>
-                    <div class="card-header"><a href="#">RoyalMac 3D Constructions</a></div>
+                    <div class="card-img"><a href="http://royalmac3dindia.com" target="_blank"><img id="construction" src="./Images/constructiontwo.png" alt="RoyalMac"></div></a>
+                    <div class="card-header"><a href="http://royalmac3dindia.com" target="_blank">RoyalMac 3D Constructions</a></div>
                 </div>
             </div>            
         </div>
@@ -190,6 +201,37 @@
             </div>
         </div>
         </div>
+        <div class="career" id="career">
+            <div class="career-heading">Careers</div>
+            <span class="line"></span>
+            <div class="career-container">
+                <div class="job-card">
+                    <p class="job-vacancy"><strong>Vacancy</strong> : Software Developer</p>
+                    <p class="job-quali"><strong>Qualification</strong> : MCA , BCA , BE</p>
+                    <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                </div>
+                <div class="job-card">
+                    <p class="job-vacancy"><strong>Vacancy</strong> : Software Developer</p>
+                    <p class="job-quali"><strong>Qualification</strong> : MCA , BCA , BE</p>
+                    <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                </div>
+                <div class="job-card">
+                    <p class="job-vacancy"><strong>Vacancy</strong> : Software Developer</p>
+                    <p class="job-quali"><strong>Qualification</strong> : MCA , BCA , BE</p>
+                    <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                </div>
+                <div class="job-card">
+                    <p class="job-vacancy"><strong>Vacancy</strong> : Software Developer</p>
+                    <p class="job-quali"><strong>Qualification</strong> : MCA , BCA , BE</p>
+                    <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                </div>
+                <div class="job-card">
+                    <p class="job-vacancy"><strong>Vacancy</strong> : Software Developer</p>
+                    <p class="job-quali"><strong>Qualification</strong> : MCA , BCA , BE</p>
+                    <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                </div>
+            </div>
+        </div>
         <div class="commodity" id="commodity">
             <div class="cm-heading">COMMODITY</div>
             <span class="line"></span>
@@ -232,9 +274,9 @@
                 <div class="cm-card">
                     <div class="cm-img"><img src="./Images/hms.png" alt="HMS"></div>
                     <div class="cm-card-content">
-                        <p class="cm-card-heading">HMS 1 & 2 </p>
+                        <p class="cm-card-heading">Rail Cut piece </p>
                         <p class="cm-info">Product : For Recycling purpose</p>
-                        <p class="cm-info">Supply Capacity: 15 ML.  MT. / Month</p>
+                        <p class="cm-info">Exclusive Supply: 15 ML.  MT. / Month</p>
                         <p class="cm-info">Origin : All</p>
                     </div>
                 </div>
@@ -260,7 +302,7 @@
                     <div class="cm-img"><img src="./Images/ship.png" alt="Ships"></div>
                     <div class="cm-card-content">
                         <p class="cm-card-heading">Ships </p>
-                        <p class="cm-info">Product :  for Recycling purpose</p>
+                        <p class="cm-info">Product :  HMS 1&2</p>
                         <p class="cm-info">Supply Capacity: As per the stock availability</p>
                         <p class="cm-info">Origin : All</p>
                     </div>
@@ -310,37 +352,37 @@
                 <div class="advisory-card-container owl-carousel">
                     <div class="brd-member-crd">  
                         <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
-                        <p class="brd-member-name">RON SWANSON</p>
+                        <p class="brd-member-name">Name :</p>
                         <div class="brd-member-soc">
                             <a href="#"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
                     <div class="brd-member-crd">
                         <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
-                        <p class="brd-member-name">RON SWANSON</p>
+                        <p class="brd-member-name">Name :</p>
                         <div class="brd-member-soc">
                             <a href="#"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
                     <div class="brd-member-crd">
                         <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
-                        <p class="brd-member-name">RON SWANSON</p>
+                        <p class="brd-member-name">Name :</p>
                         <div class="brd-member-soc">
                             <a href="#"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
                     <div class="brd-member-crd">
                         <div class="brd-member-img"><img src="./Images/brd-member.jpeg" alt=""></div>
-                        <p class="brd-member-name">RON SWANSON</p>
+                        <p class="brd-member-name">Name :</p>
                         <div class="brd-member-soc">
                             <a href="#"><span class="brd-icons brd-email"><img src="./Images//SVG/mail.svg" alt="email"></span></a>
-                            <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a>
+                            <!-- <a href="#"><span class="brd-icons brd-fb"><img src="./Images//SVG/facebook.svg" alt="facebook"></span></a> -->
                             <a href="#"><span class="brd-icons brd-lk"><img src="./Images//SVG/linkedin.svg" alt="linkedlin"></span></a>
                         </div>
                     </div>
@@ -489,7 +531,8 @@
             </div>
         </div>
         <div class="announcement">
-            <p><b>CEO MESSAGE&nbsp;</b>We, Royalmac Pvt. Ltd. business venture, cordially invite you to join our family as a solid business relationship or employment, we have business for you and a job for you with a secure and safe life.</p>
+            <p><b>CEO MESSAGE&nbsp;</b>Whatever the future may bring, we will build a robust foundation and continue to evolve beyond the boundaries of the RoyalMac Business Venture group as we aim to become a value-creative corporate group around the world with various businesses and styles of innovation.</p>
+            <p>We will take on the challenge of implementing innovation with the goal of empowering the general public to become a virtual stockist in iron metal commodities, earning money without exerting any effort and generating income quickly in order to significantly boost long-term company value while maintaining the management strategy's underlying ethos.</p>
         </div>
         <div class="footer">
             <img src="./Images/logo.svg" alt="logo">
@@ -498,6 +541,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>
