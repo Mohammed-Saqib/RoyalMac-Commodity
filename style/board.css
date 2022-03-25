@@ -123,6 +123,14 @@
     object-position: right;
 }
 
+/* same as above code */
+.brd-member-crd:hover .brd-member-img img{
+    transform: scale(2.3);
+    -webkit-transform: scale(2.3);
+    -moz-transform: scale(2.3);
+    object-position: right;
+}
+
 .brd-member-name{
     font-size: 16px;
     line-height: 20px;

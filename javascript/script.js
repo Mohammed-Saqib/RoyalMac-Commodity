@@ -387,12 +387,12 @@ navAb.addEventListener('click', () => {
 //       updateCounter();
 // })
 
-$(document).ready(function(){
-    $('.counter').counterUp({
-        delay : 10,
-        time: 1000
-    })
-});
+// $(document).ready(function(){
+//     $('.counter').counterUp({
+//         delay : 10,
+//         time: 1000
+//     })
+// });
 
 
 $(document).ready(function(){

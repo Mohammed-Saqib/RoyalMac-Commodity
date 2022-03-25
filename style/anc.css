@@ -6,9 +6,18 @@
     justify-content: center;
     margin: 10px 0;
 }
-.announcement p{
+.anc-container{
     border-left: 1px solid var(--greenColor);
     width: 79%;
+    background: linear-gradient(126deg, rgba(255,255,255,1) 12%, rgba(249,249,249,1) 22%, rgba(255,255,255,1) 31%, rgba(249,249,249,1) 42%, rgba(255,255,255,1) 51%, rgba(249,249,249,1) 63%, rgba(255,255,255,1) 73%, rgba(249,249,249,1) 83%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+    background-size: 200% 100%;
+    animation: bgPos 3s linear infinite;
+    -webkit-animation: bgPos 3s linear infinite;
+    -moz-animation: bgPos 3s linear infinite;
+    overflow: hidden;
+}
+
+.announcement p{
     padding: 10px;
     font-size: 18px;
     line-height: 24px;
@@ -18,6 +27,12 @@
 
 .announcement p:hover{
     border: none;
+}
+
+@media screen and (max-width: 375px) {
+    .anc-container{
+        width: 89%;
+    }
 }
 
 @media screen and (max-width: 350px) {

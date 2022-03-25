@@ -28,7 +28,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;    
+    padding: 10px; 
+    position: relative;   
 }
 
 .social , .traditional, .meeting, .map-container{
@@ -108,8 +109,8 @@
     align-items: center;
     margin: 0 0 10px 10px;
 }
-
-.r-fb:hover
+.reach-us-sub:hover
+,.r-fb:hover
 ,.r-insta:hover
 ,.r-twitter:hover
 ,.r-link:hover
@@ -212,6 +213,30 @@
 }
 
 @media screen and (max-width:375px) {
+    .social , .traditional, .meeting, .map-container{
+        border-left: none;
+    }
+    .reach-us-content::before{
+        position: absolute;
+        border-radius: 15px;
+        left: 1%;
+        top: 0;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: var(--greenColor);
+        animation: wd 10s ease infinite;
+    }
+    @keyframes wd {
+        0%{
+            top: -550%;
+            height: 0;
+        }
+        100%{
+            top: 100%;
+            height: 100%;
+        }
+    }
     .reach-us{
         margin:40px 0;
         /* padding: 20px 0; */
@@ -286,6 +311,7 @@
 }
 
 @media screen and (max-width:300px) {
+    
     .reach-us-sub{
         font-size: 10px;
         line-height: 10px;
