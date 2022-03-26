@@ -79,10 +79,12 @@
     /* background-color: #ecf0f1; */
     background-color: #FFF;
 }
+
 @font-face {
     font-family: Anton;
     src: url(../fonts/Prompt-ExtraBold.ttf);
 }
+
 .counter-box span{
     font-size: 25px !important;
     line-height: 28px;

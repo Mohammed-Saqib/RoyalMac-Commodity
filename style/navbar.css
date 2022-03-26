@@ -184,7 +184,7 @@ a{
     border-radius: 10px;
     background-color: var(--darkWhite1);
     font-size: 13px;
-    text-align: left;
+    text-align: justify;
     text-indent: 8px;
     text-transform: lowercase;
     width: 300px;

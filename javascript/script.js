@@ -50,13 +50,16 @@ $(document).ready(function(){
 });
 
 function startAnimation(){
+    console.log("welcome");
     const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
-    // tl.to("#gallery",4,{attr : {src:"./Images/imgone.webp"},scale : 1.2, ease : 'power2.out'})
 tl
-.from('.slide1',{opacity : 0.8, ease:'power3.out' })
+.from('.slide1',{opacity : 0, ease:'power3.out' })
 .from('.slide2',{opacity : 0, ease:'power3.out' })
 .from('.slide3',{opacity : 0, ease:'power3.out' })
 }
+
+gsap.to('.crousel-head',{opacity : 0.3, ease : 'power3.out', onComplete : startAnimation()})
+
 
 // welcome message animation code
 // const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
@@ -504,6 +507,16 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.conf-download3').click(function(){
+        $('.down-content3').addClass('down-content-show')
+        removeClasses("down-content3");   // for temprorary code
+    });
+    $('.close3').click(function(){
+        $('.down-content3').removeClass('down-content-show')
+    });
+});
+
 const globe = gsap.timeline({repeat : -1, defaults: {duration : 4 }})
 globe
 .from('.cName1',{opacity : 0, display : 'block', ease : 'power2.out'})
@@ -545,3 +558,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+$(document).ready(function(){
+    $('.content-info').click(function(){
+        window.location.href='mailto:info@royal-mac.com'
+    });
+});
