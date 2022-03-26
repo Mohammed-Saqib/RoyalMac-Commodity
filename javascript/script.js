@@ -50,7 +50,6 @@ $(document).ready(function(){
 });
 
 function startAnimation(){
-    console.log("welcome");
 const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
 tl
 .from('.slide1',{opacity : 0, ease:'power3.out' })
@@ -67,7 +66,7 @@ setTimeout(function(){
        $('.crousel-head').addClass('no-wait')
    });
    startAnimation();
-},1000)
+},2000)
 
 
 // welcome message animation code
