@@ -75,9 +75,16 @@
     }
 }
 
+@media screen and (max-width: 542px) {
+    .body-image-contain h1{
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .body-image-contain h1{
-        font-size: 35px;
+        font-size: 40px;
         line-height: 45px;
     }
     .body-image-contain h2{
