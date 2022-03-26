@@ -262,5 +262,7 @@
 @media screen and (max-width: 300px){
     .activity-list{
         min-width: 100%;
+        font-size: 11px;
+        line-height: 17px;
     }
 }

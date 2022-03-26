@@ -52,34 +52,28 @@ $(document).ready(function(){
 function startAnimation(){
     const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
     // tl.to("#gallery",4,{attr : {src:"./Images/imgone.webp"},scale : 1.2, ease : 'power2.out'})
-    // .to("#gallery",4,{attr:{src:"./Images/imgtwo.jpg"}, scale : 1, ease : 'power2.out'})
-    // .to("#gallery",4,{attr : {src:"./Images/imgthree.jpg"}, scale : 1.2, ease : 'power2.out'})
 tl
 .from('.slide1',{opacity : 0.8, ease:'power3.out' })
 .from('.slide2',{opacity : 0, ease:'power3.out' })
 .from('.slide3',{opacity : 0, ease:'power3.out' })
 }
 
-const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
-timeline
-.from('.crousel-content',{opacity : 0, ease : 'power3.in'},'<-1')
-.from('.crousel-content h1',{opacity : 0, delay:3, scale: 0, duration:2, ease : 'power3.out'},'<-1')
-.to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
-.to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
+// welcome message animation code
+// const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
+// timeline
+// .from('.crousel-content',{opacity : 0, ease : 'power3.in'},'<-1')
+// .from('.crousel-content h1',{opacity : 0, delay:3, scale: 0, duration:2, ease : 'power3.out'},'<-1')
+// .to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
+// .to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
 
 const t4 = new gsap.timeline({repeat : -1})
 t4
 .to('#construction', {scale: 0.8})
-.from('#construction', {y : -200, ease : 'elastic.out', duration: 1, stagger : {
-    each : 0.2,
-}})
-
+// .from('#construction', {y : -50, ease : 'elastic.out', duration: 1, stagger : {
+//     each : 0.2,
+// }})
 .to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, duration: 3, stagger : {
     each : 1,
-}})
-
-.to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1,stagger : {
-    each : 0.2,
 }})
 // .to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1, stagger : {
 //     each : 1,
@@ -387,12 +381,12 @@ navAb.addEventListener('click', () => {
 //       updateCounter();
 // })
 
-// $(document).ready(function(){
-//     $('.counter').counterUp({
-//         delay : 10,
-//         time: 1000
-//     })
-// });
+$(document).ready(function(){
+    $('.counter').counterUp({
+        delay : 10,
+        time: 1000
+    })
+});
 
 
 $(document).ready(function(){
@@ -499,3 +493,22 @@ $(document).ready(function(){
        $('.career').addClass('career-unhide'); 
     });
 });
+
+let jobStatus = document.querySelector('.job-inactive .job-status')
+jobStatus ?  jobStatus.innerHTML = "In Active" : ""
+
+
+// go to top page
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

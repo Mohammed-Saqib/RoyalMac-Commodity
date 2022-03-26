@@ -38,7 +38,7 @@
 
 .job-card{
     background-color: var(--whiteColor);
-    border-left: 2px solid var(--goldColor);
+    border-left: 2.5px solid var(--goldColor);
     padding: 10px;
     border-radius: 7px;
     display: flex;
@@ -134,6 +134,12 @@
     }
     
 }
+
+.job-inactive{
+    border-left: 2.5px solid red !important;
+}
+
+.job-inactive .apply-job, .job-inactive .apply-job::before {background: red !important; }
 
 .job-card:nth-child(odd){
     border-left: 2px solid var(--greenColor);

@@ -20,9 +20,8 @@
     <link rel="stylesheet" href="./style/anc.css">
     <link rel="stylesheet" href="./style/career.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
     <title>RoyalMac</title>
 </head>
 <body >
@@ -78,10 +77,11 @@
                 <h1>WELCOME</h1>
             </div> -->
         </div>
-        <marquee  direction="left" scrollamount="5" ><strong>News</strong> :- For the First Time in the Rail Industry, RoyalMac Introduces a Virtual Stockist, Accessible Only for India. <span class="blck">|</span> <strong>Rail Price</strong>  : LME/ KSA – USA – UK – Germany – Japan – Netherland – Austria – China - Poland – Spain – India - Russia - Ukraine. <span class="blck">|</span> <strong>Press</strong> : RoyalMac 3D Printed Construction JV India.  <span class="blck">|</span>  Stake : 5%</marquee>
+        <marquee  direction="left" scrollamount="5" ><span class="gold-c">News</span> : For the First Time in the Rail Industry, RoyalMac Introduces a Virtual Stockist, Accessible Only for India. <span class="blck">|</span> <span class="gold-c">Rail Price</span>  : LME/ KSA &#45; USA &#45; UK &#45; Germany &#45; Japan &#45; Netherland &#45; Austria &#45; China - Poland &#45; Spain &#45; India - Russia - Ukraine. <span class="blck">|</span> <span class="gold-c">Press</span> : RoyalMac 3D Printed Construction JV India.  <span class="blck">|</span>  <span class="gold-c">Stake</span> : 5%</marquee>
         <div class="company-info">
             <p>The ROYALMAC Pvt. Ltd. is a multinational business conglomerate with a core business segment of large-volume imports and exports across the world, which was formed as a consortium with a strategic joint venture mentality.</p>
         </div>
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="./Images/go-up.png" alt="Arrow up" style="width:40px;height:40px;"></div>
         <div class="busines-group">
             <h1 class="grp-header">RoyalMac Business Groups</h1>
             <span class="line"></span>
@@ -245,49 +245,74 @@
             <div class="career-heading">Careers</div>
             <span class="line"></span>
             <div class="career-container">
-                <div class="job-card">
+                <div class="job-card"> <!--class = "job-inactive" ex: <div class="job-card job-inactive">  <- Add this class if there is no requirement for job or vacancy is full-->
                     <p class="job-vacancy"><strong>Vacancy</strong> : Digital Marketing SEO Executive </p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : SEO implementation, SEO Specialist will have creative ideas and plan in Digital marketing and Campaign paid and non-paid, Content creation, Creativity idea to develop and implement appropriate online strategies for the businesss websites, blog sites, and other pages. Tasked with the improvement of the business’s site visibility and raising the organic search rankings, the SEO specialist will also be responsible for the creation, implementation, and analysis of SEO programs.</p>
                     <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
                     <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
                     <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : Accounts</p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : Tele Marketing</p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : Procurement</p>
                     <p class="job-quali"><strong>Qualification</strong> :Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : HR</p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : Operations</p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status">Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
                 <div class="job-card">
                     <p class="job-vacancy"><strong>Vacancy</strong> : Personal Assistant</p>
                     <p class="job-quali"><strong>Qualification</strong> : Any Graduation</p>
                     <p class="job-para"><strong><span class="job-desc">Description</span></strong> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos dolorem consectetur harum veritatis ut maiores! Hic voluptatibus inventore vitae.</p>
+                    <p class="job-para"><strong><span class="job-desc">Joining</span></strong> : Immediate</p>
+                    <p class="job-para"><strong><span class="job-desc">Place</span></strong> : Bangalore</p>
+                    <p class="job-para"><strong><span class="job-desc">Remote work</span></strong> : Applicable as per company policy</p>
+                    <p class="job-para"><strong><span class="job-desc">Status</span></strong> : <span class="job-status"> Active</span></p>
                     <div class="apply-job"><a href="#" class="apply-link">Apply Job</a></div>
                 </div>
             </div>
@@ -592,7 +617,8 @@
         </div>
         <div class="announcement">
             <div class="anc-container">
-                <p><b>CEO MESSAGE&nbsp;</b>Whatever the future may bring, we will build a robust foundation and continue to evolve beyond the boundaries of the RoyalMac Business Venture group as we aim to become a value-creative corporate group around the world with various businesses and styles of innovation.</p>
+                <p style="margin-bottom: -10px;"><b>CEO MESSAGE&nbsp;</b></p>
+                <p>Whatever the future may bring, we will build a robust foundation and continue to evolve beyond the boundaries of the RoyalMac Business Venture group as we aim to become a value-creative corporate group around the world with various businesses and styles of innovation.</p>
                 <p>We will take on the challenge of implementing innovation with the goal of empowering the general public to become a virtual stockist in iron metal commodities, earning money without exerting any effort and generating income quickly in order to significantly boost long-term company value while maintaining the management strategy's underlying ethos.</p>
             </div>
         </div>
@@ -603,7 +629,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./javascript/jquery.counterup.min.js"></script>
     <script src="./javascript/script.js"></script>
-    <script src="./count.js"></script>
 </body>
 </html>

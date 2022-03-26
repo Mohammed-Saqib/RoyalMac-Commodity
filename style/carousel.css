@@ -170,6 +170,9 @@ marquee{
     color: var(--black);
     font-weight: 800;
 }
+.gold-c{
+    color: var(--goldColor);
+}
 
 @keyframes rot {
     0%{

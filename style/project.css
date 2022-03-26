@@ -41,10 +41,12 @@
     align-items: center;
     justify-content: center;
     margin: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 2px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
     transform: scale(0.9);
     position: relative;
+    border-radius: 5px;
+    background-color: #ecf0f1;
 }
 
 .up-pro:hover , .pro-vol:hover {
@@ -64,6 +66,8 @@
 }
 
 .counter-box{
+    margin-top: 5px;
+    border-radius: 8px;
     width: 100%;
     height: 180px;
     display: flex;
@@ -72,8 +76,8 @@
     align-items: center;
     font-weight: 900;
     text-transform: uppercase;    
-    background-color: #ecf0f1;
-    /* background-color: var(--greenColor); */
+    /* background-color: #ecf0f1; */
+    background-color: #FFF;
 }
 @font-face {
     font-family: Anton;
@@ -98,7 +102,7 @@
     overflow: hidden !important;
 }
 
-.up-pro::before, .pro-vol::before{
+/* .up-pro::before, .pro-vol::before{
     position: absolute;
     content: "";
     width: 50%;
@@ -118,7 +122,8 @@
     transform: rotate(-40deg);
     left: -20%;
     top: 10%;
-}
+} */
+
 @media screen and (max-width : 1050px) {
     .counter-box span{
         font-size: 25px !important;
