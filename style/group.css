@@ -125,8 +125,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none !important;
 }
-
+/* 
 .owl-dots .owl-dot{
     outline: 1px solid var(--greenColor);
     display: inline-block;
@@ -140,7 +141,7 @@ a{
 
 .owl-dots .owl-dot.active{
     background-color: var(--greenColor);
-}
+} */
 
 @media screen and (min-width: 1010px){
     .owl-nav{

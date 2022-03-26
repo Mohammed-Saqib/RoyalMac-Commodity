@@ -216,7 +216,7 @@
         -webkit-transform: none;
         -moz-transform: none;
     }
-    .brd-member-img img{
+    /* .brd-member-img img{
         animation: zoomCard 10s ease-in-out infinite;
      }
      @keyframes zoomCard {
@@ -226,7 +226,7 @@
              -moz-transform: scale(2.3);
              object-position: right;
          }
-     }
+     } */
 }
 
 @media screen and (max-width:375px) {

@@ -70,21 +70,30 @@
 
 @media screen and (max-width: 750px) {
     .body-image-contain h1{
-        font-size: 35px;
+        font-size: 40px;
         line-height: 45px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .body-image-contain h1{
-        font-size: 30px;
+        font-size: 35px;
         line-height: 45px;
+    }
+    .body-image-contain h2{
+        font-size: 30px;
+       line-height: 40px;
     }
 }
 
 @media screen and (max-width: 300px) {
     .body-image-contain h1{
-        font-size: 25px;
+        font-size: 30px;
         line-height: 35px;
+    }
+
+    .body-image-contain h2{
+        font-size: 25px;
+       line-height: 30px;
     }
 }
