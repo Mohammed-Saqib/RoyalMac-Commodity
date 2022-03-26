@@ -381,11 +381,44 @@ navAb.addEventListener('click', () => {
 //       updateCounter();
 // })
 
+// $(document).ready(function(){
+//     $('.counter').counterUp({
+//         delay : 10,
+//         time: 1000
+//     })
+// });
+
 $(document).ready(function(){
-    $('.counter').counterUp({
-        delay : 10,
-        time: 1000
-    })
+    function counterUp(element, startAtPercentage) {
+        if (startAtPercentage == null) {
+            startAtPercentage = 20;
+        }
+    
+        var numericValue = getNumericValue(element);
+    
+        jQuery(element).counterUp({
+            beginAt: (numericValue > 0)
+                ? (numericValue * startAtPercentage / 100)
+                : undefined,
+        });
+    }
+    
+    function getNumericValue(element) {
+        try {
+            return Number(element.innerText
+                // Remove decimal points
+                .replace(/.\D+/g, '')
+                // Remove thousands separator and other symbols
+                .replace(/\D/g, ''));
+        } catch (error) {
+            return 0;
+        }
+    }
+    
+    // ... or with jQuery
+    jQuery('.counter').each(function (index, element) {
+        counterUp(element, 20);
+    });
 });
 
 
