@@ -84,13 +84,16 @@
     src: url(../fonts/Prompt-ExtraBold.ttf);
 }
 .counter-box span{
-    font-size: 40px !important;
-    line-height: 45px;
+    font-size: 25px !important;
+    line-height: 28px;
     font-weight: 900;
-    font-family: 'Anton',sans-serif;
+    /* font-family: 'Anton',sans-serif; */
     /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.2),0 0 5px rgba(0, 0, 0, 0.8); */
-    color: rgba(99,110,114,1);
-   
+    color: rgba(99,110,114,1);   
+}
+.hght{
+font-size: 40px !important;
+line-height: 40px !important;
 }
 
 .counter, .counter-no{    
@@ -126,8 +129,8 @@
 
 @media screen and (max-width : 1050px) {
     .counter-box span{
-        font-size: 25px !important;
-        line-height: 25px;
+        font-size: 18px !important;
+        line-height: 28px;
     }
     .up-pro span, .pro-vol span{
         font-size:20px;
@@ -141,7 +144,7 @@
 
 @media screen and (max-width : 850px) {
     .counter-box span{
-        font-size: 20px;
+        font-size: 16px !important;
         line-height: 30px;
     }
     .up-pro span, .pro-vol span{
@@ -175,7 +178,7 @@
     }
     
     .counter-box span{
-        font-size: 14px;
+        font-size: 18px !important;
         line-height: 24px;
     }
 }
@@ -194,7 +197,7 @@
         max-width: 80%;
     }
     .counter-box span{
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 24px;
     }
 }
@@ -225,7 +228,7 @@
     }
     
     .counter-box span{
-        font-size: 14px;
+        font-size: 18px !important;
         line-height: 24px;
     }
 }
@@ -236,7 +239,7 @@
         line-height: 12px;
     }
     .counter-box span{
-        font-size: 10px;
+        font-size: 14px !important;
         line-height: 22px;
     }
 }

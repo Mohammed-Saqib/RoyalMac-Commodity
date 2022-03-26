@@ -388,38 +388,38 @@ navAb.addEventListener('click', () => {
 //     })
 // });
 
-$(document).ready(function(){
-    function counterUp(element, startAtPercentage) {
-        if (startAtPercentage == null) {
-            startAtPercentage = 20;
-        }
+// $(document).ready(function(){
+//     function counterUp(element, startAtPercentage) {
+//         if (startAtPercentage == null) {
+//             startAtPercentage = 20;
+//         }
     
-        var numericValue = getNumericValue(element);
+//         var numericValue = getNumericValue(element);
     
-        jQuery(element).counterUp({
-            beginAt: (numericValue > 0)
-                ? (numericValue * startAtPercentage / 100)
-                : undefined,
-        });
-    }
+//         jQuery(element).counterUp({
+//             beginAt: (numericValue > 0)
+//                 ? (numericValue * startAtPercentage / 100)
+//                 : undefined,
+//         });
+//     }
     
-    function getNumericValue(element) {
-        try {
-            return Number(element.innerText
-                // Remove decimal points
-                .replace(/.\D+/g, '')
-                // Remove thousands separator and other symbols
-                .replace(/\D/g, ''));
-        } catch (error) {
-            return 0;
-        }
-    }
+//     function getNumericValue(element) {
+//         try {
+//             return Number(element.innerText
+//                 // Remove decimal points
+//                 .replace(/.\D+/g, '')
+//                 // Remove thousands separator and other symbols
+//                 .replace(/\D/g, ''));
+//         } catch (error) {
+//             return 0;
+//         }
+//     }
     
-    // ... or with jQuery
-    jQuery('.counter').each(function (index, element) {
-        counterUp(element, 20);
-    });
-});
+//     // ... or with jQuery
+//     jQuery('.counter').each(function (index, element) {
+//         counterUp(element, 20);
+//     });
+// });
 
 
 $(document).ready(function(){
@@ -457,7 +457,7 @@ $(document).ready(function(){
                 nav:true
             },
             1000:{
-                items:3,
+                items:4,
                 nav:true,
                 loop:false
             }

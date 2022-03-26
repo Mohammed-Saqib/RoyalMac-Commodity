@@ -1,0 +1,16 @@
+forms pages to create:
+
+
+1.black card
+2.green card
+3.gold card
+
+1.quantity
+name
+email
+phone no
+address
+purpose
+
+card no: 5 digits
+batch validity 3 months 
