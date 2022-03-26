@@ -51,14 +51,23 @@ $(document).ready(function(){
 
 function startAnimation(){
     console.log("welcome");
-    const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
+const tl= gsap.timeline({repeat: -1, repeatDelay: 4, defaults: {duration : 4 }})
 tl
 .from('.slide1',{opacity : 0, ease:'power3.out' })
 .from('.slide2',{opacity : 0, ease:'power3.out' })
 .from('.slide3',{opacity : 0, ease:'power3.out' })
 }
 
-gsap.to('.crousel-head',{opacity : 0.3, ease : 'power3.out', onComplete : startAnimation()})
+
+setTimeout(function(){
+   $(document).ready(function(){
+       $('.slide').each(function(index, value){
+        $(value).addClass('wait')
+       });
+       $('.crousel-head').addClass('no-wait')
+   });
+   startAnimation();
+},1000)
 
 
 // welcome message animation code

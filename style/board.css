@@ -216,6 +216,17 @@
         -webkit-transform: none;
         -moz-transform: none;
     }
+    .brd-member-img img{
+        animation: zoomCard 10s ease-in-out infinite;
+     }
+     @keyframes zoomCard {
+         60%{
+             transform: scale(2.3);
+             -webkit-transform: scale(2.3);
+             -moz-transform: scale(2.3);
+             object-position: right;
+         }
+     }
 }
 
 @media screen and (max-width:375px) {
@@ -241,15 +252,5 @@
         line-height: 18px;
         margin-bottom: 5px;
     }
-    .brd-member-img img{
-       animation: zoomCard 10s ease-in-out infinite;
-    }
-    @keyframes zoomCard {
-        60%{
-            transform: scale(2.3);
-            -webkit-transform: scale(2.3);
-            -moz-transform: scale(2.3);
-            object-position: right;
-        }
-    }
+    
 }

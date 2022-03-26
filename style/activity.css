@@ -110,6 +110,15 @@
     display: block;
 }
 
+@media screen and (max-width: 1200px){
+    .activity-content{
+        width: 90%;
+    }
+    .activity-heading{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
 @media screen and (max-width: 1061px){
     .activity-content{
         width: 90%;
