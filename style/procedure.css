@@ -1,0 +1,305 @@
+.procedure-content{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #34495e; */background-color: #c8d6e5;
+}
+
+.procedure-heading{
+    /* outline: 1px solid; */
+    background-color: #8395a7;
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.back-to-home{
+    position: absolute;
+    text-decoration: none;
+    color: var(--whiteColor);
+    left: 5%;
+    font-size: 20px;
+    line-height: 25px;
+    z-index: 1000;
+}
+.back-to-home:hover{
+    color: black !important;
+}
+.procedure-heading h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: serif;
+    word-spacing: 2px;
+    font-weight: 900;
+    /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(199,204,207,1) 9%, rgba(255,255,255,1) 17%);
+    background-size: 200% 100%;
+    animation: bgPos 3s linear infinite;
+    -webkit-animation: bgPos 3s linear infinite;
+    -moz-animation: bgPos 3s linear infinite;
+}
+@keyframes bgPos{
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
+}
+
+.procedure-steps{
+    /* outline: 1px solid; */
+    margin-top: 20px;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.procedure-step{
+    /* outline: 1px solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    /* column-gap: 10px; */
+    justify-content: space-around;
+}
+
+.left-side{
+    /* outline: 1px solid; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side{
+    /* outline: 1px solid; */
+    /* background-color: var(--darkWhite2); */
+    width: 60%;
+    background-color: #34495e;
+    color: #FFF;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 8px 10px 0 ;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-side::before{
+    content: "";
+    /* background-color: var(--darkWhite2); */background-color: #34495e;
+    color: #FFF;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: -13.5%;
+    z-index: -1;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-side h2{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.right-side p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.left-side a{
+    background-color: var(--darkWhite2);
+    text-decoration: none;
+    color: var(--black);
+    padding: 35px 50px;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #34495e;
+    color: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:1300px){
+    .procedure-steps{
+        /* width: 60%; */
+    }
+}
+
+@media screen and (max-width:1100px){
+    .procedure-steps{
+        /* width: 65%; */
+    }
+}
+
+@media screen and (max-width:1000px){
+    .procedure-steps{
+        /* width: 70%; */
+        grid-template-columns: auto ;
+    }
+}
+
+@media screen and (max-width:900px){
+    .procedure-steps{
+        /* width: 75%; */
+    }
+}
+
+@media screen and (max-width:800px){
+    .procedure-steps{
+        /* width: 80%; */
+    }
+    .procedure-heading h1{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .right-side h2{
+        font-size: 18px;
+        line-height: 22px;
+    }  
+    .right-side p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .right-side{
+        padding: 5px 5px 5px 0 ;
+    }
+    .right-side{
+        min-height: 110px;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .procedure-steps{
+        /* width: 85%; */
+    }
+}
+
+@media screen and (max-width:600px){
+    .procedure-steps{
+        /* width: 90%; */
+    }
+    .procedure-heading h1{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .right-side p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .left-side a{
+        padding: 25px 40px;
+    }   
+    .back-to-home{
+        left: 0;
+    } 
+}
+
+@media screen and (max-width:500px){
+    .procedure-steps{
+        /* width: 95%; */
+    }
+    .procedure-heading h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .right-side h2{
+        font-size: 16px;
+        line-height: 18px;
+    }  
+    .right-side p{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .left-side a{
+        font-size: 21px;
+    }
+    .back-to-home{
+        left: 0;
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .procedure-steps{
+        width: 100%;
+    }  
+    .procedure-heading h1{
+        font-size: 14px;
+        line-height: 16px;
+    } 
+    .right-side h2{
+        font-size: 14px;
+        line-height: 16px;
+    }  
+    .right-side p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .right-side{
+        min-height: 100px;
+    }
+    .left-side a{
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+    .back-to-home{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:300px){
+    .procedure-steps{
+        width: 95%;
+    }
+    .procedure-heading h1{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .right-side h2{
+        font-size: 12px;
+        line-height: 15px;
+    }  
+    .right-side p{
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .right-side{
+        min-height: 90px;
+    }
+    .left-side a{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .back-to-home{
+        font-size: 10px;
+    }
+    
+}

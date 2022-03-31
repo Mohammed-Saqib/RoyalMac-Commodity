@@ -109,7 +109,12 @@
 .unhide{
     display: block;
 }
-
+@media screen and (max-width: 1510px){
+    .activity-list{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
 @media screen and (max-width: 1200px){
     .activity-content{
         width: 90%;

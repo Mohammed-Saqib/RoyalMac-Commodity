@@ -536,7 +536,7 @@ globe
 // apply card code
 $(document).ready(function(){
     $('.box').click(function(){
-        alert('Card Will Be Available Soon');
+        alert('Card Will Be Available Soon, contact : info@royal-mac.com');
     });
 });
 
@@ -562,7 +562,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-function topFunction() {
+function topFunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
@@ -572,3 +572,57 @@ $(document).ready(function(){
         window.location.href='mailto:info@royal-mac.com'
     });
 });
+
+// language coding 
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+$(document).ready(function(){
+    var theLang;
+    var attr;
+    $("#lang").change(function (e){ 
+        e.preventDefault();
+        document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
+        
+          theLang = $(this).val();
+           if(theLang == 'en'){
+                attr = "#googtrans(en|en)"
+           }           
+          if(theLang == 'en' ) {
+              attr = "#googtrans(en|en)"
+           }
+          if(theLang == 'de' ) {
+              attr = "#googtrans(en|de)"
+           }
+          if(theLang == 'fr' ) {
+              attr = "#googtrans(en|fr)"
+           }
+          if(theLang == 'ar' ) {
+              attr = "#googtrans(en|ar)"
+           }           
+          if(theLang == 'es' ) {
+              attr = "#googtrans(en|es)"
+           }
+
+	    jQuery('.goog-te-combo').val(theLang);
+       
+	  window.location = attr;
+	  location.reload();
+    });
+});
+
