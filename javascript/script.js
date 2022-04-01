@@ -273,7 +273,7 @@ $(document).ready(function(){
         // slideSpeed: 200,
         autoplayHoverPause:true,
         autoplayTimeout: 2520,
-        smartSpeed: 1500,
+        smartSpeed: 2500,
         responsive:{
             150:{
                 items:1,

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/procedure.css">
+    <link rel="stylesheet" href="./style/contactUs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <div class="contact-navbar">
+                <div class="logo"><img src="./Images/logo.svg" alt="RoyalMac Logo"></div>
+                <a href="index.html" class="back-to-home clr-black">&#x2190; Back</a>
+            </div>
+            <div class="contact-body">
+                <div class="c-heading"><h3>Our Exclusive Product</h3> <h1>R50 - R65</h1></div>
+                <div class="c-para">
+                    <div class="co-left">
+                        <img src="./Images/steel.png" alt="">
+                    </div>
+                    <div class="co-right">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam possimus! Eligendi maxime autem assumenda accusantium obcaecati aliquam, dicta veniam illum ab eos tenetur magnam ipsa asperiores possimus? Dicta modi ea voluptate. Architecto molestias quisquam dignissimos amet corrupti saepe doloribus incidunt sed obcaecati maxime cupiditate, neque dolore rerum nesciunt molestiae, ut tempore vero minima voluptatibus quia, nam eveniet sunt? Aspernatur eos molestias cumque facilis aliquam dolor expedita sed enim magnam. Sit, nulla temporibus recusandae inventore praesentium sequi! Aliquid accusantium quidem veniam quae ducimus pariatur recusandae ad consectetur error. Amet architecto numquam consectetur earum tenetur quo vero unde beatae dignissimos!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam possimus! Eligendi maxime autem assumenda accusantium obcaecati aliquam, dicta veniam illum ab eos tenetur magnam ipsa asperiores possimus? Dicta modi ea voluptate. Architecto molestias quisquam dignissimos amet corrupti saepe doloribus incidunt sed obcaecati maxime cupiditate, neque dolore rerum nesciunt molestiae, ut tempore vero minima voluptatibus quia, nam eveniet sunt? Aspernatur eos molestias cumque facilis aliquam dolor expedita sed enim magnam. Sit, nulla temporibus recusandae inventore praesentium sequi! Aliquid accusantium quidem veniam quae ducimus pariatur recusandae ad consectetur error. Amet architecto numquam consectetur earum tenetur quo vero unde beatae dignissimos!</p>
+                    </div>
+                </div>
+                <div class="c-para c-para2">
+                    <div class="co-left">
+                        <img src="./Images/aircraft.png" alt="">
+                    </div>
+                    <div class="co-right">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam possimus! Eligendi maxime autem assumenda accusantium obcaecati aliquam, dicta veniam illum ab eos tenetur magnam ipsa asperiores possimus? Dicta modi ea voluptate. Architecto molestias quisquam dignissimos amet corrupti saepe doloribus incidunt sed obcaecati maxime cupiditate, neque dolore rerum nesciunt molestiae, ut tempore vero minima voluptatibus quia, nam eveniet sunt? Aspernatur eos molestias cumque facilis aliquam dolor expedita sed enim magnam. Sit, nulla temporibus recusandae inventore praesentium sequi! Aliquid accusantium quidem veniam quae ducimus pariatur recusandae ad consectetur error. Amet architecto numquam consectetur earum tenetur quo vero unde beatae dignissimos!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam possimus! Eligendi maxime autem assumenda accusantium obcaecati aliquam, dicta veniam illum ab eos tenetur magnam ipsa asperiores possimus? Dicta modi ea voluptate. Architecto molestias quisquam dignissimos amet corrupti saepe doloribus incidunt sed obcaecati maxime cupiditate, neque dolore rerum nesciunt molestiae, ut tempore vero minima voluptatibus quia, nam eveniet sunt? Aspernatur eos molestias cumque facilis aliquam dolor expedita sed enim magnam. Sit, nulla temporibus recusandae inventore praesentium sequi! Aliquid accusantium quidem veniam quae ducimus pariatur recusandae ad consectetur error. Amet architecto numquam consectetur earum tenetur quo vero unde beatae dignissimos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="c-row">
+                            <p id="eName" class="errorMsg">Enter Correct Name</p>
+                            <label for="name">Enter Name</label>
+                            <input type="text" id="name" name="name" required autocomplete="off" >
+                        </div>
+                            <div class="c-row">
+                            <p id="eEmail" class="errorMsg">Enter Correct Email</p>
+                            <label for="email">Enter email</label>
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                        </div>
+                        <div class="c-row" class="errorMsg">
+                            <p id="eDes">Enter atleast 50 words</p>
+                            <label for="name">Description</label>
+                            <textarea name="txtArea" id="txtArea" autocomplete="off" required></textarea>
+                        </div>
+                        <button id="button"></button>
+                    </form>
+                </div>
+            </div>
+        <div class="footer">
+            <img src="./Images/logo.svg" alt="logo">
+            <p class="footer-text">@CopyRight 2022 All Rights Reserved to RoyalMac</p>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const txtArea = document.getElementById('txtArea');
+        const eName = document.getElementById('eName');
+        const eEmail = document.getElementById('eEmail');
+        const eDes = document.getElementById('eDes');
+        const form = document.getElementById('form');
+        eName.textContent = "";
+        eEmail.textContent = "";
+        eDes.textContent = "";
+         
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (name.value == "") {
+                eName.textContent = " Please enter your name.";
+                return
+            }else if (email.value == "") {
+                eEmail.textContent = " Please enter your email. ";
+                return
+            }else if (txtArea.value == "") {
+                eDes.textContent = " Please enter your massge here.";
+                return
+            }else{
+                console.log(name.value + " " + email.value + " " + txtArea.value);
+                $(document).ready(function(){
+                    $( "#button" ).addClass( "onclic" );
+                          validate();
+                        function validate() {
+                       setTimeout(function() {
+                         $( "#button" ).removeClass( "onclic" );
+                         $( "#button" ).addClass( "validate" );
+                         callback();
+                       }, 2250 );
+                     }
+                        function callback() {
+                         setTimeout(function() {
+                           Email.send({
+                              Host : "smtp.elasticemail.com",
+                              Username : "mohammedsaqibbca62@gmail.com",
+                              Password : "39E147E802F5B07C7CCC4AFC5B503FC9A863",
+                            //   SecureToken : "4073b4c5-6626-4c40-9aa2-f0a6781938e0",
+                              To : 'mohammedsaqibbca62@gmail.com',
+                              From : email.value,
+                              Subject : "New Contact Form Enquiry",
+                              Body : "Name: " + name.value +
+                                     "<br> Email: " + email.value +
+                                     "<br> Message: " + txtArea.value 
+                                     
+                          }).then(
+                            // message => alert("Message Sent")
+                          );
+                          $( "#button" ).removeClass( "validate" );
+                           form.reset()
+                         }, 1250 );
+                       }
+                });                
+            }
+        });
+
+        name.addEventListener('blur', function(e){
+            e.preventDefault();
+            const nameregex= /^[a-zA-Z\s]+$/;
+            if (nameregex.test(name.value) === false) {
+                eName.textContent = " Please enter a valid name contain only Alphabet. ";
+                this.textContent = "";
+                this.focus();
+              }else{
+                  eName.textContent = "";
+              }
+        });
+
+        email.addEventListener('blur', function(e){
+            e.preventDefault();
+            const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (emailregex.test(email.value) === false) {
+                eEmail.textContent = "Please enter a valid email address similar to ([a-zA-Z][1-9]@gmail.com)";
+                email.textContent = "";
+                email.focus();
+              }else{
+                  eEmail.textContent = "";
+              }
+        });       
+
+        // $(document).ready(function(){
+        //              $( "#button" ).click(function() {
+        //                $( "#button" ).addClass( "onclic", 250, validate);
+        //              });
+                 
+        //              function validate() {
+        //                setTimeout(function() {
+        //                  $( "#button" ).removeClass( "onclic" );
+        //                  $( "#button" ).addClass( "validate", 450, callback );
+        //                }, 2250 );
+        //              }
+        //                function callback() {
+        //                  setTimeout(function() {
+        //                    $( "#button" ).removeClass( "validate" );
+        //                  }, 1250 );
+        //                }
+        //              });
+
+    </script>
+</body>
+</html>
