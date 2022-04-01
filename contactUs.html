@@ -103,21 +103,6 @@
                      }
                         function callback() {
                          setTimeout(function() {
-                           Email.send({
-                              Host : "smtp.elasticemail.com",
-                              Username : "mohammedsaqibbca62@gmail.com",
-                              Password : "39E147E802F5B07C7CCC4AFC5B503FC9A863",
-                            //   SecureToken : "4073b4c5-6626-4c40-9aa2-f0a6781938e0",
-                              To : 'mohammedsaqibbca62@gmail.com',
-                              From : email.value,
-                              Subject : "New Contact Form Enquiry",
-                              Body : "Name: " + name.value +
-                                     "<br> Email: " + email.value +
-                                     "<br> Message: " + txtArea.value 
-                                     
-                          }).then(
-                            // message => alert("Message Sent")
-                          );
                           $( "#button" ).removeClass( "validate" );
                            form.reset()
                          }, 1250 );
