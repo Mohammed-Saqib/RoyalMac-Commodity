@@ -262,6 +262,9 @@ a{
     -webkit-animation: bgPos 2s linear infinite;
     -moz-animation: bgPos 2s linear infinite;
 }
+#goog-gt-tt{
+    display: none !important;
+}
 
 @media only screen and (max-width:1050px){
 
