@@ -573,6 +573,8 @@ $(document).ready(function(){
     });
 });
 
+gsap.from(mybutton, {duration : 2, y : -30, repeat: -1, repeatDelay : 3, ease : "elastic"})
+
 // language coding 
 
 function googleTranslateElementInit() {
