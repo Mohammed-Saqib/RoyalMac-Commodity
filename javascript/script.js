@@ -65,7 +65,7 @@ setTimeout(function(){
        $('.crousel-head').addClass('no-wait')
    });
    startAnimation();
-},2000)
+},2500)
 
 
 // welcome message animation code

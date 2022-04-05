@@ -236,7 +236,6 @@ a{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--whiteColor);
     color: white;
     cursor: pointer;
     border-radius: 50%;
