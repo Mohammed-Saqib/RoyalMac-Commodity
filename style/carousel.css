@@ -243,6 +243,9 @@ marquee{
 #logo{
     stroke: 5px solid #FFF;
     animation: fill 2s ease forwards 1.7s;
+    -webkit-animation: fill 2s ease forwards 1.7s;
+    -moz-animation: fill 2s ease forwards 1.7s;
+    -o-animation: fill 2s ease forwards 1.7s;
     width:540px !important;
 }
 
@@ -250,41 +253,65 @@ marquee{
   stroke-dasharray: 355px;
   stroke-dashoffset: 355px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(2){
     stroke-dasharray: 261px;
   stroke-dashoffset: 261px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(3){
 stroke-dasharray: 355px;
   stroke-dashoffset: 355px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(4){
 stroke-dasharray: 646px;
   stroke-dashoffset: 646px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(5){
 stroke-dasharray: 445px;
   stroke-dashoffset: 445px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(6){
 stroke-dasharray: 434px;
   stroke-dashoffset: 434px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(7){
 stroke-dasharray: 335px;
   stroke-dashoffset: 335px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 #logo path:nth-child(8){
 stroke-dasharray: 631px;
   stroke-dashoffset: 631px;
   animation: line-anim 2.5s ease forwards;
+  -webkit-animation: line-anim 2.5s ease forwards;
+  -moz-animation: line-anim 2.5s ease forwards;
+  -o-animation: line-anim 2.5s ease forwards;
 }
 
 @keyframes line-anim {

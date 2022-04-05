@@ -114,8 +114,12 @@ a{
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
@@ -224,6 +228,7 @@ a{
     animation: shake 0.1s 2 ease;
     -webkit-animation: shake 0.1s 2 ease;
     -moz-animation: shake 0.1s 2 ease;
+    -o-animation: shake 0.1s 2 ease;
 }
 
 #myBtn {
@@ -243,6 +248,9 @@ a{
     justify-content: center;
     align-items: center;
     transform: scale(0.91);
+    -webkit-transform: scale(0.91);
+    -moz-transform: scale(0.91);
+    -o-transform: scale(0.91);
 }
 
 #lang{
@@ -259,6 +267,7 @@ a{
     background-image: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(147,142,142,1) 100%);
     background-size: 200% 100%;
     animation: bgPos 2s linear infinite;
+    -o-animation: bgPos 2s linear infinite;
     -webkit-animation: bgPos 2s linear infinite;
     -moz-animation: bgPos 2s linear infinite;
 }
@@ -294,7 +303,9 @@ a{
         width: 100%;
         background-color: var(--darkWhite1);
         transition: clip-path 0.5s ease;
+        -o-transition: clip-path 0.5s ease;
         -webkit-transition: clip-path 0.5s ease;
+        -moz-transition: clip-path 0.5s ease;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
