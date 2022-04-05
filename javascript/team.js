@@ -84,7 +84,7 @@ const team = [
         email : "info@royal-mac.com",
         designation : "Lawyer",
         country: "Dubai",
-        image: './Images/maps/saudi.png',
+        image: './Images/maps/dubai.png',
         phone:'123456789',
     },
     {
@@ -92,7 +92,7 @@ const team = [
         email : "info@royal-mac.com",
         designation : "Accountant",
         country: "Dubai",
-        image: './Images/maps/saudi.png',
+        image: './Images/maps/dubai.png',
         phone:'123456789',
     },
 ];

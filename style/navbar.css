@@ -278,6 +278,7 @@ a{
         flex: 50%;
         text-align: right;
         margin-right: 25px;
+        margin-top: 20px;
     }
 
     .navbar{

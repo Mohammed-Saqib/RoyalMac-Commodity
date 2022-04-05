@@ -2,7 +2,6 @@ $(document).ready(function(){
     $(".menu-icon img").click(function(){
       $(".menu").toggleClass("activated-menu")
       const close = document.querySelector('.activated-menu');
-      console.log(close)
       if(close == null){
           document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/menu.svg')
       }else{
@@ -90,7 +89,12 @@ t4
 //     each : 1,
 // }})
 
-
+const nImport = document.getElementById('nImport');
+const nBusCon = document.getElementById('nBusCon');
+const nJoinV = document.getElementById('nJoinV');
+const nStockist = document.getElementById('nStockist');
+const nMerchen = document.getElementById('nMerchen');
+const nTrading = document.getElementById('nTrading');
 
 let actList1 = document.querySelector('.list1');
 let actList2 = document.querySelector('.list2');
@@ -107,6 +111,60 @@ let content4 = document.querySelector('.content-4');
 let content5 = document.querySelector('.content-5');
 let content6 = document.querySelector('.content-6');
 let content7 = document.querySelector('.content-7');
+
+// ----------------------Navbar Area To Activity Area ---------------
+
+nImport.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content2.className += " unhide";
+    gsap.from(content2, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+nBusCon.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content3.className += " unhide";
+    gsap.from(content3, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+nJoinV.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content4.className += " unhide";
+    gsap.from(content4, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+nStockist.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content5.className += " unhide";
+    gsap.from(content5, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+nTrading.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content6.className += " unhide";
+    gsap.from(content6, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+nMerchen.addEventListener('click', () => {
+    let unhide = document.getElementsByClassName('unhide');
+    if(unhide.length > 0){
+        unhide[0].className =  unhide[0].className.replace(" unhide", "");
+    }
+    content7.className += " unhide";
+    gsap.from(content7, { opacity:0, duration : 3, ease : 'power2.inOut' });
+});
+
+
+//-----------------Activity Are------------------------->
 
 actList1.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -614,9 +672,9 @@ $(document).ready(function(){
           if(theLang == 'fr' ) {
               attr = "#googtrans(en|fr)"
            }
-          if(theLang == 'ar' ) {
-              attr = "#googtrans(en|ar)"
-           }           
+        //   if(theLang == 'ar' ) {
+        //       attr = "#googtrans(en|ar)"
+        //    }           
           if(theLang == 'es' ) {
               attr = "#googtrans(en|es)"
            }

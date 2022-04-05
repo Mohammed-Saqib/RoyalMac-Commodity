@@ -29,7 +29,13 @@
    /* outline: 1px solid; */
    position: relative;
  }
- 
+
+ .dInBox p{
+  /* outline: 1px solid; */
+  display: inline-block;
+  width: 150px;
+ }
+
  .box{
    position: absolute;
    left: 20%;
@@ -60,10 +66,6 @@
    margin: 2px 10px;
    position: relative;
  }
-
- .fc-g{
-  margin-left: 15px !important;
-}
  
  .flip-card-inner-sm {
    position: relative;
@@ -133,12 +135,17 @@
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 0 8px 0 rgba(0,0,0,0.2);
     border-radius: 25px !important;
     animation: flipCard 5s ease infinite;
+    -moz-animation: flipCard 5s ease infinite;
+    -o-animation: flipCard 5s ease infinite;
+    -webkit-animation: flipCard 5s ease infinite;
   }
   
   @keyframes flipCard{
       100%{
     transform: rotateY(360deg);
-  
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
       }
   }
   
