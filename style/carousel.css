@@ -35,7 +35,7 @@
     display: none !important;
 }
 
-.crousel-head h1{
+/* .crousel-head h1{
     font-family: style, sans-serif;
     font-size: 80px;
     line-height: 90px;
@@ -48,7 +48,7 @@
     animation: bgPos 1s linear infinite;
     -webkit-animation: bgPos 1s linear infinite;
     -moz-animation: bgPos 1s linear infinite;
-}
+} */
 
 .slide{
     position: absolute;
@@ -93,7 +93,7 @@
 }
 
 
-.crousel-content{
+/* .crousel-content{
     z-index: 2;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
@@ -105,17 +105,17 @@
     left: 50%;
     transform: translate(-75%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%); */
-}
+    -moz-transform: translate(-50%, -50%); 
+} */
 
-.crousel-content h1{
+/* .crousel-content h1{
     position: absolute;
     top: 85%;
     left: 50%;
     transform: translate(-75%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    /* font-family: 'Prompt', serif; */
+    /* font-family: 'Prompt', serif; 
     font-size: 70px;
     line-height: 70px;
     letter-spacing: 4px;
@@ -132,8 +132,8 @@
     -webkit-animation: bgPos 1s linear infinite;
     -moz-animation: bgPos 1s linear infinite;
     overflow: hidden;
-    /* position: relative;ss */
-}
+    /* position: relative;ss 
+} */
 
 .company-info{
     width: 100%;
@@ -242,6 +242,7 @@ marquee{
 #logo{
     stroke: 5px solid #FFF;
     animation: fill 2s ease forwards 1.5s;
+    width:540px !important;
 }
 
 #logo path:nth-child(1){
@@ -304,7 +305,9 @@ stroke-dasharray: 631px;
     .crousel{
         height: 300px;
     }
-
+    #logo{
+        width: 300px !important; height: 100%; 
+    }
     .crousel-head h1{
         font-size: 50px;
         line-height: 60px;
@@ -335,6 +338,9 @@ stroke-dasharray: 631px;
 @media screen and (max-width: 450px){
     .slide img{
         object-position: center !important;
+    }
+    #logo{
+        width: 300px !important; height: 100%; 
     }
 
     .crousel-head h1{
