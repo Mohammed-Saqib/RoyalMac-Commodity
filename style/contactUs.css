@@ -1,4 +1,5 @@
 .contact-navbar{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,34 +14,45 @@
     color: var(--goldColor) !important;
 }
 
-.contact-content{
-    width: 100%;
-    /* min-height: 73vh; */
+.contact-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.c-body-container{
+    /* outline: 1px solid; */
+    margin: 20px 0;
+    padding: 10px;
+    width: 85%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
 }
 
 .contact-form{
     background: rgb(255,255,255);
-    border-radius: 5px;
-    width: 60%;
-    margin: 20px 0;
+    width: 30%;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form form{
     background: rgb(255,255,255);
-    width: 100%;
+    width: 100% !important;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 405px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .c-row{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,22 +88,6 @@
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
-/* .contact-form form button{
-    padding: 6px 16px;
-    font-size: 16px;
-    line-height: 18px;
-    outline: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    background: var(--whiteColor);
-    border: none;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
-
-.contact-form form button:active{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-} */
-
 .errorMsg{
     color: red;
     font-size: 12px;
@@ -100,7 +96,6 @@
 
 button {
     outline:none;
-    margin-top: 10px;
     height: 40px;
     text-align: center;
     width: 130px;
@@ -115,6 +110,7 @@ button {
     cursor: pointer;
     transition: all 0.25s ease;
 }
+
 button:hover{
     color:white;
     background: #1ECD97;
@@ -123,6 +119,7 @@ button:hover{
 button:active{
     letter-spacing: 2px ;
 }
+
 button::after{
     content:"SUBMIT";
 }
@@ -165,105 +162,173 @@ button::after{
 
 .contact-body{
     /* outline: 1px solid; */
-    margin-top: 20px;
-    width: 100%;
+    align-self: flex-start !important;
+    width: 70%;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .c-heading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-self: flex-start;
 }
+
 .c-heading h3{
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     text-transform: capitalize;
+    margin: 0 0 5px 0;
 }
-.c-heading h1{
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 35px;
-    text-transform: capitalize;
+
+.c-heading h3:hover{
+    color: var(--goldColor);
+    animation: shake 0.1s 2 ease;
+    -o-animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
 }
 
 .c-para{
-    /* outline: 1px solid; */
     width: 100%;
-    margin: 20px 0;
-    display: flex;
+    margin: 10px 0;
 }
-.c-para2{
-    flex-direction: row-reverse;
-}
-
-.co-left{
-    width: 30%;
-}
-
-.co-left img{
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: center;
-}
-.co-right{
-    /* outline: 1px solid; */
-    width: 70%;
+.co-reason{
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 .co-right p{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
     text-align: justify;
-    margin-bottom: 10px;
+}
+.co-reason p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 7.5px;
+    text-align: justify;
 }
 
+@media screen and (max-width:1000px) {
+    .contact-form{
+        width: 40% !important;
+    }
+    .contact-body{
+        width: 60% ;
+    }  
+}
 
 @media screen and (max-width:750px) {
-    .contact-form{
-        width: 80%;
+    .c-body-container{
+        width: 90%;
     }
-    .c-row{
+    .c-body-container{
+        margin: 20px 0;
         width: 80%;
-    }
-    .c-para{
         flex-direction: column;
-     }
-     .co-right{
-        width: 100%;
+        align-items: center;
+        column-gap: 0px;
+        row-gap: 15px;
     }
-    .co-left{
-        width: 100%;
+    .contact-body{
+        width: 100% ;
     }
-  
+    .contact-form{
+        width: 100% !important;
+    }  
+}
+
+@media screen and (max-width:450px) {
+    .c-body-container{
+        width: 95%;
+    }
+    .c-body-container{
+        padding: 0;
+    }
+    .contact-body{
+        width: 100% ;
+    }
+    .contact-form{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }  
+    .co-right p, .co-reason p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .c-heading h3{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .c-row label{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .c-row input, textarea{
+        padding: 6px 8px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    button {
+        margin-top: 8px;
+        height: 30px;
+        width: 110px;
+        font-size:12px;
+    }
+    .onclic {
+        width: 30px;
+        border-width:2px;
+      }
+      .validate {
+        font-size:12px;
+      }
+      #save{
+        font-size: 13px;
+        line-height: 13px;
+    }
 }
 
 @media screen and (max-width:350px) {
     .contact-form{
-        width: 95%;
+        width: 100% !important;
+    }  
+    .co-right p, .co-reason p{
+        font-size: 12px;
+        line-height: 16px;
     }
-    .c-row{
-        width: 100%;
+    .c-heading h3{
+        font-size: 14px;
+        line-height: 18px;
     }
     .c-row label{
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 14px;
     }
     .c-row input, textarea{
-        width: 100%;
         padding: 6px 8px;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 14px;
     }
-    
-    /* .contact-form form button{
-        padding: 5px 14px;
-        font-size: 14px;
-        line-height: 16px;
-    } */
+    button {
+        margin-top: 8px;
+        height: 30px;
+        width: 110px;
+        font-size:12px;
+    }
+    .onclic {
+        width: 30px;
+        border-width:2px;
+      }
+      .validate {
+        font-size:12px;
+      }
+      #save{
+        font-size: 13px;
+        line-height: 13px;
+    }
     
 }
