@@ -631,6 +631,13 @@ $(document).ready(function(){
     });
 });
 
+const goToContactUs = document.getElementById('onClkToContact');
+goToContactUs.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href="contactUs.html"
+})
+
+
 gsap.from(mybutton, {duration : 2, y : -30, repeat: -1, repeatDelay : 3, ease : "elastic"})
 
 // language coding 
