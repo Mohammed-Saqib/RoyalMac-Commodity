@@ -275,6 +275,26 @@ a{
     display: none !important;
 }
 
+.goog-te-button {
+    border-color: #e7e7e7;
+    border-style: none !important;
+    border-width: 0 !important;
+    background: #fff !important;
+    border-radius: 5px !important;
+}
+
+.goog-te-banner-frame {
+    border-bottom: none !important;
+}
+
+.goog-te-banner-frame #document body{
+    background-image: none !important;
+}
+.goog-te-banner{
+    background-image: none !important;
+    background: darkgoldenrod !important;
+}
+
 @media only screen and (max-width:1050px){
 
     .logo img{
@@ -301,7 +321,9 @@ a{
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--darkWhite1);
+        /* background-color: var(--darkWhite1); */
+        /* background-color: rgba(4, 128, 4, 0.7); */
+        background-color: rgba(0,0,0,0.7);
         transition: clip-path 0.5s ease;
         -o-transition: clip-path 0.5s ease;
         -webkit-transition: clip-path 0.5s ease;
@@ -329,6 +351,7 @@ a{
     }
 
     .menu ul li a{
+        color: #FFF;
         font-size: 14px;
         line-height: 14px;
     }
