@@ -1,6 +1,15 @@
 $(document).ready(function(){
     $(".menu-icon img").click(function(){
       $(".menu").toggleClass("activated-menu")
+      setTimeout(function (){
+        $(".menu").removeClass("activated-menu")
+        const close = document.querySelector('.activated-menu');
+      if(close == null){
+          document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/menu.svg')
+      }else{
+        document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/close.svg') 
+      } 
+      },10000)
       const close = document.querySelector('.activated-menu');
       if(close == null){
           document.querySelector('.menu-icon img').setAttribute('src','./Images/SVG/menu.svg')

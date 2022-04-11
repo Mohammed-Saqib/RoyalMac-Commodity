@@ -356,7 +356,12 @@ a{
         line-height: 14px;
     }
 
+    .menu ul li:hover .menu ul li a{
+        color: var(--goldColor)!important;
+    }
+
     .dropdown-content a, .content{
+        color: #000 !important;
         font-size: 14px;
         line-height: 14px;
     }
@@ -369,6 +374,9 @@ a{
     .drp-cnt{
         top:-50%;
         left: 10%;
+    }
+    .r-pos{
+        top:10% !important;
     }
 }
 

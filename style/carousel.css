@@ -138,14 +138,14 @@
 
 .company-info{
     width: 100%;
-    height: 180px;
-    /* background-color: var(--darkWhite2); */
+    /* height: 180px; */
+    margin: 40px 0;
     background-color: var(--whiteColor);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
 }
 
 marquee{
@@ -162,7 +162,7 @@ marquee{
     font-weight: 300;
     width: 60%;
     max-height: 50%;
-    text-align: center;
+    text-align: justify;
 }
 
 .box{
@@ -347,7 +347,7 @@ stroke-dasharray: 631px;
     }
 
     .company-info{
-        height: 300px;
+        margin: 35px 0;
     }
 
     .company-info p{
@@ -386,8 +386,7 @@ stroke-dasharray: 631px;
     }
 
     .company-info{
-        /* outline: 1px solid; */
-        height: 250px;
+        margin: 30px 0;
     }
 
     .company-info p{
