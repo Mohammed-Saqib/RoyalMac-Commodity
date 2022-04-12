@@ -7,13 +7,14 @@
     <link rel="icon" href="./Images/logo.svg">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/procedure.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>RoyalMac</title>
 </head>
 <body>
     <div class="procedure-content">
         <div class="procedure-heading">
             <h1>Rail Purchase Procedure</h1>
-            <a href="index.html" class="back-to-home">&#x2190; Back</a>
+            <a href="./index.html" class="back-to-home">&#x2190; Back</a>
         </div>
             <div class="procedure-steps">
                 <div class="procedure-step">
@@ -124,6 +125,7 @@
             </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         const t6 = gsap.timeline({repeatDelay: 15})
              t6
@@ -137,7 +139,15 @@
                     document.querySelector('.back-to-home').addEventListener('click', function(e){
                         e.preventDefault();
                         window.history.back();
-                    });
-                </script>
+            });
+
+//-------------------------------------------------------language coding------------------------------------------------------------------------------------- 
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+  }
+window.location.reload
+
+    </script>
 </body>
 </html>

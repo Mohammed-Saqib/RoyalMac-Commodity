@@ -276,10 +276,7 @@ a{
 }
 
 .goog-te-button {
-    border-color: #e7e7e7;
-    border-style: none !important;
-    border-width: 0 !important;
-    background: #fff !important;
+    border: none !important;
     border-radius: 5px !important;
 }
 
@@ -287,12 +284,10 @@ a{
     border-bottom: none !important;
 }
 
-.goog-te-banner-frame #document body{
+.goog-te-banner {
+    outline: 5px solid red !important;
     background-image: none !important;
-}
-.goog-te-banner{
-    background-image: none !important;
-    background: darkgoldenrod !important;
+    background-color: none !important;
 }
 
 @media only screen and (max-width:1050px){

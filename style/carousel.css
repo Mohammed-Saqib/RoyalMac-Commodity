@@ -356,6 +356,11 @@ stroke-dasharray: 631px;
        line-height: 22px;
        text-align: justify;
     }
+    #lineBreak::before{
+        content: "\a\a";
+        white-space: pre;
+    }
+
     .a{
         font-size: 12px;
         line-height: 22px;

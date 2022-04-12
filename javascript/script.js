@@ -438,68 +438,6 @@ navAb.addEventListener('click', () => {
 });
 
 
-// const counter = document.querySelectorAll('.counter');
-//     counter.forEach((counter)=>{
-//       console.log(counter);
-//       counter.innerHTML=0; 
-//     const updateCounter = () =>{
-//         const targetCount = +counter.getAttribute('data-target');
-//     //  console.log(targetcount); // the values we are getting in string we need to convert
-        
-//       const startingCount = Number(counter.innerHTML);  // convert string to number
-//       const incr = targetCount / 100;
-        
-//       if(startingCount < targetCount){
-//           counter.innerHTML=`${Math.round(startingCount + incr)}`;
-//           setTimeout(updateCounter , 10)
-//       }else{
-//           counter.innerHTML=targetCount;
-//       }
-//     }      
-//       updateCounter();
-// })
-
-// $(document).ready(function(){
-//     $('.counter').counterUp({
-//         delay : 10,
-//         time: 1000
-//     })
-// });
-
-// $(document).ready(function(){
-//     function counterUp(element, startAtPercentage) {
-//         if (startAtPercentage == null) {
-//             startAtPercentage = 20;
-//         }
-    
-//         var numericValue = getNumericValue(element);
-    
-//         jQuery(element).counterUp({
-//             beginAt: (numericValue > 0)
-//                 ? (numericValue * startAtPercentage / 100)
-//                 : undefined,
-//         });
-//     }
-    
-//     function getNumericValue(element) {
-//         try {
-//             return Number(element.innerText
-//                 // Remove decimal points
-//                 .replace(/.\D+/g, '')
-//                 // Remove thousands separator and other symbols
-//                 .replace(/\D/g, ''));
-//         } catch (error) {
-//             return 0;
-//         }
-//     }
-    
-//     // ... or with jQuery
-//     jQuery('.counter').each(function (index, element) {
-//         counterUp(element, 20);
-//     });
-// });
-
-
 $(document).ready(function(){
     $('.confi-content').owlCarousel({
         margin:25,
@@ -640,13 +578,6 @@ $(document).ready(function(){
     });
 });
 
-const goToContactUs = document.getElementById('onClkToContact');
-goToContactUs.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.location.href="contactUs.html"
-})
-
-
 gsap.from(mybutton, {duration : 2, y : -30, repeat: -1, repeatDelay : 3, ease : "elastic"})
 
 // language coding 
@@ -668,9 +599,35 @@ function googleTranslateElementInit() {
     }
   }
 
+  const procedureAttr = document.getElementById('railPurchase');
+  const goToContactUs = document.getElementById('onClkToContact');
+document.getElementById('lang').addEventListener('change', function(){
+    if(this.value == 'en'){
+        procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
+        goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+   }           
+  if(this.value == 'en' ) {
+      procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
+      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+   }
+  if(this.value == 'de' ) {
+      procedureAttr.setAttribute('href','procedure.html#googtrans(en|de)');
+      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+   }
+  if(this.value == 'fr' ) {
+      procedureAttr.setAttribute('href','procedure.html#googtrans(en|fr)');
+      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+   }
+  if(this.value == 'es' ) {
+      procedureAttr.setAttribute('href','procedure.html#googtrans(en|es)');
+      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+   }
+})
+
+
 $(document).ready(function(){
     var theLang;
-    var attr;
+    var attr;   
     $("#lang").change(function (e){ 
         e.preventDefault();
         document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
@@ -688,9 +645,6 @@ $(document).ready(function(){
           if(theLang == 'fr' ) {
               attr = "#googtrans(en|fr)"
            }
-        //   if(theLang == 'ar' ) {
-        //       attr = "#googtrans(en|ar)"
-        //    }           
           if(theLang == 'es' ) {
               attr = "#googtrans(en|es)"
            }
@@ -701,4 +655,3 @@ $(document).ready(function(){
 	  location.reload();
     });
 });
-
