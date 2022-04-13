@@ -159,7 +159,8 @@ marquee{
     width: 80% !important;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 400 !important;
+    color: rgba(0, 0, 0, 0.8);
     width: 60%;
     max-height: 50%;
     text-align: justify;

@@ -15,12 +15,14 @@
 }
 
 ::-webkit-scrollbar-track{
-    background: var(--darkWhite2);
+    background: rgba(0,0,0,0.2);
 }
 
 ::-webkit-scrollbar-thumb{
-    background: var(--greenColor);
+    /* background: var(--greenColor); */
+    background: linear-gradient(180deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
     border-radius: 25px;
+    height: 130px;
 }
 
 :root{
@@ -42,11 +44,15 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body[style]{
+    top: 0px !important;
 }
 
 .container{
@@ -275,19 +281,11 @@ a{
     display: none !important;
 }
 
-.goog-te-button {
-    border: none !important;
-    border-radius: 5px !important;
-}
-
 .goog-te-banner-frame {
     border-bottom: none !important;
-}
-
-.goog-te-banner {
-    outline: 5px solid red !important;
-    background-image: none !important;
-    background-color: none !important;
+    box-shadow: none !important;
+    margin-bottom: -100px !important;
+    display: none;
 }
 
 @media only screen and (max-width:1050px){

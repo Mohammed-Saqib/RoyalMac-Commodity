@@ -85,15 +85,13 @@ setTimeout(function(){
 // .to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
 // .to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
 
-const t4 = new gsap.timeline({repeat : -1})
+const t4 = new gsap.timeline({repeat : -1, repeatDelay : 10})
 t4
 .to('#construction', {scale: 0.8})
-// .from('#construction', {y : -50, ease : 'elastic.out', duration: 1, stagger : {
-//     each : 0.2,
+.from('#construction', {y : -250, ease : 'elastic.out', duration: 2,})
+// .to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, duration: 3, stagger : {
+//     each : 1,
 // }})
-.to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, duration: 3, stagger : {
-    each : 1,
-}})
 // .to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1, stagger : {
 //     each : 1,
 // }})
@@ -601,10 +599,12 @@ function googleTranslateElementInit() {
 
   const procedureAttr = document.getElementById('railPurchase');
   const goToContactUs = document.getElementById('onClkToContact');
+ 
 document.getElementById('lang').addEventListener('change', function(){
     if(this.value == 'en'){
         procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
         goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+        
    }           
   if(this.value == 'en' ) {
       procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
@@ -629,7 +629,7 @@ $(document).ready(function(){
     var theLang;
     var attr;   
     $("#lang").change(function (e){ 
-        e.preventDefault();
+        e.preventDefault();       
         document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
         
           theLang = $(this).val();
