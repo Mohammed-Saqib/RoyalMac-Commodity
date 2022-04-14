@@ -106,6 +106,9 @@
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  -moz-transform: translateX(-40%) translateY(-50%);
+  -o-transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
@@ -113,6 +116,9 @@
   border-left: 20px solid #C3996B;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -moz-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -o-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .pop-sub::before{
@@ -122,14 +128,24 @@
     height: 120px;
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
     -webkit-animation: pulsate-btn 2s;
     animation: pulsate-btn 2s;
+    -moz-animation: pulsate-btn 2s;
+    -o-animation: pulsate-btn 2s;
     -webkit-animation-direction: forwards;
     animation-direction: forwards;
+    -moz-animation-direction: forwards;
+    -o-animation-direction: forwards;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
     -webkit-animation-timing-function: steps;
     animation-timing-function: steps;
+    -moz-animation-timing-function: steps;
+    -o-animation-timing-function: steps;
     opacity: 1;
     border-radius: 50%;
     border: 5px solid #C3996B;
@@ -149,6 +165,9 @@ content: "";
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  -moz-transform: translateX(-40%) translateY(-50%);
+  -o-transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border: none;
@@ -157,6 +176,8 @@ content: "";
   border-left: 20px solid #C3996B;
   z-index: 200;
   -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
   animation: none;
   border-radius: 0;
 }
@@ -164,22 +185,34 @@ content: "";
 @-webkit-keyframes pulsate-btn {
     0% {
       transform: scale(0.6, 0.6);
+      -webkit-transform: scale(0.6, 0.6);
+      -o-transform: scale(0.6, 0.6);
+      -moz-transform: scale(0.6, 0.6);
       opacity: 1;
     }
     100% {
       transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      -moz-transform: scale(1, 1);
       opacity: 0;
     }
   }
 
   @keyframes pulsate-btn {
     0% {
-      transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        -webkit-transform: scale(0.6, 0.6);
+        -o-transform: scale(0.6, 0.6);
+        -moz-transform: scale(0.6, 0.6);
       opacity: 1;
     }
     100% {
-      transform: scale(1, 1);
-      opacity: 0;
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        opacity: 0;
     }
   }
 
