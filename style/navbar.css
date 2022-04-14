@@ -285,6 +285,7 @@ a{
     top: 0.1%;
     right: 2%;
     font-size: 0 !important;
+    display: block !important;
 }
 
 .goog-te-gadget select{

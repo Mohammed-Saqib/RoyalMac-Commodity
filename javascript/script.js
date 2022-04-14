@@ -581,7 +581,7 @@ gsap.from(mybutton, {duration : 2, y : -30, repeat: -1, repeatDelay : 3, ease : 
 // language coding 
 
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'es,de,fr',autoDisplay: false, layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
 }
 
 // ------------custom language selection box coding-------------------------------
