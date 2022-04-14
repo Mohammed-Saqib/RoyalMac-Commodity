@@ -581,77 +581,68 @@ gsap.from(mybutton, {duration : 2, y : -30, repeat: -1, repeatDelay : 3, ease : 
 // language coding 
 
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-  }
+    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+}
 
-  function triggerHtmlEvent(element, eventName) {
-    var event;
-    if (document.createEvent) {
-      event = document.createEvent('HTMLEvents');
-      event.initEvent(eventName, true, true);
-      element.dispatchEvent(event);
-    } else {
-      event = document.createEventObject();
-      event.eventType = eventName;
-      element.fireEvent('on' + event.eventType, event);
-    }
-  }
+// ------------custom language selection box coding-------------------------------
 
-  const procedureAttr = document.getElementById('railPurchase');
-  const goToContactUs = document.getElementById('onClkToContact');
+// const procedureAttr = document.getElementById('railPurchase');
+// const goToContactUs = document.getElementById('onClkToContact');
+
+// document.getElementById('lang').addEventListener('change', function(e){
+//     e.preventDefault();
+//     if(this.value == 'en'){
+//         procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
+//         goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');        
+//    }           
+//   if(this.value == 'de' ) {
+//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|de)');
+//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+//    }
+//   if(this.value == 'fr' ) {
+//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|fr)');
+//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+//    }
+//   if(this.value == 'es' ) {
+//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|es)');
+//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
+//    }
+// })
+
+
+// $(document).ready(function(){
+//     var theLang;
+//     var attr; 
+//     $("#lang").change(function (e){ 
+//         e.preventDefault();       
+//         // document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
+        
+//           theLang = $(this).val();
  
-document.getElementById('lang').addEventListener('change', function(){
-    if(this.value == 'en'){
-        procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
-        goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-        
-   }           
-  if(this.value == 'en' ) {
-      procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
-      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-   }
-  if(this.value == 'de' ) {
-      procedureAttr.setAttribute('href','procedure.html#googtrans(en|de)');
-      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-   }
-  if(this.value == 'fr' ) {
-      procedureAttr.setAttribute('href','procedure.html#googtrans(en|fr)');
-      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-   }
-  if(this.value == 'es' ) {
-      procedureAttr.setAttribute('href','procedure.html#googtrans(en|es)');
-      goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-   }
-})
+//            if(theLang == 'en'){
+//                 attr = "#googtrans(en|en)"
+//                 jQuery('.goog-te-combo').val(theLang);
+//            }           
+//           if(theLang == 'en' ) {
+//               attr = "#googtrans(en|en)"
+//               jQuery('.goog-te-combo').val(theLang);
+//            }
+//           if(theLang == 'de' ) {
+//               attr = "#googtrans(en|de)"
+//               jQuery('.goog-te-combo').val(theLang);
+//            }
+//           if(theLang == 'fr' ) {
+//               attr = "#googtrans(en|fr)"
+//               jQuery('.goog-te-combo').val(theLang);
+//            }
+//           if(theLang == 'es' ) {
+//               attr = "#googtrans(en|es)"
+//               jQuery('.goog-te-combo').val(theLang);
+//            }
 
-
-$(document).ready(function(){
-    var theLang;
-    var attr;   
-    $("#lang").change(function (e){ 
-        e.preventDefault();       
-        document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
-        
-          theLang = $(this).val();
-           if(theLang == 'en'){
-                attr = "#googtrans(en|en)"
-           }           
-          if(theLang == 'en' ) {
-              attr = "#googtrans(en|en)"
-           }
-          if(theLang == 'de' ) {
-              attr = "#googtrans(en|de)"
-           }
-          if(theLang == 'fr' ) {
-              attr = "#googtrans(en|fr)"
-           }
-          if(theLang == 'es' ) {
-              attr = "#googtrans(en|es)"
-           }
-
-	    jQuery('.goog-te-combo').val(theLang);
+// 	    // jQuery('.goog-te-combo').val(theLang);
        
-	  window.location = attr;
-	  location.reload();
-    });
-});
+// 	  window.location = attr;
+// 	  location.reload();
+//     });
+// });

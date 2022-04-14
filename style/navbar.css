@@ -259,7 +259,9 @@ a{
     -o-transform: scale(0.91);
 }
 
-#lang{
+/* custom langauge selection box coding */
+
+/* #lang{
     position: absolute;
     top: 0.1%;
     right: 2%;
@@ -276,7 +278,36 @@ a{
     -o-animation: bgPos 2s linear infinite;
     -webkit-animation: bgPos 2s linear infinite;
     -moz-animation: bgPos 2s linear infinite;
+} */
+
+.goog-te-gadget{
+    position: absolute;
+    top: 0.1%;
+    right: 2%;
+    font-size: 0 !important;
 }
+
+.goog-te-gadget select{
+    border: 1px solid rgba(0,0,0,0.6);
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(147,142,142,1) 100%);
+    background-size: 200% 100%;
+    animation: bgPos 2s linear infinite;
+    -o-animation: bgPos 2s linear infinite;
+    -webkit-animation: bgPos 2s linear infinite;
+    -moz-animation: bgPos 2s linear infinite;
+}
+
+.skiptranslate.goog-te-gadget span{
+    display: none !important;
+}
+
+
 #goog-gt-tt{
     display: none !important;
 }
