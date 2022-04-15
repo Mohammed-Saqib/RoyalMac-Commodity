@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
     background: url(../Images/body-image.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
