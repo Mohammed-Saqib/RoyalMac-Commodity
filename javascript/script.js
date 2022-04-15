@@ -85,10 +85,13 @@ ScrollTrigger.defaults({
     // scrub : true,
 })
 
-gsap.from('#construction', {scrollTrigger : {
-        trigger : '#construction',
-},scale : 0.6, opacity:0.6, duration: 1.5,})
-
+ScrollTrigger.matchMedia({
+    "(min-width : 1000px)" : function(){
+        gsap.from('#construction', {scrollTrigger : {
+                trigger : '#construction',
+        },scale : 0.6, opacity:0.6, duration: 1.5,})
+    }
+})
 
 //--------------animation for Confidential on scroll-------------------------------//
  gsap.from('.up-pro',{scrollTrigger : {
