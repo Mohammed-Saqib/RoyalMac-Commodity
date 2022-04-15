@@ -89,6 +89,12 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 } */
+.pop-p{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
 .pop-sub{
   width: 94px;

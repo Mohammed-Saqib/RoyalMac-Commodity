@@ -20,6 +20,7 @@
         <div class="contact-navbar">
             <div class="logo"><img src="./Images/logo.svg" alt="RoyalMac Logo"></div>
             <a href="./index.html" class="back-to-home clr-black">&#x2190; Back</a>
+            <div id="google_translate_element" class="lang"></div>
         </div>
         <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="./Images/go-up1.png" alt="Arrow up" style="width:40px;height:40px;"></div>
         <div class="c-body-container">
@@ -268,9 +269,9 @@
 //-------------------------------------------------------language coding------------------------------------------------------------------------------------- 
 
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
   }
-window.location.reload
+
     </script>
 </body>
 

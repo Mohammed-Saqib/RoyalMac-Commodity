@@ -77,25 +77,34 @@ setTimeout(function(){
 },2500)
 
 
-// welcome message animation code
-// const timeline = gsap.timeline({defaults: {duration : 3 }, onComplete : startAnimation})
-// timeline
-// .from('.crousel-content',{opacity : 0, ease : 'power3.in'},'<-1')
-// .from('.crousel-content h1',{opacity : 0, delay:3, scale: 0, duration:2, ease : 'power3.out'},'<-1')
-// .to('.crousel-content h1',{opacity : 0, delay:2, scale: 0, duration: 3, ease : 'power3.out'})
-// .to('.crousel-content',{opacity : 1, duration: 3, opacity : 0, ease : 'power3.out'},'<1');
+//--------------animation for business group on scroll-------------------------------//
+gsap.registerPlugin(ScrollTrigger);
 
-const t4 = new gsap.timeline({repeat : -1, repeatDelay : 10})
-t4
-.to('#construction', {scale: 0.8})
-.from('#construction', {y : -250, ease : 'elastic.out', duration: 2,})
-// .to('#construction', {rotateY: '360deg', ease : 'power3.in', delay:2, duration: 3, stagger : {
-//     each : 1,
-// }})
-// .to('#construction', {y:-200, ease : 'power3.in', scale: 0.8, duration: 1, stagger : {
-//     each : 1,
-// }})
+ScrollTrigger.defaults({
+    toggleActions: "restart none restart none",    // default actions for all
+    // scrub : true,
+})
 
+gsap.from('#construction', {scrollTrigger : {
+        trigger : '#construction',
+},scale : 0.6, opacity:0.6, duration: 1.5,})
+
+
+//--------------animation for Confidential on scroll-------------------------------//
+ gsap.from('.up-pro',{scrollTrigger : {
+     trigger : '.up-pro',
+ },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+
+ gsap.from('.pro-vol',{scrollTrigger : {
+     trigger : '.pro-vol',
+ },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+
+ //----------------------CEO Message Animation OnScroll---------------------------//
+ gsap.from('.announcement',{scrollTrigger : {
+     trigger : '.announcement',
+ },scale : 0.7, opacity:0, duration: 1, ease : 'power3.out'})
+
+ //----------------------navbar navigations on click---------------------------//
 const nImport = document.getElementById('nImport');
 const nBusCon = document.getElementById('nBusCon');
 const nJoinV = document.getElementById('nJoinV');
@@ -621,28 +630,42 @@ function googleTranslateElementInit() {
  
 //            if(theLang == 'en'){
 //                 attr = "#googtrans(en|en)"
-//                 jQuery('.goog-te-combo').val(theLang);
 //            }           
 //           if(theLang == 'en' ) {
 //               attr = "#googtrans(en|en)"
-//               jQuery('.goog-te-combo').val(theLang);
 //            }
 //           if(theLang == 'de' ) {
 //               attr = "#googtrans(en|de)"
-//               jQuery('.goog-te-combo').val(theLang);
 //            }
 //           if(theLang == 'fr' ) {
 //               attr = "#googtrans(en|fr)"
-//               jQuery('.goog-te-combo').val(theLang);
 //            }
 //           if(theLang == 'es' ) {
 //               attr = "#googtrans(en|es)"
-//               jQuery('.goog-te-combo').val(theLang);
 //            }
 
-// 	    // jQuery('.goog-te-combo').val(theLang);
+	    // jQuery('.goog-te-combo').val(theLang);
        
 // 	  window.location = attr;
 // 	  location.reload();
 //     });
 // });
+
+
+    $(window).on('load', function() {
+        googleTranslateElementInit();
+        $('.goog-te-gadget').html($('.goog-te-gadget').children());
+
+        function cleartimer() {     
+            setTimeout(function(){ 
+                window.clearInterval(myVar); 
+            }, 500);             
+        }
+        function myTimer() {
+            if ($('.goog-te-combo option:first').length) {
+                $('.goog-te-combo option:first').html('Language');
+                cleartimer();
+            }
+        }
+        var myVar = setInterval(function(){ myTimer() }, 0);
+});
