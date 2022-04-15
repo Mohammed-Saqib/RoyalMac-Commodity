@@ -82,7 +82,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
     toggleActions: "restart none restart none",    // default actions for all
-    scrub : true,
+    // scrub : true,
 })
 
 gsap.from('#construction', {scrollTrigger : {
