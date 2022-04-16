@@ -27,7 +27,8 @@
 
 :root{
  --black: #000;
- --goldColor : goldenrod;
+ /* --goldColor : goldenrod; */
+ --goldColor : #C3996B;
  --whiteColor : #FFFF;
  --greenColor : rgb(52, 148, 52);
  --darkWhite1 : #f9f9f9;

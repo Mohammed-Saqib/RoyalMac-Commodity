@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Images/logo.svg">
-    <link rel="stylesheet" href="./style/navbar.css">
-    <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/procedure.css">
-    <link rel="stylesheet" href="./style/group.css">
-    <link rel="stylesheet" href="./style/contactUs.css">
+    <link rel="icon" href="../Images/logo.svg">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footerLinks.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/procedure.css">
+    <link rel="stylesheet" href="../style/informations.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>RoyalMac</title>
 </head>
 
 <body>
-    <div class="contact-container">
-        <div class="contact-navbar">
-            <div class="logo"><img src="./Images/logo.svg" alt="RoyalMac Logo"></div>
-            <a href="./index.html" class="back-to-home clr-black">&#x2190; Back</a>
-            <div id="google_translate_element" class="lang"></div>
+    <div class="informations-container">
+        <div class="informations-navbar">
+            <div class="logo"><img src="../Images/logo.svg" alt="RoyalMac Logo"></div>
+            <a href="../index.html" class="back-to-home clr-black">&#x2190; Back</a>
+            <!-- <div id="google_translate_element" class="lang"></div> -->
         </div>
-        <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="./Images/go-up1.png" alt="Arrow up" style="width:40px;height:40px;"></div>
+        <div onclick="topFunction()" id="myBtn" title="Go to top"><img src="../Images/go-up1.png" alt="Arrow up"
+                style="width:40px;height:40px;"></div>
         <div class="c-body-container">
-            <div class="contact-body">
-                <div class="contact-header"><h1>Heavy Metal Scrap Used Rails R50 &#8211; R65 Second quality</h1></div>
+            <div class="informations-body">
+                <div class="informations-header">
+                    <h1>Heavy Metal Scrap Used Rails R50 &#8211; R65 Second quality</h1>
+                </div>
                 <div class="c-para">
                     <div class="c-heading">
                         <h3>How to Find Heavy Metal Scrap Rails ISRI R50 &#8211; R65</h3>
@@ -138,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="informations-form">
                 <div class="co-reason">
                     <div class="c-heading">
                         <h3><b>CUSTOMER DOUBTS ABOUT ROYALMAC RAIL SUPPLY IN GLOBALLY</b></h3>
@@ -176,103 +179,33 @@
             </div>
         </div>
 
+        <div class="footerLinks">
+            <div class="fLinks-heading">Links</div>
+            <span class="line"></span>
+            <div class="fLinks-container">
+                <div class="fLinkContent fLinkLeft">
+                    <a href="../informations/heavyMetal.html" class="fLinks">&#x2192;&nbsp;Heavy Metal Scrap Used Rails
+                        R50&#8211;R65 Second quality</a>
+                    <a href="../informations/usedScrap.html" class="fLinks">&#x2192;&nbsp;Used and Scrap Rail line
+                        track</a>
+                </div>
+                <div class="fLinkContent fLinkcenter">
+                    <a href="../informations/investment.html" class="fLinks">&#x2192;&nbsp;Investment Opportunity in India</a>
+                </div>
+                <div class="fLinkContent fLinkRight">
+                    <a href="../informations/businessPartnership.html" class="fLinks">&#x2192;&nbsp;Business Partnership</a>
+                </div>
+            </div>
+        </div>
 
         <div class="footer">
-            <img src="./Images/logo.svg" alt="logo">
+            <img src="../Images/logo.svg" alt="logo">
             <p class="footer-text">@CopyRight 2022 All Rights Reserved to RoyalMac</p>
         </div>
     </div>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-        const name = document.getElementById('name');
-        const email = document.getElementById('email');
-        const txtArea = document.getElementById('txtArea');
-        const eName = document.getElementById('eName');
-        const eEmail = document.getElementById('eEmail');
-        const eDes = document.getElementById('eDes');
-        const form = document.getElementById('form');
-        eName.textContent = "";
-        eEmail.textContent = "";
-        eDes.textContent = "";
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (name.value == "") {
-                eName.textContent = " Please enter your name.";
-                return
-            } else if (email.value == "") {
-                eEmail.textContent = " Please enter your email. ";
-                return
-            } else if (txtArea.value == "") {
-                eDes.textContent = " Please enter your massge here.";
-                return
-            } else {
-                // console.log(name.value + " " + email.value + " " + txtArea.value);
-                $(document).ready(function () {
-                    $("#button").addClass("onclic");
-                    validate();
-                    function validate() {
-                        setTimeout(function () {
-                            $("#button").removeClass("onclic");
-                            $("#button").addClass("validate");
-                            callback();
-                        }, 2250);
-                    }
-                    function callback() {
-                        setTimeout(function () {
-                            $("#button").removeClass("validate");
-                            form.reset()
-                        }, 1250);
-                    }
-                });
-            }
-        });
-
-        name.addEventListener('blur', function (e) {
-            e.preventDefault();
-            const nameregex = /^[a-zA-Z\s]+$/;
-            if (nameregex.test(name.value) === false) {
-                eName.textContent = " Please enter a valid name contain only Alphabet. ";
-                this.textContent = "";
-                this.focus();
-            } else {
-                eName.textContent = "";
-            }
-        });
-
-        email.addEventListener('blur', function (e) {
-            e.preventDefault();
-            const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            if (emailregex.test(email.value) === false) {
-                eEmail.textContent = "Please enter a valid email address similar to ([a-zA-Z][1-9]@gmail.com)";
-                email.textContent = "";
-                email.focus();
-            } else {
-                eEmail.textContent = "";
-            }
-        });
-
-        //---------------go to top coding-------------------------------//
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "flex";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        function topFunction(){
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-//-------------------------------------------------------language coding------------------------------------------------------------------------------------- 
-
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-  }
-
-    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../javascript/informations.js"></script>
 </body>
 
 </html>
