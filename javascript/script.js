@@ -77,30 +77,40 @@ setTimeout(function(){
 },2500)
 
 
-//--------------animation for business group on scroll-------------------------------//
-gsap.registerPlugin(ScrollTrigger);
+window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  });
 
-ScrollTrigger.defaults({
-    toggleActions: "restart none restart none",    // default actions for all
-    // scrub : true,
-})
+// //--------------animation for business group on scroll-------------------------------//
+// gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.matchMedia({
-    "(min-width : 1000px)" : function(){
-        gsap.from('#construction', {scrollTrigger : {
-                trigger : '#construction',
-        },scale : 0.6, opacity:0.6, duration: 1.5,})
-    }
-})
+// ScrollTrigger.defaults({
+//     toggleActions: "restart none restart none",    // default actions for all
+//     // scrub : true,
+// })
 
-//--------------animation for Confidential on scroll-------------------------------//
- gsap.from('.up-pro',{scrollTrigger : {
-     trigger : '.up-pro',
- },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+// ScrollTrigger.matchMedia({
+//     "(min-width : 1000px)" : function(){
+//         gsap.from('#construction', {scrollTrigger : {
+//                 trigger : '#construction',
+//         },scale : 0.6, opacity:0.6, duration: 1.5,})
+//     }
+// })
 
- gsap.from('.pro-vol',{scrollTrigger : {
-     trigger : '.pro-vol',
- },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+// //--------------animation for Project Volume on scroll-------------------------------//
+//  gsap.from('.up-pro',{scrollTrigger : {
+//      trigger : '.up-pro',
+//  },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+
+//  gsap.from('.pro-vol',{scrollTrigger : {
+//      trigger : '.pro-vol',
+//  },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
+
 
  //----------------------CEO Message Animation OnScroll---------------------------//
  gsap.from('.announcement',{scrollTrigger : {
