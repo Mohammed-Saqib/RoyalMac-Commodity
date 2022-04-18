@@ -5,6 +5,8 @@
     overflow: hidden;
     position: relative;
     background-color: var(--darkWhite2);
+    
+    margin-top: 100px;
 }
 
 /* .crousel-img{
@@ -198,6 +200,9 @@ marquee{
     background: linear-gradient(180deg, var(--greenColor) 50%, var(--goldColor) 50%);
     border-radius: 25px;
     animation: rot 2s infinite ease-out;
+    -webkit-animation: rot 2s infinite ease-out;
+    -moz-animation: rot 2s infinite ease-out;
+    -o-animation: rot 2s infinite ease-out;
 }
 
 .box::after {
@@ -327,6 +332,12 @@ stroke-dasharray: 631px;
     }
     to{
         fill: #C3996B;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .crousel{
+        margin-top: 80px !important;
     }
 }
 

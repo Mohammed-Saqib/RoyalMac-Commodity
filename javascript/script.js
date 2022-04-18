@@ -86,36 +86,13 @@ window.addEventListener('load', () => {
     })
 });
 
-// //--------------animation for business group on scroll-------------------------------//
-// gsap.registerPlugin(ScrollTrigger);
+//--------------------------------------sticky navbar---------------------------------------------------//
 
-// ScrollTrigger.defaults({
-//     toggleActions: "restart none restart none",    // default actions for all
-//     // scrub : true,
-// })
-
-// ScrollTrigger.matchMedia({
-//     "(min-width : 1000px)" : function(){
-//         gsap.from('#construction', {scrollTrigger : {
-//                 trigger : '#construction',
-//         },scale : 0.6, opacity:0.6, duration: 1.5,})
-//     }
-// })
-
-// //--------------animation for Project Volume on scroll-------------------------------//
-//  gsap.from('.up-pro',{scrollTrigger : {
-//      trigger : '.up-pro',
-//  },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
-
-//  gsap.from('.pro-vol',{scrollTrigger : {
-//      trigger : '.pro-vol',
-//  },scale : 0.6, opacity:0, duration: 0.8, ease : 'power3.inOut'})
-
-
- //----------------------CEO Message Animation OnScroll---------------------------//
- gsap.from('.announcement',{scrollTrigger : {
-     trigger : '.announcement',
- },scale : 0.7, opacity:0, duration: 1, ease : 'power3.out'})
+window.addEventListener('scroll', function(){
+    const navbar = this.document.querySelector('.navbar')
+    const crousel = this.document.querySelector('.crousel')
+    this.scrollY > 20 ? (navbar.classList.add('sticky') , crousel.style.marginTop = '90px') : (navbar.classList.remove('sticky') , crousel.style.marginTop = '100px') 
+})
 
  //----------------------navbar navigations on click---------------------------//
 const nImport = document.getElementById('nImport');

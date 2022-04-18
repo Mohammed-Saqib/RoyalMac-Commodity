@@ -66,6 +66,19 @@ body[style]{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    color: var(--whiteColor) !important;
+    transition: all 0.2s ease;
+}
+
+.navbar.sticky{
+    height: 90px;
+    background-color: rgba(0,0,0,0.7) !important;
 }
 
 .logo{
@@ -104,10 +117,12 @@ a{
 .menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    /* color: #000; */
     font-size: 16px;
     line-height: 16px;
     position: relative;
+
+    color: var(--whiteColor);
 }
 
 .menu ul li a::after{
@@ -166,15 +181,17 @@ a{
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 5px;
+
 }
 
 .dropdown-content a{
     background-color: var(--whiteColor) !important;
+    color: var(--black) !important;
 }
 
 .content:hover {background-color: var(--darkWhite2); color: var(--goldColor);}
 
-.dropdown-content a:hover {background-color: var(--darkWhite2) !important;}
+.dropdown-content a:hover {background-color: var(--darkWhite2) !important; color: var(--goldColor) !important;}
 
 .dropdown-content a::after{
     display: none;
@@ -248,7 +265,7 @@ a{
     z-index: 99;
     border: none;
     outline: none;
-    color: white;
+    color: var(--whiteColor);
     cursor: pointer;
     border-radius: 50%;
     display: flex;
@@ -290,14 +307,16 @@ a{
 }
 
 .goog-te-gadget select{
-    border: 1px solid rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.8);
+    color: var(--whiteColor) !important;
+    background-color: rgba(0,0,0,0.8);
     outline: none;
     border-radius: 3px;
     font-size: 14px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(147,142,142,1) 100%);
+    background-image: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(147,142,142,1) 100%);
     background-size: 200% 100%;
     animation: bgPos 2s linear infinite;
     -o-animation: bgPos 2s linear infinite;
@@ -338,7 +357,12 @@ a{
     .navbar{
         height: 80px;
         width: 100%;
-        position: relative;
+        position: fixed;
+    }
+
+    .navbar.sticky{
+        height: 80px !important;
+        background-color: rgba(0,0,0,0.7) !important;
     }
     
     .menu{
@@ -347,9 +371,7 @@ a{
         top: 100%;
         left: 0;
         width: 100%;
-        /* background-color: var(--darkWhite1); */
-        /* background-color: rgba(4, 128, 4, 0.7); */
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0,0,0,0.6);
         transition: clip-path 0.5s ease;
         -o-transition: clip-path 0.5s ease;
         -webkit-transition: clip-path 0.5s ease;
@@ -373,8 +395,7 @@ a{
         padding: 5px 10px;
     }
     .menu ul li:hover{
-        /* background-color: var(--darkWhite2); */
-        background-color: rgba(0,0,0,0.75);
+        background-color: rgba(0,0,0,0.6);
     }
 
     .menu ul li a{
