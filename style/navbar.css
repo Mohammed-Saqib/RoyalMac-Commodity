@@ -71,7 +71,7 @@ body[style]{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.8);
     color: var(--whiteColor) !important;
     transition: all 0.2s ease;
 }
@@ -362,7 +362,7 @@ a{
 
     .navbar.sticky{
         height: 80px !important;
-        background-color: rgba(0,0,0,0.7) !important;
+        /* background-color: rgba(0,0,0,0.7) !important; */
     }
     
     .menu{
@@ -395,7 +395,7 @@ a{
         padding: 5px 10px;
     }
     .menu ul li:hover{
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.6) !important;
     }
 
     .menu ul li a{
