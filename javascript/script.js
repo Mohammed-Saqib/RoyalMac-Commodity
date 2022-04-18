@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
       once: false,
       mirror: true,
     })
-  });
+});
 
 // //--------------animation for business group on scroll-------------------------------//
 // gsap.registerPlugin(ScrollTrigger);

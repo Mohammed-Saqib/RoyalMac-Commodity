@@ -80,8 +80,19 @@ eDes.textContent = "";
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-//-------------------------------------------------------language coding------------------------------------------------------------------------------------- 
+//-------------------------------------------------------language coding-------------------------------------------------------//
 
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
   }
+
+    //---------------------------------------------animation on scroll-----------------------------------------------------------//
+
+    window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: false,
+          mirror: true,
+        })
+    });
