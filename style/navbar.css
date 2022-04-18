@@ -373,7 +373,8 @@ a{
         padding: 5px 10px;
     }
     .menu ul li:hover{
-        background-color: var(--darkWhite2);
+        /* background-color: var(--darkWhite2); */
+        background-color: rgba(0,0,0,0.75);
     }
 
     .menu ul li a{
@@ -390,6 +391,9 @@ a{
         color: #000 !important;
         font-size: 14px;
         line-height: 14px;
+    }
+    .dropdown-content a:hover{
+        color: var(--goldColor) !important;
     }
 
     .dropdown-content{
