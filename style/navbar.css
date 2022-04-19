@@ -27,10 +27,12 @@
 
 :root{
  --black: #000;
- /* --goldColor : goldenrod; */
  --goldColor : #C3996B;
  --whiteColor : #FFFF;
- --greenColor : rgb(52, 148, 52);
+ --greenColor : rgba(11, 44, 11,1);
+ --greenTransparent : rgba(11, 44, 11,0.8);
+ --greenTransparent1 : rgba(11, 44, 11,0.7);
+ --greenTransparent2 : rgba(11, 44, 11,0.6);
  --darkWhite1 : #f9f9f9;
  --darkWhite2 : #f1f1f1;
 }
@@ -71,14 +73,15 @@ body[style]{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.8);
+    /* background-color: rgba(0,0,0,0.8); */
+    background-color: var(--greenColor);
     color: var(--whiteColor) !important;
     transition: all 0.2s ease;
 }
 
 .navbar.sticky{
     height: 90px;
-    background-color: rgba(0,0,0,0.7) !important;
+    background-color: var(--greenTransparent);
 }
 
 .logo{
@@ -131,7 +134,8 @@ a{
     width: 0%;
     height: 2px;
     border-radius: 10px;
-    background: var(--greenColor);
+    /* background: var(--greenColor); */
+    background: var(--goldColor);
     top: 100%;
     left: 50%;
     right: 50%;
@@ -164,13 +168,11 @@ a{
     text-align: left;
     /* width: 210px; */
     border-radius: 5px !important;
-    /* background-color: var(--whiteColor) !important; */
     min-width: 160px;
     box-shadow: 0px 8px 16px  rgba(0,0,0,0.2);
     z-index: 5;
     display: none;
-    
-    background-color: rgba(0,0,0,0.6) !important;
+    background-color: var(--greenTransparent1) !important;
 }
 
 .dropdown-content a, .content{
@@ -190,16 +192,14 @@ a{
 }
 
 .dropdown-content a{
-    /* background-color: var(--whiteColor) !important;
-    color: var(--black) !important; */
 
     background-color: transparent !important;
     color: var(--whiteColor);
 }
 
-.content:hover {background-color: rgba(0,0,0,0.6) !important; color: var(--goldColor);}
+.content:hover {background-color: var(--greenTransparent) !important; color: var(--goldColor);}
 
-.dropdown-content a:hover {background-color: rgba(0,0,0,0.6) !important; color: var(--goldColor) !important;}
+.dropdown-content a:hover {background-color: var(--greenTransparent) !important; color: var(--goldColor) !important;}
 
 .dropdown-content a::after{
     display: none;
@@ -317,7 +317,7 @@ a{
 .goog-te-gadget select{
     border: 1px solid rgba(255,255,255,0.8);
     color: var(--whiteColor) !important;
-    background-color: rgba(0,0,0,0.8);
+    background-color: var(--greenColor);
     outline: none;
     border-radius: 3px;
     font-size: 14px;
@@ -370,7 +370,6 @@ a{
 
     .navbar.sticky{
         height: 80px !important;
-        /* background-color: rgba(0,0,0,0.7) !important; */
     }
     
     .menu{
@@ -379,12 +378,13 @@ a{
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: rgba(0,0,0,0.6);
         transition: clip-path 0.5s ease;
         -o-transition: clip-path 0.5s ease;
         -webkit-transition: clip-path 0.5s ease;
         -moz-transition: clip-path 0.5s ease;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+        background-color: var(--greenTransparent2);
     }
 
     .active-menu{
@@ -403,7 +403,7 @@ a{
         padding: 5px 10px;
     }
     .menu ul li:hover{
-        background-color: rgba(0,0,0,0.5) !important;
+        background-color: var(--greenTransparent2) !important;
     }
 
     .menu ul li a{
