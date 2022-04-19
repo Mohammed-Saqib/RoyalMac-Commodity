@@ -66,7 +66,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: var(--greenTransparent2);
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,15 +76,15 @@
     /* display: none; */
     transition: clip-path 0.2s ease !important;
     /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
-    animation: clipAni 9s ease infinite;
+    animation: clipAni 10s ease infinite 2s;
 }
 
 @keyframes clipAni {
-    65%{
+    35%{
         transition: clip-path 0.2s ease !important;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
-    70%{
+    60%{
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     }
     90%{

@@ -24,7 +24,7 @@
     left: -61.5%;
     width: 150%;
     height: 400%;
-    background-color: var(--greenTransparent1);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.5;
     transform: rotate(30deg) !important;
 }
