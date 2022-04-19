@@ -164,17 +164,19 @@ a{
     text-align: left;
     /* width: 210px; */
     border-radius: 5px !important;
-    background-color: var(--whiteColor) !important;
+    /* background-color: var(--whiteColor) !important; */
     min-width: 160px;
     box-shadow: 0px 8px 16px  rgba(0,0,0,0.2);
     z-index: 5;
     display: none;
+    
+    background-color: rgba(0,0,0,0.6) !important;
 }
 
 .dropdown-content a, .content{
     font-size: 16px;
     line-height: 16px;
-    color: black;
+    /* color: black; */
     padding: 10px 16px;
     text-decoration: none;
     display: block;
@@ -182,16 +184,22 @@ a{
     text-transform: uppercase;
     border-radius: 5px;
 
+    color: var(--whiteColor);
+    background-color: transparent !important;
+
 }
 
 .dropdown-content a{
-    background-color: var(--whiteColor) !important;
-    color: var(--black) !important;
+    /* background-color: var(--whiteColor) !important;
+    color: var(--black) !important; */
+
+    background-color: transparent !important;
+    color: var(--whiteColor);
 }
 
-.content:hover {background-color: var(--darkWhite2); color: var(--goldColor);}
+.content:hover {background-color: rgba(0,0,0,0.6) !important; color: var(--goldColor);}
 
-.dropdown-content a:hover {background-color: var(--darkWhite2) !important; color: var(--goldColor) !important;}
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.6) !important; color: var(--goldColor) !important;}
 
 .dropdown-content a::after{
     display: none;
@@ -395,25 +403,25 @@ a{
         padding: 5px 10px;
     }
     .menu ul li:hover{
-        background-color: rgba(0,0,0,0.6) !important;
+        background-color: rgba(0,0,0,0.5) !important;
     }
 
     .menu ul li a{
-        color: #FFF;
+        color: var(--whiteColor) !important;
         font-size: 14px;
         line-height: 14px;
     }
 
-    .menu ul li:hover .menu ul li a{
+    .menu ul li a:hover{
         color: var(--goldColor)!important;
     }
 
     .dropdown-content a, .content{
-        color: #000 !important;
+        color: var(--whiteColor) !important;
         font-size: 14px;
         line-height: 14px;
     }
-    .dropdown-content a:hover{
+    .dropdown-content a:hover, .content:hover{
         color: var(--goldColor) !important;
     }
 

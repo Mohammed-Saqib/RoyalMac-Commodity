@@ -126,7 +126,7 @@ nImport.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content2.className += " unhide";
-    gsap.from(content2, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content2, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 nBusCon.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -134,7 +134,7 @@ nBusCon.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content3.className += " unhide";
-    gsap.from(content3, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content3, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 nJoinV.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -142,7 +142,7 @@ nJoinV.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content4.className += " unhide";
-    gsap.from(content4, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content4, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 nStockist.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -150,7 +150,7 @@ nStockist.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content5.className += " unhide";
-    gsap.from(content5, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content5, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 nTrading.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -158,7 +158,7 @@ nTrading.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content6.className += " unhide";
-    gsap.from(content6, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content6, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 nMerchen.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -166,11 +166,11 @@ nMerchen.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content7.className += " unhide";
-    gsap.from(content7, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content7, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 
-//-----------------Activity Are------------------------->
+//-----------------Activity Area------------------------->
 
 actList1.addEventListener('click', () => {
     let unhide = document.getElementsByClassName('unhide');
@@ -178,7 +178,7 @@ actList1.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content1.className += " unhide";
-    gsap.from(content1, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content1, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 actList2.addEventListener('click', () => {
@@ -187,7 +187,7 @@ actList2.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content2.className += " unhide";
-    gsap.from(content2, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content2, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 actList3.addEventListener('click', () => {
@@ -196,7 +196,7 @@ actList3.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content3.className += " unhide";
-    gsap.from(content3, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content3, { opacity:0, duration : 2, ease : 'power2.inOut' });
 
 });
 
@@ -206,7 +206,7 @@ actList4.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content4.className += " unhide";
-    gsap.from(content4, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content4, { opacity:0, duration : 2, ease : 'power2.inOut' });
 
 });
 
@@ -216,7 +216,7 @@ actList5.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content5.className += " unhide";
-    gsap.from(content5, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content5, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 actList6.addEventListener('click', () => {
@@ -225,7 +225,7 @@ actList6.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content6.className += " unhide";
-    gsap.from(content6, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content6, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 actList7.addEventListener('click', () => {
@@ -234,7 +234,7 @@ actList7.addEventListener('click', () => {
         unhide[0].className =  unhide[0].className.replace(" unhide", "");
     }
     content7.className += " unhide";
-    gsap.from(content7, { opacity:0, duration : 3, ease : 'power2.inOut' });
+    gsap.from(content7, { opacity:0, duration : 2, ease : 'power2.inOut' });
 });
 
 // virtual stockiest card
