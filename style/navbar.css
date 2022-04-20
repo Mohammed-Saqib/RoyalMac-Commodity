@@ -75,7 +75,10 @@ body[style]{
     left: 0;
     background-color: var(--greenColor);
     color: var(--whiteColor) !important;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar.sticky{
