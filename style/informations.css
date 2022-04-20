@@ -228,13 +228,13 @@ button::after{
 .co-right p{
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 12.5px;
     text-align: justify;
 }
 .co-reason p{
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 7.5px;
+    margin-bottom: 10px;
     text-align: justify;
 }
 
