@@ -1,5 +1,5 @@
 .board{
-    margin:50px 0;
+    margin:30px 0;
     /* background-color: var(--darkWhite2); */
     background-color: var(--whiteColor);
     width: 100%;
@@ -26,7 +26,6 @@
 }
 
 .board-of-director{
-    /* outline: 1px solid; */
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -59,7 +58,6 @@
 } */
 
 .brd-card-container{
-    /* outline: 1px solid; */
     margin: 5px 0;
     padding:20px 0;
     width: 80% !important;
