@@ -66,7 +66,8 @@ eDes.textContent = "";
             }
         });
 
-        //---------------go to top coding-------------------------------//
+//-----------------------------------------------go to top coding------------------------------------------------------//
+
         var mybutton = document.getElementById("myBtn");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
@@ -86,7 +87,7 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
   }
 
-    //---------------------------------------------animation on scroll-----------------------------------------------------------//
+//---------------------------------------------animation on scroll-----------------------------------------------------------//
 
     window.addEventListener('load', () => {
         AOS.init({
@@ -95,4 +96,4 @@ function googleTranslateElementInit() {
           once: false,
           mirror: true,
         })
-    });
+});

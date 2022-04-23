@@ -35,6 +35,15 @@ body[style]{
     column-gap: 10px;
 }
 
+.privacy-container{
+    margin: 20px 0;
+    padding: 10px;
+    width: 90%;
+}
+.privacy-body{
+    width: 100%;
+}
+
 .informations-header{
     width: 100%;
     text-align: center;
@@ -319,6 +328,9 @@ button::after{
       #save{
         font-size: 13px;
         line-height: 13px;
+    }
+    .privacy-container{
+        width: 95%;
     }
 }
 
