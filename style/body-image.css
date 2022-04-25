@@ -83,24 +83,26 @@
     -moz-animation: bgPos 2s linear infinite;
 }
 
-.body-image-contain h2{
+.body-image-contain .b-h2{
     margin-top: 30px;
     color: var(--whiteColor);
     border-bottom: 2px solid var(--whiteColor);
     text-align: center;
     font-size: 30px;
     line-height: 40px;
+    font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
     opacity: 0.7;
 }
 
-.body-image-contain  h1{
+.body-image-contain  .b-h1{
     margin-top: 30px;
     color: var(--whiteColor);
     text-align: center;
     font-size: 40px;
     line-height: 45px;
+    font-weight: bolder;
     letter-spacing: 3px;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
@@ -114,37 +116,37 @@
 }
 
 @media screen and (max-width: 750px) {
-    .body-image-contain h1{
+    .body-image-contain .b-h1{
         font-size: 40px;
         line-height: 45px;
     }
 }
 
 @media screen and (max-width: 542px) {
-    .body-image-contain h1{
+    .body-image-contain .b-h1{
         font-size: 45px;
         line-height: 45px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .body-image-contain h1{
+    .body-image-contain .b-h1{
         font-size: 40px;
         line-height: 45px;
     }
-    .body-image-contain h2{
+    .body-image-contain .b-h2{
         font-size: 30px;
        line-height: 40px;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .body-image-contain h1{
+    .body-image-contain .b-h1{
         font-size: 30px;
         line-height: 35px;
     }
 
-    .body-image-contain h2{
+    .body-image-contain .b-h2{
         font-size: 25px;
        line-height: 30px;
     }

@@ -1,3 +1,4 @@
+//----------------------------------Menu Bar Toggle Coding---------------------------------------//
 let speed = 12000;
 let stopingIntervals;
 $(document).ready(function(){
