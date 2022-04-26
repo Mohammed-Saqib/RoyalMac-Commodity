@@ -9,16 +9,6 @@
     margin-top: 100px;
 }
 
-/* .crousel-img{
-    width: 100%; height: 100%;
-} */
-
-/* .crousel-img img{
-    width: 100%; height: 100%; 
-    object-fit: cover; 
-    object-position: top;
-}  */
-
 @font-face {
     font-family: "style";
     src: url(../fonts/CinzelDecorative-Bold.ttf);
@@ -37,21 +27,6 @@
 .no-wait{
     display: none !important;
 }
-
-/* .crousel-head h1{
-    font-family: style, sans-serif;
-    font-size: 80px;
-    line-height: 90px;
-    font-weight: 900;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(199,204,207,1) 9%, rgba(255,255,255,1) 17%);
-    background-size: 200% 100%;
-    animation: bgPos 1s linear infinite;
-    -webkit-animation: bgPos 1s linear infinite;
-    -moz-animation: bgPos 1s linear infinite;
-} */
 
 .slide{
     position: absolute;
@@ -95,48 +70,6 @@
     }
 }
 
-
-/* .crousel-content{
-    z-index: 2;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* top: 75%;
-    left: 50%;
-    transform: translate(-75%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%); 
-} */
-
-/* .crousel-content h1{
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-75%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    /* font-family: 'Prompt', serif; 
-    font-size: 70px;
-    line-height: 70px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center;
-    color: var(--whiteColor);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(199,204,207,1) 9%, rgba(255,255,255,1) 17%);
-    background-size: 200% 100%;
-    animation: bgPos 1s linear infinite;
-    -webkit-animation: bgPos 1s linear infinite;
-    -moz-animation: bgPos 1s linear infinite;
-    overflow: hidden;
-    /* position: relative;ss 
-} */
 
 .company-info{
     width: 100%;
