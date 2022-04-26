@@ -11,7 +11,7 @@
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     -moz-transition: all 1s ease;
-    background: url(../Images/body-image.jpg) no-repeat;
+    background: url(../Images/body-image.webp) no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
