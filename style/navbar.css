@@ -304,7 +304,6 @@ a{
     display: flex !important;
     align-items: center;
     column-gap: 5px;
-    display: none !important;
 }
 
 .viewing-profile{
