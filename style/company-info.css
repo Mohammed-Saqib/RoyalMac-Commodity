@@ -9,6 +9,7 @@
 }
 .company-info-container{
     width: 80%;
+    padding: 10px;
     overflow: hidden;
 }
 .cmp-info{
@@ -90,7 +91,7 @@
         }
     .company-info-container{
         width: 95%;
-        padding: 10px;
+        padding: 0;
     }
     .cmp-info{
        padding: 10px;
@@ -101,6 +102,9 @@
     }
     .company-msg-content{
         width: 95%;
+    }
+    .company-msg{
+        row-gap: 15px;
     }
     .c-msg-para{
         font-size: 16px;
