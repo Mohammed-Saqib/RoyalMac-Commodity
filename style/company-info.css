@@ -7,15 +7,18 @@
     align-items: center;
     justify-content: center;
 }
-.cmp-info{
+.company-info-container{
+    outline: 1px solid;
     width: 80%;
+    overflow: hidden;
+}
+.cmp-info{
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.8);
     max-height: 50%;
     text-align: justify;
-    overflow: hidden;
 }
 .company-msg-content{
     width: 80%;
@@ -61,13 +64,13 @@
     .company-info{
             margin: 35px 0;
     }
-    
+    .company-info-container{
+        width: 90%;
+    }
     .cmp-info{
-        width: 90% !important;
         font-size: 18px;
        line-height: 22px;
        text-align: justify;
-       overflow: hidden;
     }
 
     #lineBreak::before{
@@ -86,11 +89,14 @@
     .company-info{
             margin: 30px 0;
         }
-    .cmp-info{
+    .company-info-container{
         width: 95%;
         padding: 10px;
-        max-height: 80%;
-        font-size: 16px;
+    }
+    .cmp-info{
+       padding: 10px;
+       max-height: 80%;
+       font-size: 16px;
        line-height: 22px;
        text-align: justify;
     }
