@@ -65,7 +65,7 @@ const team = [
     },
     {
         name:"Mr. M. Saqib",
-        email : "info@royal-mac.com",
+        email : "sq@royal-mac.com",
         designation : "Web Developer",
         country: "India",
         image: './Images/maps/india.png',
@@ -93,6 +93,14 @@ const team = [
         designation : "Accountant",
         country: "Dubai",
         image: './Images/maps/dubai.png',
+        phone:'123456789',
+    },
+    {
+        name:"Mr. Santosh",
+        email : "sh@royal-mac.com",
+        designation : "SEO Specialist",
+        country: "India",
+        image: './Images/maps/india.png',
         phone:'123456789',
     },
 ];

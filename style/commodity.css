@@ -2,21 +2,20 @@
     margin-top: 30px;
 }
 .commodity{
-    margin:70px 0 50px 0;
-    background-color: var(--whiteColor);
+    margin:50px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    overflow: hidden;  
 }
 
 .cm-heading{
+    color: var(--greenColor);
     font-size: 28px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .cm-heading:hover{
@@ -27,43 +26,21 @@
 }
 
 .cm-content{
-    width: 80% !important;
-    /* display: grid;
+    width: 80%;
+    padding: 10px;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px; */
-    overflow: hidden !important;
+    gap: 80px 20px;
 }
 
 .cm-card{
-    height: 380px !important;
+    height: 380px;
     position: relative;
-    border-radius: 0 50px 0 50px;
-    overflow: hidden !important;
-    background-color: var(--darkWhite2);
-    margin-bottom: 25px;
-    cursor: pointer;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-.cm-img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 0 50px 0 50px;
-}
-
-.cm-img img{
-    /* width: 100%; 
-    object-fit: cover;
-    object-position: center; */
-    min-width: 100%;
-    vertical-align : middle;
-    display: inline-block;
-    height: 100% !important;
-}
-
-.cm-card-content{
+.cm-ani-content{
     position: absolute;
-    color: var(--whiteColor);
     width: 100%;
     height: 100%;
     top: 0;
@@ -71,17 +48,14 @@
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
-    border-radius: 0 50px 0 50px;
-    overflow: hidden !important;
-    /* display: none; */
     transition: clip-path 0.2s ease !important;
-    /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
-    animation: clipAni 10s ease infinite 2s;
+    animation: clipAni 10s ease-in-out infinite 2s;
+    overflow: hidden;
 }
-
 @keyframes clipAni {
     35%{
         transition: clip-path 0.2s ease !important;
@@ -97,70 +71,122 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
 }
-
-.cm-card-heading{
-    font-size: 22px;
-    line-height: 22px;
+.cm-ani-content h1{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 25px;
-    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.1), 2px 2px 2px rgba(255, 255, 255, 0.1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(0, 0, 0,1) 10%, rgba(255,255,255,0.9) 20%);
+    background-size: 200% 100%;
+    animation: bgPos 2s linear infinite;
+    -o-animation: bgPos 2s linear infinite;
+    -webkit-animation: bgPos 2s linear infinite;
+    -moz-animation: bgPos 2s linear infinite;
 }
 
+.cm-card:nth-child(1) ,.cm-card:nth-child(1) .cm-img , .cm-card:nth-child(1) .cm-card-content, .cm-card:nth-child(1) .cm-ani-content{
+    border-radius: 50px 0px 0 0px;
+}
+.cm-card:nth-child(2) ,.cm-card:nth-child(2) .cm-img , .cm-card:nth-child(2) .cm-card-content , .cm-card:nth-child(2) .cm-ani-content{
+    border-radius: 50px 0px 0 0px;
+}
+.cm-card:nth-child(3) ,.cm-card:nth-child(3) .cm-img , .cm-card:nth-child(3) .cm-card-content , .cm-card:nth-child(3) .cm-ani-content{
+    border-radius: 50px 0px 0 0px;
+}
+.cm-card:nth-child(4) ,.cm-card:nth-child(4) .cm-img , .cm-card:nth-child(4) .cm-card-content , .cm-card:nth-child(4) .cm-ani-content{
+    border-radius: 0px 50px 0 0px;
+}
+.cm-card:nth-child(5) ,.cm-card:nth-child(5) .cm-img , .cm-card:nth-child(5) .cm-card-content , .cm-card:nth-child(5) .cm-ani-content{
+    border-radius: 0px 50px 0 0px;
+}
+.cm-card:nth-child(6) ,.cm-card:nth-child(6) .cm-img , .cm-card:nth-child(6) .cm-card-content , .cm-card:nth-child(6) .cm-ani-content{
+    border-radius: 0px 50px 0 0px;
+}
+
+.cm-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cm-img img{
+    width: 100%;
+    display: inline-block;
+    vertical-align : middle;
+    height: 100% !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cm-card-content{
+    width: 90%;
+    height: 30%;
+    background-color: var(--whiteColor);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cm-card:hover .cm-card-content{
+    background-color: var(--darkWhite1);
+}
 .cm-info{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
-    margin: 7px 0 0 25px;
+    font-weight: 400;
+    text-align: center;
+}
+.cm-card-heading{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cm-card:hover .cm-card-heading{
+    color: var(--goldColor);
 }
 
-/* .cm-card:hover .cm-card-content{
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-} */
+@media screen and (max-width: 1200px){
+    .cm-content{
+        width: 90%;
+    }
+}
 
-@media screen and (max-width:1500px) {
-    .cm-card-heading{
-        font-size: 18px;
+@media screen and (max-width: 750px){
+    .cm-info{
+        font-size: 12px;
         line-height: 20px;
     }
-    
-    .cm-info{
-        font-size: 16px;
-        line-height: 18px;
-    }
 }
 
-@media screen and (max-width:1000px) {
-    .cm-card-heading{
-        font-size: 20px;
+@media screen and (max-width: 350px){
+    .cm-content{
+        width: 95%;
+        grid-template-columns: auto;
+        gap: 80px 0px;
+    }
+    .cm-heading{
+        font-size: 14px;
         line-height: 20px;
     }
-    
-    .cm-info{
-        font-size: 17px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (max-width:600px) {
     .cm-card-heading{
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 20px; 
     }
-    
     .cm-info{
-        font-size: 18px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .cm-card-heading{
-        font-size: 18px;
-        line-height: 20px;
-    }
-    
-    .cm-info{
-        font-size: 16px;
+        font-size: 10px;
         line-height: 18px;
     }
 }

@@ -64,6 +64,7 @@ $(document).ready(function () {
     });
 });
 
+//-----------------------------------Carousel Animation On Images As Slides----------------------------------//
 function startAnimation() {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { duration: 4 } })
     tl
@@ -72,7 +73,7 @@ function startAnimation() {
         .from('.slide3', { opacity: 0, ease: 'power3.out' })
 }
 
-
+//-----------------------------------Carousel Text -> Royalmac Animation Time Duration----------------------------------//
 setTimeout(function () {
     $(document).ready(function () {
         $('.slide').each(function (index, value) {
@@ -83,7 +84,7 @@ setTimeout(function () {
     startAnimation();
 }, 2500)
 
-
+//-----------------------------AOS Library Animation Start------------------------------------------//
 window.addEventListener('load', () => {
     AOS.init({
         duration: 1000,
@@ -102,237 +103,105 @@ window.addEventListener('scroll', function () {
 })
 
 //----------------------navbar navigations on click---------------------------//
-const nImport = document.getElementById('nImport');
-const nBusCon = document.getElementById('nBusCon');
-const nJoinV = document.getElementById('nJoinV');
-const nStockist = document.getElementById('nStockist');
-const nMerchen = document.getElementById('nMerchen');
-const nTrading = document.getElementById('nTrading');
+const nwwr = document.getElementById('nwwr');
+const nwwd = document.getElementById('nwwd');
+const nsss = document.getElementById('nsss');
+nwwr.addEventListener('click', () => {
+    gsap.from('#wwr', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nwwd.addEventListener('click', () => {
+    gsap.from('#wwd', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nsss.addEventListener('click', () => {
+    gsap.from('#sss', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
 
-let actList1 = document.querySelector('.list1');
-let actList2 = document.querySelector('.list2');
-let actList3 = document.querySelector('.list3');
-let actList4 = document.querySelector('.list4');
-let actList5 = document.querySelector('.list5');
-let actList6 = document.querySelector('.list6');
-let actList7 = document.querySelector('.list7');
 
-let content1 = document.querySelector('.content-1');
-let content2 = document.querySelector('.content-2');
-let content3 = document.querySelector('.content-3');
-let content4 = document.querySelector('.content-4');
-let content5 = document.querySelector('.content-5');
-let content6 = document.querySelector('.content-6');
-let content7 = document.querySelector('.content-7');
+// const nImport = document.getElementById('nImport');
+// const nBusCon = document.getElementById('nBusCon');
+// const nJoinV = document.getElementById('nJoinV');
+// const nStockist = document.getElementById('nStockist');
+// const nMerchen = document.getElementById('nMerchen');
+// const nTrading = document.getElementById('nTrading');
+
+// let actList1 = document.querySelector('.list1');
+// let actList2 = document.querySelector('.list2');
+// let actList3 = document.querySelector('.list3');
+// let actList4 = document.querySelector('.list4');
+// let actList5 = document.querySelector('.list5');
+// let actList6 = document.querySelector('.list6');
+// let actList7 = document.querySelector('.list7');
+
+// let content1 = document.querySelector('.content-1');
+// let content2 = document.querySelector('.content-2');
+// let content3 = document.querySelector('.content-3');
+// let content4 = document.querySelector('.content-4');
+// let content5 = document.querySelector('.content-5');
+// let content6 = document.querySelector('.content-6');
+// let content7 = document.querySelector('.content-7');
 
 // ----------------------Navbar Area To Activity Area ---------------
 
-nImport.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content2.className += " unhide";
-    gsap.from(content2, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-nBusCon.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content3.className += " unhide";
-    gsap.from(content3, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-nJoinV.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content4.className += " unhide";
-    gsap.from(content4, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-nStockist.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content5.className += " unhide";
-    gsap.from(content5, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-nTrading.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content6.className += " unhide";
-    gsap.from(content6, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-nMerchen.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content7.className += " unhide";
-    gsap.from(content7, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
+// nImport.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content2.className += " unhide";
+//     gsap.from(content2, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
+// nBusCon.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content3.className += " unhide";
+//     gsap.from(content3, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
+// nJoinV.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content4.className += " unhide";
+//     gsap.from(content4, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
+// nStockist.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content5.className += " unhide";
+//     gsap.from(content5, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
+// nTrading.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content6.className += " unhide";
+//     gsap.from(content6, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
+// nMerchen.addEventListener('click', () => {
+//     let unhide = document.getElementsByClassName('unhide');
+//     if (unhide.length > 0) {
+//         unhide[0].className = unhide[0].className.replace(" unhide", "");
+//     }
+//     content7.className += " unhide";
+//     gsap.from(content7, { opacity: 0, duration: 2, ease: 'power2.inOut' });
+// });
 
 
-//-----------------Activity Area------------------------->
+//------------------------------------------------Activity Area-------------------------------------------------------//
+//deleted
 
-actList1.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content1.className += " unhide";
-    gsap.from(content1, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
+//----------------------------------------------virtual stockiest card--------------------------------------------------------//
+//deleted
 
-actList2.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content2.className += " unhide";
-    gsap.from(content2, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
+//------------------------------------------Commodity Content Coding---------------------------------------------//
+//deleted
 
-actList3.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content3.className += " unhide";
-    gsap.from(content3, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-
-});
-
-actList4.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content4.className += " unhide";
-    gsap.from(content4, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-
-});
-
-actList5.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content5.className += " unhide";
-    gsap.from(content5, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-
-actList6.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content6.className += " unhide";
-    gsap.from(content6, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-
-actList7.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('unhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" unhide", "");
-    }
-    content7.className += " unhide";
-    gsap.from(content7, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-});
-
-// virtual stockiest card
-let actLists1 = document.querySelector('.lists1');
-let actLists2 = document.querySelector('.lists2');
-let actLists3 = document.querySelector('.lists3');
-let actLists4 = document.querySelector('.lists4');
-
-let contents1 = document.querySelector('.contents-1');
-let contents2 = document.querySelector('.contents-2');
-let contents3 = document.querySelector('.contents-3');
-let contents4 = document.querySelector('.contents-4');
-
-actLists1.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('vunhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" vunhide", "");
-    }
-    contents1.className += " vunhide";
-    gsap.from(contents1, { opacity: 0, duration: 3, ease: 'power2.inOut' });
-});
-
-actLists2.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('vunhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" vunhide", "");
-    }
-    contents2.className += " vunhide";
-    gsap.from(contents2, { opacity: 0, duration: 3, ease: 'power2.inOut' });
-});
-
-actLists3.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('vunhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" vunhide", "");
-    }
-    contents3.className += " vunhide";
-    gsap.from(contents3, { opacity: 0, duration: 3, ease: 'power2.inOut' });
-
-});
-
-actLists4.addEventListener('click', () => {
-    let unhide = document.getElementsByClassName('vunhide');
-    if (unhide.length > 0) {
-        unhide[0].className = unhide[0].className.replace(" vunhide", "");
-    }
-    contents4.className += " vunhide";
-    gsap.from(contents4, { opacity: 0, duration: 3, ease: 'power2.inOut' });
-
-});
-
-
-$(document).ready(function () {
-    $('.cm-content').owlCarousel({
-        margin: 15,
-        responsiveClass: true,
-        loop: true,
-        autoplay: true,
-        dots: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 2520,
-        smartSpeed: 1500,
-        responsive: {
-            150: {
-                items: 1,
-                nav: true
-            },
-            450: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 2,
-                nav: true
-            },
-            750: {
-                items: 3,
-                nav: true
-            },
-            1000: {
-                items: 3,
-                nav: true,
-            },
-            2000: {
-                items: 4,
-                nav: true,
-            }
-        }
-    });
-});
-
+//----------------------------------------------------Board Members And Advisory Board Coding--------------------------------------------//
 $(document).ready(function () {
     $('.brd-card-container').owlCarousel({
         margin: 15,
@@ -417,7 +286,6 @@ $(document).ready(function () {
         }
     });
 });
-
 let navBod = document.querySelector('.nav-bod')
 let navAb = document.querySelector('.nav-ab')
 let bod = document.querySelector('.board-of-director')
@@ -485,8 +353,7 @@ $(document).ready(function () {
     });
 });
 
-// confidential code
-
+//------------------------------------------------------confidential code-------------------------------------------------------//
 function removeClasses(cls) {
     setTimeout(() => {
         $(document).ready(function () {
@@ -534,6 +401,7 @@ $(document).ready(function () {
     });
 });
 
+//----------------------------------------------------------Reach Us Location Coding----------------------------------------------//
 const globe = gsap.timeline({ repeat: -1, defaults: { duration: 4 } })
 globe
     .from('.cName1', { opacity: 0, display: 'block', ease: 'power2.out' })
@@ -590,64 +458,6 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
 }
 
-// ------------custom language selection box coding-------------------------------
-
-// const procedureAttr = document.getElementById('railPurchase');
-// const goToContactUs = document.getElementById('onClkToContact');
-
-// document.getElementById('lang').addEventListener('change', function(e){
-//     e.preventDefault();
-//     if(this.value == 'en'){
-//         procedureAttr.setAttribute('href','procedure.html#googtrans(en|en)');
-//         goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');        
-//    }           
-//   if(this.value == 'de' ) {
-//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|de)');
-//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-//    }
-//   if(this.value == 'fr' ) {
-//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|fr)');
-//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-//    }
-//   if(this.value == 'es' ) {
-//       procedureAttr.setAttribute('href','procedure.html#googtrans(en|es)');
-//       goToContactUs.setAttribute('href','procedure.html#googtrans(en|en)');
-//    }
-// })
-
-
-// $(document).ready(function(){
-//     var theLang;
-//     var attr; 
-//     $("#lang").change(function (e){ 
-//         e.preventDefault();       
-//         // document.getElementById('remove_op') ? document.getElementById('remove_op').remove() : " "
-
-//           theLang = $(this).val();
-
-//            if(theLang == 'en'){
-//                 attr = "#googtrans(en|en)"
-//            }           
-//           if(theLang == 'en' ) {
-//               attr = "#googtrans(en|en)"
-//            }
-//           if(theLang == 'de' ) {
-//               attr = "#googtrans(en|de)"
-//            }
-//           if(theLang == 'fr' ) {
-//               attr = "#googtrans(en|fr)"
-//            }
-//           if(theLang == 'es' ) {
-//               attr = "#googtrans(en|es)"
-//            }
-
-// jQuery('.goog-te-combo').val(theLang);
-
-// 	  window.location = attr;
-// 	  location.reload();
-//     });
-// });
-
 
 $(window).on('load', function () {
     googleTranslateElementInit();
@@ -678,9 +488,9 @@ nopView.textContent = "";
 nopViewPlace.textContent = "";
     let vStates = ["Tamil Nadu", "Maharashtra", "Gujarat", "Uttar Pradesh", "Andhra Pradesh", "Chhattisgarh", "Uttarakhand", "Kerala", "Haryana", "Jharkhand"]
     let vCountries = ["China", "European Union", "US", "Japan", "Germany", "India", "South Korea", "United Kingdom", "France", "Italy"];
-    let showState = vStates[Math.ceil(Math.random() * 10)];
+    let showState = vStates[Math.floor(Math.random() * 10)];
     let showCountry = vCountries[Math.floor(Math.random() * 10)];
-    nopView.textContent = parseInt(Math.ceil(Math.random() * 10));
+    nopView.textContent = parseInt(Math.floor(Math.random() * 10));
     if(showLiveUserList){
         if(showState === 'India'){
             nopView.textContent =  Math.ceil(Math.random() * 90);
@@ -696,5 +506,5 @@ nopViewPlace.textContent = "";
 showLiveUser();
 let vMessageAnimation = gsap.timeline({repeat : -1, repeatDelay : 2, onRepeat : showLiveUser})
 vMessageAnimation
-.from(viewingMessage,{ y : 210, opacity : 0.5, ease : 'power3', duration : 6 })
-.to(viewingMessage, 4, {x : -400, opacity : 0.1})
+.from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'power3', duration : 5 })
+.to(viewingMessage, 4, {y : 150, opacity : 0.1})

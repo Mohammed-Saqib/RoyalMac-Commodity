@@ -1,0 +1,199 @@
+.virtual-stockist{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.v-header{
+    color: var(--greenColor);
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.v-header:hover{
+    color: var(--goldColor);
+    animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
+    -o-animation: shake 0.1s 2 ease;
+}
+
+.v-content{
+    width: 80% !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.v-subhead{
+    display: inline-block;
+    max-width: 100% !important;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.5) 9%, rgba(0,0,0,0.7) 17%);
+    background-size: 200% 100%;
+    animation: bgPos 2s linear infinite;
+    -o-animation: bgPos 2s linear infinite;
+    -webkit-animation: bgPos 2s linear infinite;
+    -moz-animation: bgPos 2s linear infinite;
+}
+.v-subhead:hover{
+    animation: shake 0.1s 2 ease;
+    -webkit-animation: shake 0.1s 2 ease;
+    -moz-animation: shake 0.1s 2 ease;
+    -o-animation: shake 0.1s 2 ease;
+}
+
+.v-card-content{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--darkWhite2);
+    display: grid;
+    grid-template-columns: 210px auto;
+    align-items: center;
+}
+.v-left{
+    /* border-right: 1px solid var(--goldColor); */
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.v-right{
+    padding-left:20px ;
+}
+.v-right .para{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* flip card css */
+.flip-card {
+    padding: 2.5px;
+    background-color: transparent;
+     width: 170px !important;
+     height: 230px;
+     perspective: 2000px;
+     border-radius: 15px !important;
+     margin: 5px 0;
+     position: relative;
+   }
+   
+   .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
+     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+     box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 0 8px 0 rgba(0,0,0,0.2);
+     border-radius: 25px !important;
+     animation: flipCard 5s ease infinite;
+     -moz-animation: flipCard 5s ease infinite;
+     -o-animation: flipCard 5s ease infinite;
+     -webkit-animation: flipCard 5s ease infinite;
+   }
+   
+   @keyframes flipCard{
+       100%{
+     transform: rotateY(360deg);
+     -webkit-transform: rotateY(360deg);
+     -o-transform: rotateY(360deg);
+     -moz-transform: rotateY(360deg);
+       }
+   }
+   
+   .flip-card-front, .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+   }
+   
+   .flip-card-front {
+     background-color: var(--whiteColor);
+     color: black;
+     border-radius: 15px;  
+   }
+   
+   .flip-card-back {
+     color: white;
+     background-color: var(--whiteColor);
+     transform: rotateY(180deg);
+     border-radius: 15px;
+   }
+
+@media screen and (max-width: 1200px){
+    .v-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .v-content{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .v-header{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .v-right .para{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .v-header{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .v-card-content{
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .v-left{
+        width: 100%;
+        padding: 0px 0px 10px 0;
+    }
+    .v-right{
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .virtual-stockist{
+        margin: 10px 0px 0px 0px;
+    }
+    .v-header{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .v-right .para{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

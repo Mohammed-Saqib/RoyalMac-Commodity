@@ -188,9 +188,6 @@
 }
 
 @media screen and (max-width:550px) {
-    .reach-us-content{
-        width: 80%;
-    }
     .social , .traditional, .meeting, .map-container{
         min-width: 80%;
     }
