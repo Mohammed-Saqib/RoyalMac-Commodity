@@ -122,7 +122,6 @@ a{
 .menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    /* color: #000; */
     font-size: 16px;
     line-height: 16px;
     position: relative;
@@ -297,13 +296,13 @@ a{
     z-index: 99;
     border-radius: 10px;
     background: var(--whiteColor);
-    /* border: 1px solid rgba(255, 255, 255, 0.10); */
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: flex !important;
     align-items: center;
     column-gap: 5px;
+    border: 1px solid var(--greenColor);
 }
 
 .viewing-profile{
@@ -315,6 +314,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(195,153,107,1);
 }
 .viewing-profile img{
     width: 100%;
@@ -328,7 +328,7 @@ a{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.5) 9%, rgba(0,0,0,0.7) 17%);
+    background-image: linear-gradient(90deg, rgba(195,153,107,1) 0%, rgba(255,255,255,0.5) 9%, rgba(195,153,107,1) 17%);
     background-size: 200% 100%;
     animation: bgPos 2s linear infinite;
     -o-animation: bgPos 2s linear infinite;

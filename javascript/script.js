@@ -490,7 +490,7 @@ nopViewPlace.textContent = "";
     let vCountries = ["China", "European Union", "US", "Japan", "Germany", "India", "South Korea", "United Kingdom", "France", "Italy"];
     let showState = vStates[Math.floor(Math.random() * 10)];
     let showCountry = vCountries[Math.floor(Math.random() * 10)];
-    nopView.textContent = parseInt(Math.floor(Math.random() * 10));
+    nopView.textContent = parseInt(Math.ceil(Math.random() * 10));
     if(showLiveUserList){
         if(showState === 'India'){
             nopView.textContent =  Math.ceil(Math.random() * 90);
@@ -504,7 +504,7 @@ nopViewPlace.textContent = "";
     } 
 }
 showLiveUser();
-let vMessageAnimation = gsap.timeline({repeat : -1, repeatDelay : 2, onRepeat : showLiveUser})
+let vMessageAnimation = gsap.timeline({repeat : -1, onRepeat : showLiveUser})
 vMessageAnimation
-.from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'power3', duration : 5 })
-.to(viewingMessage, 4, {y : 150, opacity : 0.1})
+.from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'elastic.inOut', duration : 3 })
+.to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 3})
