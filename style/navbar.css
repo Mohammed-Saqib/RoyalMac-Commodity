@@ -326,7 +326,7 @@ a{
     text-align: justify;
     font-weight: 900;
     color: var(--goldColor);
-    /* -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(90deg, rgba(195,153,107,1) 0%, rgba(255,255,255,0.5) 9%, rgba(195,153,107,1) 17%);
@@ -334,7 +334,7 @@ a{
     animation: bgPos 2s linear infinite;
     -o-animation: bgPos 2s linear infinite;
     -webkit-animation: bgPos 2s linear infinite;
-    -moz-animation: bgPos 2s linear infinite; */
+    -moz-animation: bgPos 2s linear infinite;
 }
 
 .goog-te-gadget{
