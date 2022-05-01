@@ -577,6 +577,7 @@ a{
     }
     .viewing-message{
         max-width: 50%;
+        column-gap: 10px;
         left: 10px;
         overflow: hidden;
     }
