@@ -1,6 +1,5 @@
 .board{
     margin:30px 0;
-    /* background-color: var(--darkWhite2); */
     background-color: var(--whiteColor);
     width: 100%;
     overflow: hidden;
@@ -43,20 +42,6 @@
     position: relative;
 }
 
-.brd-header:hover::after{
-    /* width: 100%; */
-}
-
-/* .brd-header::after{
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: var(--greenColor);
-    position: absolute;
-    top: 100%;
-    left: 0;
-} */
-
 .brd-card-container{
     margin: 5px 0;
     padding:20px 0;
@@ -74,7 +59,7 @@
     margin-bottom: 10px !important;
     margin-top: 10px !important;
     /* width: 260px;   */
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +131,6 @@
 }
 
 .brd-member-soc{
-    /* outline: 1px solid; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -218,17 +202,6 @@
         font-size: 14px;
         line-height: 18px;
     }
-    /* .brd-member-img img{
-        animation: zoomCard 10s ease-in-out infinite;
-     }
-     @keyframes zoomCard {
-         60%{
-             transform: scale(2.3);
-             -webkit-transform: scale(2.3);
-             -moz-transform: scale(2.3);
-             object-position: right;
-         }
-     } */
 }
 
 @media screen and (max-width:375px) {
@@ -245,7 +218,6 @@
         line-height: 20px;
     }
     .brd-card-container{
-        /* outline: 1px solid red; */
         padding:20px 0;
         width: 80%;
     }
