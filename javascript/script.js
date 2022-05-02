@@ -116,31 +116,33 @@ nsss.addEventListener('click', () => {
     gsap.from('#sss', { opacity: 0, duration: 2, ease: 'power2.inOut' });
 });
 
+// ----------------------Navbar Area To Activity Area ---------------//
 
-// const nImport = document.getElementById('nImport');
-// const nBusCon = document.getElementById('nBusCon');
-// const nJoinV = document.getElementById('nJoinV');
-// const nStockist = document.getElementById('nStockist');
-// const nMerchen = document.getElementById('nMerchen');
-// const nTrading = document.getElementById('nTrading');
+const nImport = document.getElementById('nImport');
+const nBusCon = document.getElementById('nBusCon');
+const nJoinV = document.getElementById('nJoinV');
+const nStockist = document.getElementById('nStockist');
+const nMerchen = document.getElementById('nMerchen');
+const nTrading = document.getElementById('nTrading');
 
-// let actList1 = document.querySelector('.list1');
-// let actList2 = document.querySelector('.list2');
-// let actList3 = document.querySelector('.list3');
-// let actList4 = document.querySelector('.list4');
-// let actList5 = document.querySelector('.list5');
-// let actList6 = document.querySelector('.list6');
-// let actList7 = document.querySelector('.list7');
-
-// let content1 = document.querySelector('.content-1');
-// let content2 = document.querySelector('.content-2');
-// let content3 = document.querySelector('.content-3');
-// let content4 = document.querySelector('.content-4');
-// let content5 = document.querySelector('.content-5');
-// let content6 = document.querySelector('.content-6');
-// let content7 = document.querySelector('.content-7');
-
-// ----------------------Navbar Area To Activity Area ---------------
+nImport.addEventListener('click', () => {
+    gsap.from('.content1', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nBusCon.addEventListener('click', () => {
+    gsap.from('.content2', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nJoinV.addEventListener('click', () => {
+    gsap.from('.content3', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nStockist.addEventListener('click', () => {
+    gsap.from('.content4', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nTrading.addEventListener('click', () => {
+    gsap.from('.content5', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
+nMerchen.addEventListener('click', () => {
+    gsap.from('.content6', { opacity: 0, duration: 2, ease: 'power2.inOut' });
+});
 
 // nImport.addEventListener('click', () => {
 //     let unhide = document.getElementsByClassName('unhide');
@@ -150,56 +152,6 @@ nsss.addEventListener('click', () => {
 //     content2.className += " unhide";
 //     gsap.from(content2, { opacity: 0, duration: 2, ease: 'power2.inOut' });
 // });
-// nBusCon.addEventListener('click', () => {
-//     let unhide = document.getElementsByClassName('unhide');
-//     if (unhide.length > 0) {
-//         unhide[0].className = unhide[0].className.replace(" unhide", "");
-//     }
-//     content3.className += " unhide";
-//     gsap.from(content3, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-// });
-// nJoinV.addEventListener('click', () => {
-//     let unhide = document.getElementsByClassName('unhide');
-//     if (unhide.length > 0) {
-//         unhide[0].className = unhide[0].className.replace(" unhide", "");
-//     }
-//     content4.className += " unhide";
-//     gsap.from(content4, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-// });
-// nStockist.addEventListener('click', () => {
-//     let unhide = document.getElementsByClassName('unhide');
-//     if (unhide.length > 0) {
-//         unhide[0].className = unhide[0].className.replace(" unhide", "");
-//     }
-//     content5.className += " unhide";
-//     gsap.from(content5, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-// });
-// nTrading.addEventListener('click', () => {
-//     let unhide = document.getElementsByClassName('unhide');
-//     if (unhide.length > 0) {
-//         unhide[0].className = unhide[0].className.replace(" unhide", "");
-//     }
-//     content6.className += " unhide";
-//     gsap.from(content6, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-// });
-// nMerchen.addEventListener('click', () => {
-//     let unhide = document.getElementsByClassName('unhide');
-//     if (unhide.length > 0) {
-//         unhide[0].className = unhide[0].className.replace(" unhide", "");
-//     }
-//     content7.className += " unhide";
-//     gsap.from(content7, { opacity: 0, duration: 2, ease: 'power2.inOut' });
-// });
-
-
-//------------------------------------------------Activity Area-------------------------------------------------------//
-//deleted
-
-//----------------------------------------------virtual stockiest card--------------------------------------------------------//
-//deleted
-
-//------------------------------------------Commodity Content Coding---------------------------------------------//
-//deleted
 
 //----------------------------------------------------Board Members And Advisory Board Coding--------------------------------------------//
 $(document).ready(function () {
