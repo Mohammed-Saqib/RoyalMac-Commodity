@@ -170,7 +170,7 @@ a{
     }
 
     .business-grp-content{
-        width: 70% !important;
+        width: 80% !important;
     }
     
 }
@@ -190,12 +190,12 @@ a{
         margin-right: 0;
     }
 
-    .business-grp-content{
-        width: 60% !important;
-    }
 }
 
 @media screen and (max-width:375px) {
+    .business-grp-content{
+        width: 90% !important;
+    }
     .grp-header{
         font-size: 16px;
         line-height: 20px;
