@@ -468,6 +468,11 @@ const meetFormContent = document.querySelector('.meet-form-content');
 const meetClose = document.querySelector('#meetClose');
 const meetForm = document.getElementById('meetForm');
 const meetSubmit = document.getElementById('meetSubmit');
+const meetName = document.getElementById('meetName');
+const meetEmail = document.getElementById('meetEmail');
+const meetPhone = document.getElementById('meetPhone');
+const meetPurpose = document.getElementById('meetPurpose');
+
 for (let i = 0; i < meetingForm.length; i++) {
     meetingForm[i].addEventListener('click', function(e){
         e.preventDefault();
@@ -480,12 +485,34 @@ meetClose.addEventListener('click', function(e){
     document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
 })
 
+meetName.addEventListener('input', function(e){
+    e.preventDefault();
+    const fullNameregex= /^[a-zA-Z\s\.]+$/;
+    if (fullNameregex.test(e.target.value) === false) {
+        meetName.value = meetName.value.slice(0,meetName.value.length - 1)
+      }
+});
+
+meetPhone.addEventListener('keydown', function(e){
+    if(e.key==='.' || e.key === '-' || e.key === '+'){
+        e.preventDefault();
+        this.addEventListener('input', function(event){
+            event.target.value = event.target.value.replace(/[^0-9]*/g,'');
+        });
+    }
+});
+
+meetEmail.addEventListener('blur', function(e){
+    e.preventDefault();
+     const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     if (emailregex.test(meetEmail.value) === false) {
+             meetEmail.value = "";
+             return 
+         }
+ });   
+
 meetForm.addEventListener('submit', function(e){
     e.preventDefault();
-})
-
-meetSubmit.addEventListener('click', function(e){
-    e.preventDefault();
-    // meetForm.submit();
-    meetForm.reset();
+    // this.submit();
+    this.reset();
 })
