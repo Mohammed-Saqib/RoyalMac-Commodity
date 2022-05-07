@@ -513,6 +513,6 @@ meetEmail.addEventListener('blur', function(e){
 
 meetForm.addEventListener('submit', function(e){
     e.preventDefault();
-    // this.submit();
-    this.reset();
+    this.submit();
+    // this.reset();
 })
