@@ -7,7 +7,7 @@ $phone = $_POST['phone'];
 $message = $_POST['purpose'];
 
 $subject= "Meeting Request (Message From Website)";
-$to = "sq@royal-mac.com";
+$to = "sales@royal-mac.com";
 $body = "";
 
 $body .= "From: ".$name. "\r\n";
@@ -25,7 +25,7 @@ $Eemail = $_POST['Eemail'];
 $Emessage = $_POST['EtxtArea'];
 
 $subject= "Enquiry Form (Message From Website)";
-$to = "sq@royal-mac.com";
+$to = "sales@royal-mac.com";
 $body = "";
 
 $body .= "From: ".$Ename. "\r\n";
