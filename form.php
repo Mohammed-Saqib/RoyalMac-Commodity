@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['purpose'];
 
-$subject= "Meeting Request";
+$subject= "Meeting Request, (Message From Website)";
 $to = "sq@royal-mac.com";
 $body = "";
 

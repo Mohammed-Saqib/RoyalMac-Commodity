@@ -472,6 +472,7 @@ const meetName = document.getElementById('meetName');
 const meetEmail = document.getElementById('meetEmail');
 const meetPhone = document.getElementById('meetPhone');
 const meetPurpose = document.getElementById('meetPurpose');
+const meetMsg = document.getElementById('meetMsg');
 
 for (let i = 0; i < meetingForm.length; i++) {
     meetingForm[i].addEventListener('click', function(e){
@@ -513,7 +514,10 @@ meetEmail.addEventListener('blur', function(e){
 
 meetForm.addEventListener('submit', function(e){
     e.preventDefault();
-    this.submit();
-    document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
-    // this.reset();
+    meetMsg.style.color="#C3996B";
+    meetMsg.textContent = "Request Sent...!";
+    setTimeout(() => {
+        this.submit();
+        document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
+    }, 1000);
 })
