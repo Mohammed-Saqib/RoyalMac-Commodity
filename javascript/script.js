@@ -460,3 +460,32 @@ let vMessageAnimation = gsap.timeline({repeat : -1, onRepeat : showLiveUser})
 vMessageAnimation
 .from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'elastic.inOut', duration : 3 })
 .to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 1.5})
+
+
+//--------------------------Meeting Form Coding-------------------------------------------------//
+const meetingForm = document.querySelectorAll('#meetingForm');
+const meetFormContent = document.querySelector('.meet-form-content');
+const meetClose = document.querySelector('#meetClose');
+const meetForm = document.getElementById('meetForm');
+const meetSubmit = document.getElementById('meetSubmit');
+for (let i = 0; i < meetingForm.length; i++) {
+    meetingForm[i].addEventListener('click', function(e){
+        e.preventDefault();
+        meetFormContent.classList.add('meet-form-active');
+    })
+}
+
+meetClose.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
+})
+
+meetForm.addEventListener('submit', function(e){
+    e.preventDefault();
+})
+
+meetSubmit.addEventListener('click', function(e){
+    e.preventDefault();
+    // meetForm.submit();
+    meetForm.reset();
+})

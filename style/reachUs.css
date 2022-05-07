@@ -167,6 +167,92 @@
     color: var(--goldColor);
 }
 
+.meeting-form{
+    position: relative;
+}
+.meet-form-content{
+    max-width: 95%;
+    padding: 20px;
+    background-color: var(--greenTransparent);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid var(--greenTransparent);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    visibility: none;
+    opacity: 0;
+}
+.meet-form-active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.meet-form-content .meetLogo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1%;
+}
+.meet-form-content img{
+   display: block;
+   margin-left: auto;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.meet-form-content p{
+    font-size: 16px;
+    line-height: 20px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--whiteColor);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-group input, .form-group textarea, .meet-form-content form button{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    resize: none;
+    width: 100%;
+}
+.form-group input:focus{
+    box-shadow: inset 0px 0px 5px var(--goldColor);
+}
+.meet-form-content form button{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--greenColor);
+    background-color: var(--whiteColor);
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+.meet-form-content form button:active{
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -o-transform: scale(0.99);
+}
+.meet-form-content form button:hover{
+    background-color: var(--darkWhite2);
+    color: var(--goldColor);
+}
+
 @media screen and (max-width:1250px) {
 .reach-us-content{
     width: 60%;
@@ -206,6 +292,14 @@
     }
     .social , .traditional, .meeting, .map-container{
         min-width: 90%;
+    }
+    .meet-form-content{
+         width: 90%;
+    }
+    .form-group input, .form-group textarea, .meet-form-content form button{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 7px;
     }
 }
 
