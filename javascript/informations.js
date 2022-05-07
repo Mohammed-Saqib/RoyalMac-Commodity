@@ -11,7 +11,7 @@ eDes.textContent = "";
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            if (name.value == "") {
+            if (eName.value == "") {
                 eName.textContent = " Please enter your name.";
                 return
             } else if (email.value == "") {
@@ -30,13 +30,13 @@ eDes.textContent = "";
                             $("#button").removeClass("onclic");
                             $("#button").addClass("validate");
                             callback();
-                        }, 2250);
+                        }, 1000);
                     }
                     function callback() {
                         setTimeout(function () {
                             $("#button").removeClass("validate");
-                            form.reset()
-                        }, 1250);
+                            form.submit();
+                        }, 1000);
                     }
                 });
             }
@@ -58,7 +58,7 @@ eDes.textContent = "";
             e.preventDefault();
             const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if (emailregex.test(email.value) === false) {
-                eEmail.textContent = "Please enter a valid email address similar to ([a-zA-Z][1-9]@gmail.com)";
+                eEmail.textContent = "Please enter a valid email address";
                 email.textContent = "";
                 email.focus();
             } else {
