@@ -514,5 +514,6 @@ meetEmail.addEventListener('blur', function(e){
 meetForm.addEventListener('submit', function(e){
     e.preventDefault();
     this.submit();
+    document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
     // this.reset();
 })
