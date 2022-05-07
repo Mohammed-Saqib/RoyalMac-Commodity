@@ -14,7 +14,7 @@ $body .= "From: ".$name. "\r\n";
 $body .= "Email: ".$email. "\r\n";
 $body .= "Phone: ".$phone. "\r\n";
 $body .= "Message: ".$message. "\r\n";
-// mail($to,$subject,$body);
+mail($to,$subject,$body);
 header('location:index.html');
 }
 
