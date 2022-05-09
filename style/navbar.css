@@ -324,7 +324,7 @@ a{
     line-height: 18px;
     text-transform: uppercase;
     text-align: justify;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--goldColor);
     /* -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

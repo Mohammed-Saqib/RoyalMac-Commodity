@@ -25,13 +25,17 @@
     margin: 20px 0px 0px 0px;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px 0px;
+    gap: 10px;
 }
 .company-msg{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.company-msg:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .c-msg-heading{
     text-align: left;

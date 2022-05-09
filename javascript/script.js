@@ -439,7 +439,7 @@ const nopViewPlace = document.getElementById('nopViewPlace');
 nopView.textContent = "";
 nopViewPlace.textContent = "";
     let vStates = ["Tamil Nadu", "Maharashtra", "Gujarat", "Uttar Pradesh", "Andhra Pradesh", "Chhattisgarh", "Uttarakhand", "Kerala", "Haryana", "Jharkhand"]
-    let vCountries = ["China", "European Union", "US", "Japan", "Germany", "India", "South Korea", "United Kingdom", "France", "Italy"];
+    let vCountries = ["China", "European Union", "USA", "Japan", "Germany", "India", "South Korea", "United Kingdom", "France", "Italy"];
     let showState = vStates[Math.floor(Math.random() * 10)];
     let showCountry = vCountries[Math.floor(Math.random() * 10)];
     nopView.textContent = parseInt(Math.ceil(Math.random() * 10));
@@ -459,7 +459,7 @@ showLiveUser();
 let vMessageAnimation = gsap.timeline({repeat : -1, onRepeat : showLiveUser})
 vMessageAnimation
 .from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'elastic.inOut', duration : 3 })
-.to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 1.5})
+.to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 2.5})
 
 
 //--------------------------Meeting Form Coding-------------------------------------------------//

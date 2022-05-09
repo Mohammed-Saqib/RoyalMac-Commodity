@@ -30,6 +30,11 @@
     position: relative;
     overflow: hidden;
 }
+.virtual-stockist-info{
+    width: 80% !important;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
 
 .v-subhead{
     display: inline-block;
@@ -76,7 +81,7 @@
 .v-right{
     padding-left:20px ;
 }
-.v-right .para{
+.para{
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
@@ -144,10 +149,16 @@
     .v-content{
         width: 90%;
     }
+    .virtual-stockist-info{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 950px){
     .v-content{
+        width: 95%;
+    }
+    .virtual-stockist-info{
         width: 95%;
     }
 }
@@ -157,7 +168,7 @@
         font-size: 24px;
         line-height: 26px;
     }
-    .v-right .para{
+    .para{
         font-size: 14px;
         line-height: 22px;
     }
@@ -182,6 +193,9 @@
         width: 100%;
         padding: 0px 0px 0px 0px;
     }
+    .line-h{
+        line-height: 25px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -192,7 +206,7 @@
         font-size: 18px;
         line-height: 22px;
     }
-    .v-right .para{
+    .para{
         font-size: 12px;
         line-height: 20px;
     }
