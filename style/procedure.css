@@ -195,6 +195,13 @@ body[style]{
 }
 
 @media screen and (max-width:500px){
+    .procedure-step{
+        width: 95%;
+        justify-content: space-between;
+    }
+    .right-side{
+        width: 70%;
+    }
     .procedure-heading h1{
         font-size: 20px;
         line-height: 30px;
@@ -220,9 +227,6 @@ body[style]{
     
 }
 @media screen and (max-width:400px){
-    .procedure-steps{
-        width: 95%;
-    }  
     .procedure-heading h1{
         font-size: 14px;
         line-height: 16px;
