@@ -22,10 +22,10 @@
 }
 .company-msg-content{
     width: 80%;
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    grid-gap: 0px 15px;
 }
 .company-msg{
     display: flex;
@@ -85,6 +85,7 @@
     .company-msg-content{
         width: 90%;
         grid-template-columns: auto;
+        grid-gap: 15px 0px;
     }
    
 }
@@ -106,6 +107,7 @@
     }
     .company-msg-content{
         width: 95%;
+        grid-gap: 15px 0px;
     }
     .company-msg{
         row-gap: 15px;
