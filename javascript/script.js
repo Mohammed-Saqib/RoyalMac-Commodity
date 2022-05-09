@@ -153,6 +153,30 @@ nMerchen.addEventListener('click', () => {
 //     gsap.from(content2, { opacity: 0, duration: 2, ease: 'power2.inOut' });
 // });
 
+//----------------------------------------------------Company Info Border Animation Code--------------------------------------------//
+
+const n1 = 1;
+const n2 = 2;
+const n3 = 3;
+const n4 = 4;
+const borderAnim = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { duration: 3 } })
+   borderAnim
+        .to(`#wwr span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
+
+        .to(`#wwd span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
+
+        .to(`#sss span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
+
+
 //----------------------------------------------------Board Members And Advisory Board Coding--------------------------------------------//
 $(document).ready(function () {
     $('.brd-card-container').owlCarousel({
@@ -522,23 +546,3 @@ meetForm.addEventListener('submit', function(e){
     }, 1000);
 })
 
-const n1 = 1;
-const n2 = 2;
-const n3 = 3;
-const n4 = 4;
-const borderAnim = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { duration: 3 } })
-   borderAnim
-        .to(`#wwr span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#wwr span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
-        .to(`#wwr span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#wwr span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
-
-        .to(`#wwd span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#wwd span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
-        .to(`#wwd span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#wwd span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
-
-        .to(`#sss span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#sss span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
-        .to(`#sss span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
-        .to(`#sss span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
