@@ -232,12 +232,12 @@ body[style]{
         line-height: 16px;
     } 
     .right-side h2{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
     }  
     .right-side p{
         font-size: 10px;
-        line-height: 12px;
+        line-height: 13px;
     }
     .right-side{
         min-height: 100px;
@@ -253,7 +253,7 @@ body[style]{
 
 @media screen and (max-width:300px){
     .procedure-heading h1{
-        font-size: 13px;
+        font-size: 14px;
         line-height: 15px;
     }
     .right-side h2{
