@@ -33,6 +33,7 @@
     row-gap: 10px;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 .company-msg:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2);
@@ -63,6 +64,75 @@
     line-height: 24px;
     text-align:justify;
 }
+
+.company-msg span{
+    position: absolute;
+    display: block;
+}
+.company-msg span:nth-child(1){
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: calc(100% - 1px);
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(90deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
+}
+ 
+.company-msg span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: calc(100% - 1px);
+    opacity: 0.3;
+    transform: scaleY(0);
+    transform-origin: top;
+    background: linear-gradient(180deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
+}
+
+.company-msg span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: linear-gradient(90deg, rgba(195,153,107,1) 0%, rgba(41,111,52,1) 100%);
+}
+
+.company-msg span:nth-child(4){
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: calc(100% - 1px);
+    opacity: 0.3;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    background: linear-gradient(180deg, rgba(195,153,107,1) 0%, rgba(41,111,52,1) 100%);
+}
+
+.border-anim span:nth-child(1){
+    transform: scaleX(1);
+}
+.border-anim span:nth-child(2){
+    transform: scaleY(1);
+}
+.border-anim span:nth-child(3){
+    transform: scalex(1);
+}
+.border-anim span:nth-child(4){
+    transform: scaleY(1);
+}
+
+.border-anim{
+    transition: none !important;
+}
+.border-anim span{
+    transition-delay: 0s;
+}
+
 
 @media screen and (max-width: 750px){
     .company-info{

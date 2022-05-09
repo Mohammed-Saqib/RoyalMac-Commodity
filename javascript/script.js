@@ -456,7 +456,7 @@ nopViewPlace.textContent = "";
     } 
 }
 showLiveUser();
-let vMessageAnimation = gsap.timeline({repeat : -1, onRepeat : showLiveUser})
+let vMessageAnimation = gsap.timeline({repeat : -1, repeatDelay: 40, onRepeat : showLiveUser})
 vMessageAnimation
 .from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'elastic.inOut', duration : 3 })
 .to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 2.5})
@@ -521,3 +521,24 @@ meetForm.addEventListener('submit', function(e){
         document.querySelector('.meet-form-active') ? meetFormContent.classList.remove('meet-form-active') : " ";
     }, 1000);
 })
+
+const n1 = 1;
+const n2 = 2;
+const n3 = 3;
+const n4 = 4;
+const borderAnim = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { duration: 3 } })
+   borderAnim
+        .to(`#wwr span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwr span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
+
+        .to(`#wwd span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#wwd span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
+
+        .to(`#sss span:nth-child(${n1})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n2})`,{ scaleY : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
+        .to(`#sss span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
