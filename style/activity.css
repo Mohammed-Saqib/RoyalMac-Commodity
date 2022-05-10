@@ -1,6 +1,6 @@
 .activity-area{
     width: 100%;
-    margin: 20px 0;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +30,34 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+}
+.buss-oppur-content{
+    width: 80%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    column-gap: 30px;
+    margin: 10px 0px;
+    position: relative;
+}
+.buss-oppur-content > div{
+    width: calc(75% - 15px);
+}
+.buss-oppur-content #bus-oppur{
+    width: calc(25% - 15px);
+}
+.buss-oppur-content #bus-oppur  path{
+    fill: rgba(0, 0, 0, 0.9) !important;
+}
+.buss-oppur-content::after{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 25.2%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
 }
 
 .activity-card{
@@ -104,10 +132,39 @@
     width: 100%;
     position: sticky;
 }
+.mb-15{
+    margin-bottom: 15px;
+}
 
 @media screen and (max-width: 1200px){
     .activity-content{
         width: 90%;
+    }
+    .buss-oppur-content{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 950px){
+    .buss-oppur-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+    .buss-oppur-content::after{
+        width: 100%;
+        height: 4px;
+        top: calc(250px + 15px);
+        left: 0;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
+    }
+    .buss-oppur-content > div{
+        width: 100%;
+    }
+    .buss-oppur-content #bus-oppur{
+        width: 250px;
+        aspect-ratio: 1 / 1;
     }
 }
 
@@ -116,10 +173,28 @@
         font-size: 12px;
         line-height: 20px;
     }
+    .activity-header{
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .activity-header{
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 @media screen and (max-width: 350px){
     .activity-content{
+        width: 95%;
+    }
+    .activity-header{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .buss-oppur-content{
         width: 95%;
     }
     .activity-content{

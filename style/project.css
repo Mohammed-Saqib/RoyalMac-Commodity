@@ -12,7 +12,7 @@
         background-position: center;
         background-attachment: fixed;
         color: var(--whiteColor);
-        padding: 20px 0px;
+        padding: 30px 0px;
         position: relative;
 }
 .project::after{
@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     z-index: 2;
 }
 .pro-box{
@@ -64,7 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 15px;
 }
 .pro-box-content{
     width: 100%;
@@ -92,17 +92,29 @@
     border-radius: 50%;
     border: 6px solid var(--goldColor);
     border-left: 6px solid transparent;
-    animation: rotate 5s infinite linear reverse;
+    animation: rotate 6s infinite linear reverse;
+    -webkit-animation: rotate 6s infinite linear reverse;
+    -moz-animation: rotate 6s infinite linear reverse;
+    -o-animation: rotate 6s infinite linear reverse;
 }
 .rotate1::after{
-    animation: rotate 7s infinite linear;
+    animation: rotate 8s infinite linear;
+    -webkit-animation: rotate 8s infinite linear;
+    -moz-animation: rotate 8s infinite linear;
+    -o-animation: rotate 8s infinite linear;
 }
 .rotate2::after{
-    animation: rotate 5s infinite linear reverse;
+    animation: rotate 6s infinite linear reverse;
+    -webkit-animation: rotate 6s infinite linear reverse;
+    -moz-animation: rotate 6s infinite linear reverse;
+    -o-animation: rotate 6s infinite linear reverse;
 }
 @keyframes rotate {
     100%{
         transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
     }
 }
 

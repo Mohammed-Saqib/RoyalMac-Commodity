@@ -35,7 +35,12 @@
     overflow: hidden;
     margin-bottom: 35px;
 }
-
+.line-h{
+    animation: bgPos 5s linear infinite !important;
+    -o-animation: bgPos 5s linear infinite !important;
+    -webkit-animation: bgPos 5s linear infinite !important;
+    -moz-animation: bgPos 5s linear infinite !important;
+}
 .v-subhead{
     display: inline-block;
     max-width: 100% !important;
