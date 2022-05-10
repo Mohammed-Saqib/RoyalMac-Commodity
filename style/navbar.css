@@ -585,7 +585,7 @@ a{
     }
     .viewing-profile{
         width: 35px;
-        padding: 5px;
+        /* padding: 5px; */
     }
     .view-msg{
         font-size: 10px;
