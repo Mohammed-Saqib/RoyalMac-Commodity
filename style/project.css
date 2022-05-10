@@ -43,9 +43,10 @@
     -moz-animation: shake 0.1s 2 ease;
 }
 
-.line-green{
+.line-gold{
     height: 4px !important;
-    background-color: darkgreen !important;
+    background: var(--goldColor) !important;
+    z-index: 2;
 }
 
 .project-content{
