@@ -14,7 +14,7 @@
     background: url(../Images/body-image.webp) no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 .body-image::after{
@@ -116,6 +116,9 @@
 }
 
 @media screen and (max-width: 750px) {
+    .body-image{
+        background-size: cover;
+    }
     .body-image-contain .b-h1{
         font-size: 40px;
         line-height: 45px;
