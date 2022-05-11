@@ -28,6 +28,10 @@
     display: none !important;
 }
 
+.wait{
+    display: block !important;
+}
+
 .slide{
     position: absolute;
     width: 100%;
@@ -38,10 +42,6 @@
     transition: all 0.2s ease !important;
     -webkit-transition: all 0.2s ease !important;
     -moz-transition: all 0.2s ease !important;
-}
-
-.wait{
-    display: block !important;
 }
 
 .slide img{
