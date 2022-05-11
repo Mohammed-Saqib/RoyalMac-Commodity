@@ -24,14 +24,6 @@
     background-color: rgb(11, 44, 11);
 } 
 
-.no-wait{
-    display: none !important;
-}
-
-.wait{
-    display: block !important;
-}
-
 .slide{
     position: absolute;
     width: 100%;
@@ -70,7 +62,13 @@
     }
 }
 
+.no-wait{
+    display: none !important;
+}
 
+.wait{
+    display: block !important;
+}
 
 marquee{
    color: var(--greenColor);
