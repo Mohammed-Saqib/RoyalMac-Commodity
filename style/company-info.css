@@ -1,6 +1,6 @@
 .company-info{
     width: 100%;
-    margin: 40px 0;
+    margin: 10px 0px 40px 0px;
     background-color: var(--whiteColor);
     display: flex;
     flex-direction: column;
@@ -11,6 +11,22 @@
     width: 80%;
     padding: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+@font-face {
+    font-family: decorative;
+    src: url(../font/CinzelDecorative-Bold.ttf);
+}
+.cmp-heading{
+    display: inline-block;
+    font-display: swap;
+    font-family: decorative;
+}
+.cmp-heading::after{
+    width: 60px !important;
+    height: 3px !important;
 }
 .cmp-info{
     font-size: 18px;
@@ -52,8 +68,8 @@
     position: absolute;
     content: "";
     width: 10%;
-    height: 2px;
-    border-radius: 10px;
+    height: 3px !important;
+    border-radius: 25px;
     background: var(--goldColor);
     top: 100%;
     left: 0%;
@@ -117,7 +133,7 @@
 
 @media screen and (max-width: 750px){
     .company-info{
-            margin: 35px 0;
+        margin: 10px 0px 35px 0px;
     }
     .company-info-container{
         width: 90%;
@@ -143,7 +159,7 @@
 
 @media screen and (max-width: 450px){
     .company-info{
-            margin: 30px 0;
+        margin: 10px 0px 30px 0px;
         }
     .company-info-container{
         width: 95%;
