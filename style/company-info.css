@@ -26,7 +26,6 @@
 }
 .cmp-heading::after{
     width: 60px !important;
-    height: 3px !important;
     top: calc(100% + 2px) !important;
 }
 .cmp-info{
@@ -69,7 +68,7 @@
     position: absolute;
     content: "";
     width: 10%;
-    height: 3px !important;
+    height: 2px !important;
     border-radius: 25px;
     background: var(--goldColor);
     top: 100%;
@@ -191,9 +190,6 @@
     .c-msg-heading{
         font-size: 20px;
         line-height: 28px;
-    }
-    .c-msg-heading::after{
-        height: 2px !important;
     }
     .c-msg-para{
         font-size: 16px;
