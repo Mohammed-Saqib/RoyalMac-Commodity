@@ -23,12 +23,10 @@
     display: inline-block;
     font-display: swap;
     font-family: decorative;
-    /* padding-left: 10px; */
 }
 .cmp-heading::after{
     width: 60px !important;
     height: 3px !important;
-    /* left: 10px !important; */
     top: calc(100% + 2px) !important;
 }
 .cmp-info{
@@ -63,7 +61,6 @@
     font-size: 22px;
     line-height: 30px;
     font-weight: 500;
-    font-family: decorative;
     text-transform: capitalize;
     position: relative;
 }
