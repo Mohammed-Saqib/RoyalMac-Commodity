@@ -223,7 +223,7 @@ body[style]{
         line-height: 18px;
     }  
     .right-side p{
-        font-size: 11px;
+        font-size: 12px;
         line-height: 14px;
     }
     .left-side a{
@@ -248,8 +248,8 @@ body[style]{
         line-height: 16px;
     }  
     .right-side p{
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 12px;
+        line-height: 14px;
     }
     .right-side{
         min-height: 100px;
@@ -273,8 +273,8 @@ body[style]{
         line-height: 15px;
     }  
     .right-side p{
-        font-size: 8px;
-        line-height: 11px;
+        font-size: 12px;
+        line-height: 12px;
     }
     .right-side{
         min-height: 90px;
@@ -283,7 +283,7 @@ body[style]{
         font-size: 14px;
     }
     .back-to-home{
-        font-size: 10px;
+        font-size: 12px;
     }
     
 }

@@ -311,10 +311,6 @@ content: "";
         line-height: 12px;
         margin: 10px;
     }
-    .conf-download{
-        font-size: 10px;
-        line-height: 10px;
-    }
 }
 
 @media screen and (max-width:3750px){

@@ -374,8 +374,8 @@
 
 @media screen and (max-width:340px) {
     .reach-us-sub{
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .fb-text
     ,.insta-text
@@ -385,8 +385,8 @@
     ,.em-text
     ,.gm-text
     ,.zm-text{
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 12px;
 }
 .social , .traditional, .meeting, .map-container{
     min-width: 100%;
@@ -404,8 +404,8 @@
 @media screen and (max-width:300px) {
     
     .reach-us-sub{
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .fb-text
     ,.insta-text
@@ -415,8 +415,8 @@
     ,.em-text
     ,.gm-text
     ,.zm-text{
-    font-size: 8px;
-    line-height: 8px;
+    font-size: 12px;
+    line-height: 12px;
 }
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
     width: 20px;
@@ -425,8 +425,8 @@
 
 @media screen and (max-width:260px) {
     .reach-us-sub{
-        font-size: 8px;
-        line-height: 8px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .fb-text
     ,.insta-text
@@ -436,8 +436,8 @@
     ,.em-text
     ,.gm-text
     ,.zm-text{
-    font-size: 6px;
-    line-height: 6px;
+    font-size: 12px;
+    line-height: 12px;
 }
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
     width: 15px;

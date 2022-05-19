@@ -170,7 +170,7 @@
     }
     
     .job-para{
-        font-size: 10px;
+        font-size: 12px;
         line-height: 18px;
         text-align: justify;
     }
@@ -189,18 +189,18 @@
     
     .job-quali{
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 18px;
     }
     
     .job-desc{
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 16px;
     }
     
     .job-para{
-        font-size: 8px;
+        font-size: 12px;
         line-height: 18px;
         text-align: justify;
     }
