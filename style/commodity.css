@@ -53,12 +53,21 @@
     align-items: center;
     padding: 5px;
     transition: clip-path 0.2s ease !important;
+    -webkit-transition: clip-path 0.2s ease !important;
+    -moz-transition: clip-path 0.2s ease !important;
+    -o-transition: clip-path 0.2s ease !important;
     animation: clipAni 10s ease-in-out infinite 2s;
+    -webkit-animation: clipAni 10s ease-in-out infinite 2s;
+    -moz-animation: clipAni 10s ease-in-out infinite 2s;
+    -o-animation: clipAni 10s ease-in-out infinite 2s;
     overflow: hidden;
 }
 @keyframes clipAni {
     35%{
         transition: clip-path 0.2s ease !important;
+        -webkit-transition: clip-path 0.2s ease !important;
+        -moz-transition: clip-path 0.2s ease !important;
+        -o-transition: clip-path 0.2s ease !important;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
     60%{
