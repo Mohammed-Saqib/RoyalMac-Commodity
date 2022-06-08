@@ -103,6 +103,30 @@ const team = [
         image: './Images/maps/india.png',
         phone:'123456789',
     },
+    {
+        name:"Chandra Pratap Samal",
+        email : "ch@royal-mac.com",
+        designation : "Graphic Designer",
+        country: "India",
+        image: './Images/maps/india.png',
+        phone:'123456789',
+    },
+    {
+        name:"Priyanka R",
+        email : "pr@royal-mac.com",
+        designation : "Operations & Admin",
+        country: "India",
+        image: './Images/maps/india.png',
+        phone:'123456789',
+    },
+    {
+        name:"Surender Kapoor",
+        email : "sk@royal-mac.com",
+        designation : "Business Relations Adviser",
+        country: "India",
+        image: './Images/maps/india.png',
+        phone:'123456789',
+    },
 ];
 
 const parent = document.querySelector('.team-list');

@@ -28,7 +28,8 @@
     padding: 10px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(auto, 450px));
+    justify-content: center;
     gap: 20px;
 }
 .buss-oppur-content{
@@ -59,7 +60,6 @@
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(41,111,52,1) 0%, rgba(195,153,107,1) 100%);
 }
-
 .activity-card{
     width: 100%;
     padding: 15px 10px;
@@ -76,7 +76,6 @@
 .activity-card:hover .act-img{
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
-
 .act-img{
     width: 80px;
     height: 80px;
