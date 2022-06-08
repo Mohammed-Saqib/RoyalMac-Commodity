@@ -143,6 +143,9 @@
     }
 }
 @media screen and (max-width: 950px){
+    .activity-content{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
     .buss-oppur-content{
         display: flex;
         flex-direction: column;
