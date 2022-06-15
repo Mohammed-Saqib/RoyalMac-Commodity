@@ -33,8 +33,29 @@
 .virtual-stockist-info{
     width: 80% !important;
     overflow: hidden;
+    position: relative;
     margin-bottom: 35px;
 }
+.virtual-stockist-info::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+.virtual-stockist-info .para{
+    width: 100%;
+}
+.video-info{
+    float: right;
+    width: 350px;
+    margin-left: 10px;
+    height: 175px;
+    overflow: hidden;
+}
+.video-info .yt-vs-video{
+    width: 350px;
+    height: 175px;
+}
+
 .line-h{
     animation: bgPos 5s linear infinite !important;
     -o-animation: bgPos 5s linear infinite !important;
@@ -177,6 +198,12 @@
         font-size: 14px;
         line-height: 22px;
     }
+    .video-info{
+        display: block;
+        float: none;
+        margin: 0px auto !important;
+        margin-bottom: 10px !important;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -203,6 +230,16 @@
     }
 }
 
+@media screen and (max-width: 450px){
+    .video-info{
+        width: 100% !important;
+        max-height: 100% !important;
+    }
+    .video-info .yt-vs-video{
+        width: 100% !important;
+        max-height: 100% !important;
+    }
+}
 @media screen and (max-width: 350px){
     .virtual-stockist{
         margin: 10px 0px 0px 0px;
