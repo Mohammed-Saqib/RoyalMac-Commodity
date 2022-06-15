@@ -62,6 +62,8 @@ body[style]{
     line-height: 28px;
     text-transform: uppercase;
     font-weight: 600;
+    background-color: var(--darkWhite2);
+    padding: 10px;
 }
 
 .informations-form{
@@ -262,6 +264,8 @@ button::after{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .co-right p{
+    padding: 10px;
+    background-color: var(--darkWhite2);
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 12.5px;
