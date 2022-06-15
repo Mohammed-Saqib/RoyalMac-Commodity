@@ -48,14 +48,6 @@ body[style]{
     width: 100%;
     text-align: center;
 }
-.informations-header:hover{
-    color: var(--goldColor);
-    animation: shake 0.1s 2 ease;
-    -o-animation: shake 0.1s 2 ease;
-    -webkit-animation: shake 0.1s 2 ease;
-    -moz-animation: shake 0.1s 2 ease;
-}
-
 .informations-header h1{
     text-align: center;
     font-size: 22px;
@@ -65,13 +57,11 @@ body[style]{
     background-color: var(--darkWhite2);
     padding: 10px;
 }
-
 .informations-form{
     background: rgb(255,255,255);
     width: 30%;
     padding: 10px;
 }
-
 .informations-form form{
     background: rgb(255,255,255);
     width: 100% !important;
@@ -85,7 +75,6 @@ body[style]{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
-
 .c-row{
     width: 100%;
     display: flex;
@@ -94,13 +83,11 @@ body[style]{
     row-gap: 5px;
     margin-bottom: 15px;
 }
-
 .c-row label{
     font-size: 18px;
     line-height: 20px;
     text-transform: capitalize;
 }
-
 .c-row input, textarea{
     width: 100%;
     padding: 8px 10px;
@@ -110,25 +97,21 @@ body[style]{
     border-radius: 5px;
     border: 1px solid #1ECD97;
 }
-
 .c-row textarea{
     height: 100px;
     resize: none;
 }
-
 .c-row input:focus{
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
 }
 .c-row textarea:focus{
     box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
 }
-
 .errorMsg{
     color: red;
     font-size: 12px;
     line-height: 12px;
 }
-
 button {
     outline:none;
     height: 40px;
@@ -145,7 +128,6 @@ button {
     cursor: pointer;
     transition: all 0.25s ease;
 }
-
 button:hover{
     color:white;
     background: #1ECD97;
@@ -154,7 +136,6 @@ button:hover{
 button:active{
     letter-spacing: 2px ;
 }
-
 button::after{
     content:"SUBMIT";
 }
@@ -209,16 +190,6 @@ button::after{
 .c-heading{
     align-self: flex-start;
 }
-
-/* .c-heading h3{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin: 0 0 5px 0;
-}
-*/
-
 .c-heading > :first-child{
     font-weight: 500;
     font-size: 18px;
@@ -226,15 +197,6 @@ button::after{
     text-transform: uppercase;
     margin: 0 0 5px 0;
 }
-
-.c-heading:first-child:hover{
-    color: var(--goldColor);
-    animation: shake 0.1s 2 ease;
-    -o-animation: shake 0.1s 2 ease;
-    -webkit-animation: shake 0.1s 2 ease;
-    -moz-animation: shake 0.1s 2 ease;
-}
-
 .informations-images{
     margin: 20px 0;
     width: 100%;
@@ -252,7 +214,6 @@ button::after{
     object-position: center center; */
     border-radius: 5px;
 }
-
 .c-para{
     width: 100%;
     margin: 10px 0;
@@ -277,20 +238,6 @@ button::after{
     margin-bottom: 10px;
     text-align: justify;
 }
-
-@keyframes shake {
-    0%{
-        transform: translateX(2px);
-        -webkit-transform: translateX(2px);
-        -moz-transform: translateX(2px);
-    }
-    100%{
-        transform: translateX(-2px);
-        -webkit-transform: translateX(-2px);
-        -moz-transform: translateX(-2px);
-    }
-}
-
 @media screen and (max-width:1000px) {
     .informations-form{
         width: 40% !important;
@@ -304,7 +251,6 @@ button::after{
         height: 280px;
     }
 }
-
 @media screen and (max-width:750px) {
     .informations-header h1{
         font-size: 18px;
@@ -329,9 +275,7 @@ button::after{
         width: 100%;
         height: 280px;
     }
-    
 }
-
 @media screen and (max-width:450px) {
     .informations-header h1{
         font-size: 16px;
