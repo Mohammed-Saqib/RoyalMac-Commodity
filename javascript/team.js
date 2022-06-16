@@ -159,6 +159,14 @@ const team = [
         image: './Images/maps/india.png',
         phone:'123456789',
     },
+    {
+        name:"Mr. Shashi Kumar",
+        email : "ss@royal-mac.com",
+        designation : "Public Relation Executive",
+        country: "India",
+        image: './Images/maps/india.png',
+        phone:'123456789',
+    },
 ];
 
 const parent = document.querySelector('.team-list');
