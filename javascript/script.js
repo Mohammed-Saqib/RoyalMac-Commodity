@@ -546,3 +546,19 @@ meetForm.addEventListener('submit', function(e){
     }, 1000);
 })
 
+
+//-------------------------Vedio Language Coding-------------------------------------------------//
+const vedioLanguages = document.getElementById('vedioLanguages');
+const ytVideo = document.getElementById('yt-vs-video');
+vedioLanguages.addEventListener('change', function (e) {
+    e.preventDefault();
+    if(this.value === "Kannada"){
+        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+    }
+    if(this.value === "Hindi"){
+        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+    }
+    if(this.value === ""){
+        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+    }
+})
