@@ -63,6 +63,7 @@
     padding: 0px 10px;
     outline: none;
     text-transform: capitalize;
+    background-color: var(--whiteColor);
 }
 .video-info .yt-vs-video{
     width: 350px;
