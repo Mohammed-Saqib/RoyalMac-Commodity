@@ -550,10 +550,12 @@ meetForm.addEventListener('submit', function(e){
 //-------------------------Vedio Language Coding-------------------------------------------------//
 const vedioLanguages = document.getElementById('vedioLanguages');
 const ytVideo = document.getElementById('yt-vs-video');
+const rmvOpt = document.getElementById('rmvOpt');
 vedioLanguages.addEventListener('change', function (e) {
     e.preventDefault();
+    rmvOpt.remove();
     if(this.value === "Kannada"){
-        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+        ytVideo.setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM');
     }
     if(this.value === "Hindi"){
         ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');

@@ -51,21 +51,22 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 230px;
     row-gap: 5px;
 }
 .vedioLanguages{
     font-size: 16px;
     line-height: 20px;
+    height: 30px;
     font-weight: 400;
     width: 100%;
-    padding: 2.5px 10px;
+    padding: 0px 10px;
     outline: none;
     text-transform: capitalize;
 }
 .video-info .yt-vs-video{
     width: 350px;
-    height: 175px;
+    height: 200px;
 }
 
 .line-h{
@@ -252,7 +253,7 @@
     }
     .video-info .yt-vs-video{
         width: 100% !important;
-        max-height: 100% !important;
+        max-height: 75% !important;
     }
 }
 @media screen and (max-width: 350px){
