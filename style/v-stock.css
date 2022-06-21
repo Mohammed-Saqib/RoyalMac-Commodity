@@ -219,6 +219,7 @@
     }
     .vedioLanguages{
       margin-bottom: 5px;
+      border: 1px solid rgba(0,0,0,0.7);
     }
 }
 
@@ -248,12 +249,13 @@
 
 @media screen and (max-width: 450px){
     .video-info{
+        outline: 1px solid;
         width: 100% !important;
-        max-height: 100% !important;
+        max-height: 200px !important;
     }
     .video-info .yt-vs-video{
         width: 100% !important;
-        max-height: 75% !important;
+        height: 170px !important;
     }
 }
 @media screen and (max-width: 350px){
