@@ -26,44 +26,6 @@ $(document).ready(function () {
     });
 });
 
-
-$(document).ready(function () {
-    $('.business-grp-content').owlCarousel({
-        margin: 15,
-        responsiveClass: true,
-        loop: true,
-        autoplay: true,
-        dots: true,
-        // slideSpeed: 200,
-        autoplayHoverPause: true,
-        autoplayTimeout: 2520,
-        smartSpeed: 1500,
-        responsive: {
-            150: {
-                items: 1,
-                nav: true
-            },
-            450: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 2,
-                nav: true
-            },
-            750: {
-                items: 2,
-                nav: true
-            },
-            1000: {
-                items: 3,
-                nav: true,
-                loop: false
-            }
-        }
-    });
-});
-
 //-----------------------------------Carousel Animation On Images As Slides----------------------------------//
 function startAnimation() {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { duration: 4 } })
