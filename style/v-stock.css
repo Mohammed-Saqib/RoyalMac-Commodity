@@ -63,7 +63,19 @@
     padding: 0px 10px;
     outline: none;
     text-transform: capitalize;
-    background-color: var(--whiteColor);
+    background: linear-gradient(120deg, rgba(255,255,255,1) 12%, var(--darkWhite2) 22%, rgba(255,255,255,1) 31%, var(--darkWhite2) 42%, rgba(255,255,255,1) 51%, var(--darkWhite2) 63%, rgba(255,255,255,1) 73%, var(--darkWhite2) 83%, rgba(255,255,255,1) 92%, rgba(255,255,255,1) 100%);
+    background-size: 200% 100%;
+    animation: bgpos2 1.5s linear infinite;
+    -webkit-animation: bgpos2 1.5s linear infinite;
+    -moz-animation: bgpos2 1.5s linear infinite;
+}
+@keyframes bgpos2 {
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
 }
 .video-info .yt-vs-video{
     width: 350px;
@@ -146,7 +158,6 @@
      text-align: center;
      transition: transform 0.6s;
      transform-style: preserve-3d;
-     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
      box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 0 8px 0 rgba(0,0,0,0.2);
      border-radius: 25px !important;
      animation: flipCard 5s ease infinite;

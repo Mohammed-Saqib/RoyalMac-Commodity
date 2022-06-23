@@ -138,6 +138,27 @@ const borderAnim = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { durat
         .to(`#sss span:nth-child(${n3})`,{ scaleX : '1' , ease: 'power1.inOut' })
         .to(`#sss span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
 
+//----------------------------------------------------Business Group Coding--------------------------------------------//
+ VanillaTilt.init(document.querySelector(".buss-crd-back-face"), {
+     max: 0,
+     speed: 400
+ });
+window.addEventListener('scroll', reveal);
+const vedioRestart = document.querySelectorAll('#vedioRestart');
+function reveal() {
+    let reveals = document.querySelectorAll('.buss-web-crd');
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 270;
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+            vedioRestart[i].load();
+        }else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
 
 //----------------------------------------------------Board Members And Advisory Board Coding--------------------------------------------//
 $(document).ready(function () {
