@@ -153,9 +153,10 @@ function reveal() {
         let revealPoint = 270;
         if (revealTop < windowHeight - revealPoint) {
             reveals[i].classList.add('active');
-            vedioRestart[i].load();
+            vedioRestart[i].play();
         }else{
             reveals[i].classList.remove('active');
+            vedioRestart[i].pause();
         }
     }
 }
