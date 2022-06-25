@@ -261,7 +261,6 @@
 
 @media screen and (max-width: 450px){
     .video-info{
-        outline: 1px solid;
         width: 100% !important;
         max-height: 200px !important;
     }
