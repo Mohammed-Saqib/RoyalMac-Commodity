@@ -258,6 +258,10 @@
     display: inline-block;
     width: 30px;
 }
+.rail-r-des p .f-w-align{
+    display: inline-block;
+    width: 100px;
+}
 .rail-spec-r:nth-child(3) .rail-r-des{
     padding-left: 10px !important;
 }
@@ -327,6 +331,9 @@
     .rail-spec-subHead{
         font-size: 16px;
         line-height: 22px;
+    }
+    .rail-r-des p .f-w-align{
+        width: 80px;
     }
 }
 
