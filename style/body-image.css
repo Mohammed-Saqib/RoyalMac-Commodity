@@ -165,11 +165,11 @@
 }
 .rail-spec-r{
     align-self: center;
-    width: 100%;
+    min-width: 100% !important;
+    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
@@ -200,19 +200,13 @@
     border-radius: 5px;
     overflow: hidden;
 }
-.rail-spec-r:nth-child(2) .rail-r-img{
-    border-radius: 5px !important;
-}
-.rail-spec-r:nth-child(2) .rail-r-img img{
-    border-radius: 5px !important;
-}
 .rail-r-img img{
     max-width: 100%;
     max-height: 100%;
     display: block;
     object-fit: cover;
     object-position: center;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
 }
 .rail-r-img-des{
     position: absolute;
@@ -264,17 +258,12 @@
     display: inline-block;
     width: 30px;
 }
-.rail-spec-r:nth-child(2) .rail-r-des{
+.rail-spec-r:nth-child(3) .rail-r-des{
     padding-left: 10px !important;
 }
-.rail-spec-r:nth-child(2) p {
+.rail-spec-r:nth-child(3) p {
     line-height: 25px;
     margin: 0px !important;  
-}
-.rail-r-subH{
-    margin-top: 5px;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
 }
 .rail-spec-footer{
     font-size: 16px;
