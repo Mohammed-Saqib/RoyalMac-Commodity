@@ -139,10 +139,6 @@ const borderAnim = gsap.timeline({ repeat: -1, repeatDelay: 4, defaults: { durat
         .to(`#sss span:nth-child(${n4})`,{ scaleY : '1' , ease: 'power1.inOut' })
 
 //----------------------------------------------------Business Group Coding--------------------------------------------//
- VanillaTilt.init(document.querySelector(".buss-crd-back-face"), {
-     max: 0,
-     speed: 400
- });
 window.addEventListener('scroll', reveal);
 const vedioRestart = document.querySelectorAll('#vedioRestart');
 function reveal() {
@@ -153,7 +149,9 @@ function reveal() {
         let revealPoint = 270;
         if (revealTop < windowHeight - revealPoint) {
             reveals[i].classList.add('active');
-            vedioRestart[i].play();
+            setTimeout(() => {
+                vedioRestart[i].play();
+            }, 500);
         }else{
             reveals[i].classList.remove('active');
             vedioRestart[i].pause();
