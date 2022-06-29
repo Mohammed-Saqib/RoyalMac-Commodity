@@ -206,6 +206,10 @@
     border-radius: 5px;
     overflow: hidden;
 }
+.rail-spec-r:nth-child(3) .rail-r-img{
+    animation: none;
+    background: var(--greenColor);
+}
 @keyframes bgPosi {
     0%{
         background-position: 50% 0%;
@@ -238,7 +242,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg,  rgba(11,44,11,.7) 0%,  rgba(195,153,107,.5) 100%);
+    background-color: var(--greenTransparent1);
     display: grid;
     place-items: center;
     border-radius: 5px;
