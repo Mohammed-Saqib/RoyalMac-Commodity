@@ -74,11 +74,11 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 .activity-card:hover .act-img{
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, rgba(25,143,25,.7) 100%);
 }
 .act-img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     padding: 17.5px;
     display: flex;
     flex-direction: column !important;
@@ -129,6 +129,8 @@
 .act-img img{
     max-width: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
 }
 .mb-15{
     margin-bottom: 15px;

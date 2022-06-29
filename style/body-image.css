@@ -196,9 +196,31 @@
     max-height: 100%;
     position: relative;
     padding: 3px;
-    background-color: var(--greenTransparent);
+    background-image: linear-gradient(90deg, rgba(11,44,11,1) 0%, #C3996B 20%, rgba(11,44,11,1) 50%);
+    background-size: 200% 100%;
+    animation: bgPosi 2s infinite linear alternate-reverse both;
+    -webkit-animation: bgPosi 2s infinite linear alternate-reverse both;
+    -ms-animation: bgPosi 2s infinite linear alternate-reverse both;
+    -moz-animation: bgPosi 2s infinite linear alternate-reverse both;
+    -o-animation: bgPosi 2s infinite linear alternate-reverse both;
     border-radius: 5px;
     overflow: hidden;
+}
+@keyframes bgPosi {
+    0%{
+        background-position: 50% 0%;
+    }
+    100%{
+        background-position: -150% 0%;
+    }
+}
+@-webkit-keyframes bgPosi {
+    0%{
+        background-position: 50% 0%;
+    }
+    100%{
+        background-position: -150% 0%;
+    }
 }
 .rail-r-img img{
     max-width: 100%;
@@ -216,7 +238,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--greenTransparent2);
+    background-image: linear-gradient(180deg, rgba(195,153,107,.6)  0%, rgba(11,44,11,.7) 100%);
     display: grid;
     place-items: center;
     border-radius: 5px;
