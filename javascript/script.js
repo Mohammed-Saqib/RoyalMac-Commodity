@@ -151,7 +151,7 @@ function reveal() {
             reveals[i].classList.add('active');
             setTimeout(() => {
                 vedioRestart[i].play();
-            }, 500);
+            }, 400);
         }else{
             reveals[i].classList.remove('active');
             vedioRestart[i].pause();
@@ -530,19 +530,90 @@ meetForm.addEventListener('submit', function(e){
 
 
 //-------------------------Vedio Language Coding-------------------------------------------------//
-const vedioLanguages = document.getElementById('vedioLanguages');
-const ytVideo = document.getElementById('yt-vs-video');
-const rmvOpt = document.getElementById('rmvOpt');
-vedioLanguages.addEventListener('change', function (e) {
-    e.preventDefault();
-    rmvOpt.remove();
-    if(this.value === "Kannada"){
-        ytVideo.setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM');
-    }
-    if(this.value === "Hindi"){
-        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
-    }
-    if(this.value === ""){
-        ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
-    }
-})
+// const vedioLanguages = document.getElementById('vedioLanguages');
+// const ytVideo = document.getElementById('yt-vs-video');
+// const rmvOpt = document.getElementById('rmvOpt');
+// vedioLanguages.addEventListener('change', function (e) {
+//     e.preventDefault();
+//     rmvOpt.remove();
+//     if(this.value === "Kannada"){
+//         ytVideo.setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM');
+//     }
+//     if(this.value === "Hindi"){
+//         ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+//     }
+//     if(this.value === ""){
+//         ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
+//     }
+// })
+
+
+    function labnolIframe(div) {
+        var iframe = document.createElement("iframe");
+        iframe.setAttribute(
+          "src",
+          "https://www.youtube.com/embed/" + div.dataset.id + "?autoplay=1&amp;rel=0"
+        );
+        iframe.setAttribute("id", "iFrameVedio");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        iframe.setAttribute(
+          "allow",
+          "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        );
+        div.parentNode.replaceChild(iframe, div);
+      }
+      function initYouTubeVideos() {
+        var playerElements = document.getElementsByClassName("youtube-player");
+        for (var n = 0; n < playerElements.length; n++) {
+          var videoId = playerElements[n].dataset.id;
+          var div = document.createElement("div");
+          div.setAttribute("data-id", videoId);
+          var thumbNode = document.createElement("img");
+          thumbNode.src = "https://i.ytimg.com/vi/ID/hqdefault.jpg".replace(
+            "ID",
+            videoId
+          );
+          div.appendChild(thumbNode);
+          var playButton = document.createElement("div");
+          playButton.setAttribute("class", "play");
+          div.appendChild(playButton);
+          div.onclick = function () {
+            labnolIframe(this);
+          };
+          playerElements[n].appendChild(div);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", initYouTubeVideos);
+
+      const vedioLanguages = document.getElementById('vedioLanguages');
+      const ytVideo = document.getElementById('yt-vs-video');
+      const rmvOpt = document.getElementById('rmvOpt');
+      vedioLanguages.addEventListener('change', function (e) {
+          e.preventDefault();
+          rmvOpt.remove();
+          if(this.value === "Kannada"){
+              initYouTubeVideos();
+              ytVideo.setAttribute('data-id','FzBRSYXFPAM');
+              document.querySelector('.youtube-player div').remove();
+            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM?autoplay=1&amp;rel=0')
+            console.log(document.getElementById('iFrameVedio'));
+
+          }
+          if(this.value === "Hindi"){
+              initYouTubeVideos();
+              ytVideo.setAttribute('data-id','31fV0VlieVQ');
+              document.querySelector('.youtube-player div').remove();
+            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0')
+            console.log(document.getElementById('iFrameVedio'));
+
+          }
+          if(this.value === ""){
+              initYouTubeVideos();
+              ytVideo.setAttribute('data-id','31fV0VlieVQ');
+              document.querySelector('.youtube-player div').remove();
+            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0')
+            console.log(document.getElementById('iFrameVedio'));
+
+          }
+      })
