@@ -133,12 +133,13 @@
 }
 
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
-    display: inline-block;
-    vertical-align: center;
     padding: 2px;
     width: 35px;
+    height: 35px;
     margin-right: 5px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
     cursor: pointer;
 }
 
