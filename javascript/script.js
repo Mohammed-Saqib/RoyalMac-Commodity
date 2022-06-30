@@ -528,7 +528,6 @@ meetForm.addEventListener('submit', function(e){
     }, 1000);
 })
 
-
 //-------------------------Vedio Language Coding-------------------------------------------------//
     function labnolIframe(div) {
         var iframe = document.createElement("iframe");
