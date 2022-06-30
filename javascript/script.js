@@ -593,27 +593,21 @@ meetForm.addEventListener('submit', function(e){
           e.preventDefault();
           rmvOpt.remove();
           if(this.value === "Kannada"){
+              ytVideo.setAttribute('data-id','FzBRSYXFPAM'); 
               initYouTubeVideos();
-              ytVideo.setAttribute('data-id','FzBRSYXFPAM');
               document.querySelector('.youtube-player div').remove();
-            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM?autoplay=1&amp;rel=0')
-            console.log(document.getElementById('iFrameVedio'));
-
+              document.getElementById('iFrameVedio') ? document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM?autoplay=1&amp;rel=0') : " ";
           }
           if(this.value === "Hindi"){
+              ytVideo.setAttribute('data-id','31fV0VlieVQ'); 
               initYouTubeVideos();
-              ytVideo.setAttribute('data-id','31fV0VlieVQ');
               document.querySelector('.youtube-player div').remove();
-            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0')
-            console.log(document.getElementById('iFrameVedio'));
-
+              document.getElementById('iFrameVedio') ? document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0') : " ";
           }
           if(this.value === ""){
+              ytVideo.setAttribute('data-id','31fV0VlieVQ'); 
               initYouTubeVideos();
-              ytVideo.setAttribute('data-id','31fV0VlieVQ');
               document.querySelector('.youtube-player div').remove();
-            document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0')
-            console.log(document.getElementById('iFrameVedio'));
-
+              document.getElementById('iFrameVedio') ? document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0') : " ";
           }
       })
