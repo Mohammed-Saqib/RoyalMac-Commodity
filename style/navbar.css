@@ -82,7 +82,8 @@ body[style]{
 }
 
 .navbar.sticky{
-    height: 90px;
+    /* height: 90px; */
+    height: 100px;
     background-color: var(--greenTransparent);
 }
 
@@ -447,8 +448,6 @@ a{
     .dropdown-content a:hover, .content:hover{
         color: var(--goldColor) !important;
     }
-
-
     .dropdown-content{
         position: absolute;
         opacity: 1;
@@ -458,11 +457,9 @@ a{
         top:-10% !important;
         left: 12%;
     }
-
     .dropdown:hover .dropdown-content{
         display: block;
      }
-
     .drp-cnt{
         top:-50%;
         left: 10%;
