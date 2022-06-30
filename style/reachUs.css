@@ -133,9 +133,10 @@
 }
 
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
-    padding: 2px;
-    width: 35px;
-    height: 35px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
     margin-right: 5px;
     border-radius: 50%;
     object-fit: cover;
@@ -365,7 +366,9 @@
     line-height: 12px;
 }
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
-    width: 25px;
+    width: 35px;
+    height: 35px;
+    padding: 2.5px;
 }
 .reach-us-content{
     justify-content: center !important;
@@ -420,7 +423,8 @@
     line-height: 12px;
 }
 .r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
-    width: 20px;
+    width: 25px;
+    height: 25px;
 }
 }
 
@@ -439,8 +443,5 @@
     ,.zm-text{
     font-size: 12px;
     line-height: 12px;
-}
-.r-fb img, .r-insta img, .r-twitter img, .r-link img, .r-tele img, .r-email img, .r-gmeet img, .r-zmeet img{
-    width: 15px;
 }
 }
