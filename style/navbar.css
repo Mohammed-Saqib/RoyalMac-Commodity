@@ -82,8 +82,7 @@ body[style]{
 }
 
 .navbar.sticky{
-    /* height: 90px; */
-    height: 100px;
+    height: 90px;
     background-color: var(--greenTransparent);
 }
 
@@ -98,6 +97,7 @@ body[style]{
 
 .logo img{
     width: 100px; object-fit: cover; object-position: center;
+    height: 100% !important;
 }
 
 .menu{
@@ -247,21 +247,41 @@ a{
 .menu-icon{
     display: none;
 }
-
-.menu-icon img:active{
-    transition: transform 0.4s ease;
-    -webkit-transition: transform 0.4s ease;
-    -moz-transition: transform 0.4s ease;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
+.menu-icons-span{
+    width: 25px;
+    margin-left: auto;
 }
-
-.menu-icon img:hover{
-    animation: shake 0.1s 2 ease;
-    -webkit-animation: shake 0.1s 2 ease;
-    -moz-animation: shake 0.1s 2 ease;
-    -o-animation: shake 0.1s 2 ease;
+.menu-icons-span span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 6px auto;
+    border-radius: 5rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 1;
+    background-color: rgba(255,255,255,1);
+}
+.menu-icon.active .menu-icons-span span:nth-child(1){
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
+}
+.menu-icon.active .menu-icons-span span:nth-child(2){
+    opacity: 0;
+    transform: translateX(5px);
+}
+.menu-icon.active .menu-icons-span span:nth-child(3){
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    -ms-transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+    -moz-transform: translateY(-10px) rotate(45deg);
+    -o-transform: translateY(-10px) rotate(45deg);
 }
 
 #myBtn {

@@ -2,7 +2,7 @@
 let speed = 12000;
 let stopingIntervals;
 $(document).ready(function () {
-    $(".menu-icon img").click(function () {
+    $(".menu-icons-span").click(function () {
         $(".menu").toggleClass("activated-menu")
         if (stopingIntervals) {
             clearTimeout(stopingIntervals);
@@ -12,16 +12,16 @@ $(document).ready(function () {
             $(".menu").removeClass("activated-menu")
             const close = document.querySelector('.activated-menu');
             if (close == null) {
-                document.querySelector('.menu-icon img').setAttribute('src', './Images/SVG/menu.svg')
+                document.querySelector('.menu-icon').classList.remove('active')
             } else {
-                document.querySelector('.menu-icon img').setAttribute('src', './Images/SVG/close.svg')
+                document.querySelector('.menu-icon').classList.add('active')
             }
         }, speed);
         const close = document.querySelector('.activated-menu');
         if (close == null) {
-            document.querySelector('.menu-icon img').setAttribute('src', './Images/SVG/menu.svg');
+            document.querySelector('.menu-icon').classList.remove('active')
         } else {
-            document.querySelector('.menu-icon img').setAttribute('src', './Images/SVG/close.svg')
+            document.querySelector('.menu-icon').classList.add('active')
         }
     });
 });
@@ -530,24 +530,6 @@ meetForm.addEventListener('submit', function(e){
 
 
 //-------------------------Vedio Language Coding-------------------------------------------------//
-// const vedioLanguages = document.getElementById('vedioLanguages');
-// const ytVideo = document.getElementById('yt-vs-video');
-// const rmvOpt = document.getElementById('rmvOpt');
-// vedioLanguages.addEventListener('change', function (e) {
-//     e.preventDefault();
-//     rmvOpt.remove();
-//     if(this.value === "Kannada"){
-//         ytVideo.setAttribute('src','https://www.youtube.com/embed/FzBRSYXFPAM');
-//     }
-//     if(this.value === "Hindi"){
-//         ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
-//     }
-//     if(this.value === ""){
-//         ytVideo.setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ');
-//     }
-// })
-
-
     function labnolIframe(div) {
         var iframe = document.createElement("iframe");
         iframe.setAttribute(
