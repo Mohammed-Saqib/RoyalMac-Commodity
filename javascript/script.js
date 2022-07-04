@@ -555,6 +555,7 @@ meetForm.addEventListener('submit', function(e){
             "ID",
             videoId
           );
+          thumbNode.setAttribute("alt","Virtual Stock Vedio");
           div.appendChild(thumbNode);
           var playButton = document.createElement("div");
           playButton.setAttribute("class", "play");
