@@ -592,3 +592,16 @@ meetForm.addEventListener('submit', function(e){
               document.getElementById('iFrameVedio') ? document.getElementById('iFrameVedio').setAttribute('src','https://www.youtube.com/embed/31fV0VlieVQ?autoplay=1&amp;rel=0') : " ";
           }
       })
+
+//================================= Does not use passive listeners to improve scrolling performance ==================================//
+// Passive event listeners
+jQuery.event.special.touchstart = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.touchmove = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
