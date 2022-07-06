@@ -144,9 +144,9 @@ const team = [
         phone:'123456789',
     },
     {
-        name:"Ms. Priyanka R",
-        email : "pr@royal-mac.com",
-        designation : "Operations & Admin",
+        name:"Mr. Ravi Vyas",
+        email : "info@royal-mac.com",
+        designation : "Business Development Advisor",
         country: "India",
         image: './Images/maps/india.png',
         phone:'123456789',
