@@ -462,7 +462,7 @@ nopViewPlace.textContent = "";
     } 
 }
 showLiveUser();
-let vMessageAnimation = gsap.timeline({repeat : -1, repeatDelay: 40, onRepeat : showLiveUser})
+let vMessageAnimation = gsap.timeline({repeat : -1, repeatDelay: 20, onRepeat : showLiveUser})
 vMessageAnimation
 .from(viewingMessage,{ y : 150, opacity : 0.5, ease : 'elastic.inOut', duration : 3 })
 .to(viewingMessage, 3, {y : 150, opacity : 0.1, delay: 2.5})
