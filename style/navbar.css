@@ -35,6 +35,7 @@
  --greenTransparent2 : rgba(11, 44, 11,0.6);
  --darkWhite1 : #f9f9f9;
  --darkWhite2 : #f1f1f1;
+ --normalGreen : green;
 }
 
 html{

@@ -34,9 +34,11 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 0px 15px;
+    grid-gap: 0px 20px;
 }
 .company-msg{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -67,11 +69,58 @@
     top: 100%;
     left: 0%;
 }
-
 .c-msg-para{
     font-size: 16px;
     line-height: 24px;
     text-align:justify;
+}
+.company-msg span{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+}
+.company-msg span:nth-child(1){
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: calc(100% - 3px);
+    opacity: 0.7;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(90deg, var(--normalGreen) 0%, rgba(195,153,107,1) 100%);
+}
+ 
+.company-msg span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: calc(100% - 3px);
+    opacity: 0.7;
+    transform: scaleY(0);
+    transform-origin: top;
+    background: linear-gradient(180deg, var(--normalGreen) 0%, rgba(195,153,107,1) 100%);
+}
+
+.company-msg span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0.7;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: linear-gradient(90deg, rgba(195,153,107,1) 0%, var(--normalGreen) 100%);
+}
+
+.company-msg span:nth-child(4){
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: calc(100% - 3px);
+    opacity: 0.7;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    background: linear-gradient(180deg, rgba(195,153,107,1) 0%, var(--normalGreen) 100%);
 }
 @media screen and (max-width: 750px){
     .company-info{
@@ -94,7 +143,7 @@
     .company-msg-content{
         width: 90%;
         grid-template-columns: auto;
-        grid-gap: 15px 0px !important;
+        grid-gap: 20px 0px !important;
         padding: 10px !important;
     }
    
@@ -123,7 +172,7 @@
     }
     .company-msg-content{
         width: 95%;
-        grid-gap: 15px 0px !important;
+        grid-gap: 20px 0px !important;
     }
     .company-msg{
         width: 100%;
